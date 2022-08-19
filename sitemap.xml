@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/lang/</loc>
+    <lastmod>2022-08-19T14:18:51+08:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2022-08-19T14:18:51+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-08-19T14:18:51+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-08-19T14:18:51+08:00</lastmod>
+  </url><url>
+    <loc>/lang/%E8%8F%AF%E6%96%87/</loc>
+    <lastmod>2022-08-19T14:18:51+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E8%B8%85%E8%B8%85%E5%94%B8/</loc>
+    <lastmod>2022-08-19T14:18:51+08:00</lastmod>
+  </url><url>
+    <loc>/posts/%E9%80%99%E8%A3%A1%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2022-08-19T14:18:51+08:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/series/</loc>
+  </url><url>
+    <loc>/about/</loc>
+  </url>
+</urlset>

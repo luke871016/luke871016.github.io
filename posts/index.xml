@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 陳建中 Tân Kiàn-tiong</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on 陳建中 Tân Kiàn-tiong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant</language>
+    <lastBuildDate>Fri, 19 Aug 2022 14:18:51 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>這裡的第一篇文章</title>
+      <link>/posts/%E9%80%99%E8%A3%A1%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Fri, 19 Aug 2022 14:18:51 +0800</pubDate>
+      
+      <guid>/posts/%E9%80%99%E8%A3%A1%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <description>這是這裡的第一篇文章，來寫一些近期發生的事情與架站的碎念和廢話 源頭 🔗從三年前還在讀大三、疫情剛開始的時候寫了一些文章，主要是模型、字型與台語</description>
+    </item>
+    
+  </channel>
+</rss>

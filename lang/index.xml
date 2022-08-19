@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lang on 陳建中 Tân Kiàn-tiong</title>
+    <link>/lang/</link>
+    <description>Recent content in Lang on 陳建中 Tân Kiàn-tiong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant</language>
+    <lastBuildDate>Fri, 19 Aug 2022 14:18:51 +0800</lastBuildDate><atom:link href="/lang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>華文</title>
+      <link>/lang/%E8%8F%AF%E6%96%87/</link>
+      <pubDate>Fri, 19 Aug 2022 14:18:51 +0800</pubDate>
+      
+      <guid>/lang/%E8%8F%AF%E6%96%87/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

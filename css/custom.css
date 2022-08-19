@@ -1,0 +1,67 @@
+@import url('https://cdn.jsdelivr.net/npm/chiron-sung-hk-webfont@1.0.5/css/vf.min.css');
+@import url('https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont@2.5.3/css/vf.min.css');
+:root {
+    --interactive-accent: #9db34a;
+    --interactive-hover: #c6e35d;
+    --lang-color: #9db098;
+}
+
+body{
+    font-family: "Chiron hei HK WS";
+}
+
+nav.navigation a {
+    font-size: 15px;
+    transition-duration: 0.2s;
+    color: var(--interactive-accent);
+    font-weight: 350;
+}
+
+nav.navigation a:hover {
+    color: var(--interactive-hover);
+}
+
+#list-page .tags a {
+    background: #f2f2f2;
+    padding: 4px 7px;
+    color: #999;
+    font-size: 14px;
+    margin-right: 3px;
+}
+
+#list-page .title {
+    width: 70%;
+}
+
+#list-page .lang {
+    display: inline-block;
+    position: relative;
+    transform: translateY(1px);
+    width: 22px;
+    height: 22px;
+    border: 0.5px solid var(--lang-color);
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+#list-page .lang a {
+    font-weight: 400;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(-15%);
+    font-size: 13px;
+    color: var(--lang-color);
+    display: inline-block;
+}
+
+a {
+    color: var(--interactive-accent);
+}
+
+a:hover {
+    color: var(--interactive-hover);
+}
+
+#single .tags a:hover, #archive .group .value .tags a:hover,#list-page .title a:hover {
+    color: var(--interactive-hover);
+}
