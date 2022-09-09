@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>踅踅唸 on 陳建中 Tân Kiàn-tiong</title>
-    <link>/tags/%E8%B8%85%E8%B8%85%E5%94%B8/</link>
-    <description>Recent content in 踅踅唸 on 陳建中 Tân Kiàn-tiong</description>
+    <title>雙文 on 陳建中 Tân Kiàn-tiong</title>
+    <link>/lang/%E9%9B%99%E6%96%87/</link>
+    <description>Recent content in 雙文 on 陳建中 Tân Kiàn-tiong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant</language>
-    <lastBuildDate>Thu, 08 Sep 2022 20:36:45 +0800</lastBuildDate><atom:link href="/tags/%E8%B8%85%E8%B8%85%E5%94%B8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 20:36:45 +0800</lastBuildDate><atom:link href="/lang/%E9%9B%99%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>個人網站的頭一篇文章</title>
       <link>/posts/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99%E7%9A%84%E9%A0%AD%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
@@ -14,6 +14,15 @@
       
       <guid>/posts/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99%E7%9A%84%E9%A0%AD%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
       <description>這張相片是今年三--月佮皓梅鬥陣七週年翕的，感謝攝影師陳嘉斌 前言 🔗真久以前就想欲起一个個人網站矣，大學三年仔的時陣捌佇 Medium 寫幾若篇文章，彼時猶</description>
+    </item>
+    
+    <item>
+      <title>關於</title>
+      <link>/about/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>關於 🔗我是陳建中，2022 自台科大設計系剛畢業，現在在公視台語台台灣新眼界擔任工讀生，以及私立衛理女中生活科技課兼任老師。 在這個網站我華文與</description>
     </item>
     
   </channel>
