@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lang on 陳建中 Tân Kiàn-tiong</title>
-    <link>/lang/</link>
+    <link>https://kiantiong.com/lang/</link>
     <description>Recent content in Lang on 陳建中 Tân Kiàn-tiong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant</language>
-    <lastBuildDate>Thu, 08 Sep 2022 20:36:45 +0800</lastBuildDate><atom:link href="/lang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 20:36:45 +0800</lastBuildDate><atom:link href="https://kiantiong.com/lang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>雙文</title>
-      <link>/lang/%E9%9B%99%E6%96%87/</link>
+      <link>https://kiantiong.com/lang/%E9%9B%99%E6%96%87/</link>
       <pubDate>Thu, 08 Sep 2022 20:36:45 +0800</pubDate>
       
-      <guid>/lang/%E9%9B%99%E6%96%87/</guid>
+      <guid>https://kiantiong.com/lang/%E9%9B%99%E6%96%87/</guid>
       <description></description>
     </item>
     
