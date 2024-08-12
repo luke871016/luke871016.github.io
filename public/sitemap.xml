@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://kiantiong.com/posts/</loc>
     <lastmod>2024-08-12T13:55:37+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/quick-start/</loc>
+    <loc>http://kiantiong.com/posts/quick-start/</loc>
     <lastmod>2024-08-12T13:55:37+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://kiantiong.com/</loc>
     <lastmod>2024-08-12T13:55:37+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://kiantiong.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://kiantiong.com/tags/</loc>
   </url>
 </urlset>

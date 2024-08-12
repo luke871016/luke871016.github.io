@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 測試測試</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://kiantiong.com/posts/</link>
     <description>Recent content in Posts on 測試測試</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Aug 2024 13:55:37 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 13:55:37 +0800</lastBuildDate><atom:link href="http://kiantiong.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quick Start</title>
-      <link>http://localhost:1313/posts/quick-start/</link>
+      <link>http://kiantiong.com/posts/quick-start/</link>
       <pubDate>Mon, 12 Aug 2024 13:55:37 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/quick-start/</guid>
+      <guid>http://kiantiong.com/posts/quick-start/</guid>
       <description>Hello world 你好！！</description>
     </item>
     
