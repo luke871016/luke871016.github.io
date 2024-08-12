@@ -1,0 +1,7 @@
+baseURL = 'http://kiantiong.com/'
+languageCode = 'en-us'
+title = '測試測試'
+theme = 'hugo-theme-monochrome'
+
+[params]
+navbar_title = "Monochrome" # default: site's `title`
