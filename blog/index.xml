@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日誌 on 陳建中｜Tân Kiàn-tiong</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://www.kiantiong.com/blog/</link>
     <description>Recent content in 日誌 on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
     <lastBuildDate>Mon, 10 Mar 2025 10:05:47 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.kiantiong.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>台語 MyGO Mî-im</title>
-      <link>http://localhost:1313/blog/taigi-mygo/</link>
+      <link>https://www.kiantiong.com/blog/taigi-mygo/</link>
       <pubDate>Mon, 10 Mar 2025 10:05:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/taigi-mygo/</guid>
+      <guid>https://www.kiantiong.com/blog/taigi-mygo/</guid>
       <description>模仿台語台雙語字幕做的台語 MyGO Mî-im</description>
     </item>
     <item>
       <title>Lāu-khok-khok kho̍k-hî kho̍k kho̍k-hî</title>
-      <link>http://localhost:1313/blog/laukhokkhokkhokhi/</link>
+      <link>https://www.kiantiong.com/blog/laukhokkhokkhokhi/</link>
       <pubDate>Tue, 26 Nov 2024 09:56:56 +0800</pubDate>
-      <guid>http://localhost:1313/blog/laukhokkhokkhokhi/</guid>
+      <guid>https://www.kiantiong.com/blog/laukhokkhokkhokhi/</guid>
       <description>有一隻老硞硞的鱷魚咧硞嘓魚</description>
     </item>
   </channel>

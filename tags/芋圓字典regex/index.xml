@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>芋圓字典REGEX on 陳建中｜Tân Kiàn-tiong</title>
-    <link>http://localhost:1313/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/</link>
+    <link>https://www.kiantiong.com/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/</link>
     <description>Recent content in 芋圓字典REGEX on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
     <lastBuildDate>Thu, 22 May 2025 20:48:17 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.kiantiong.com/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>台語有啥物句型？用 REGEX 語法共揣出來！</title>
-      <link>http://localhost:1313/sutian/ooinn2/</link>
+      <link>https://www.kiantiong.com/sutian/ooinn2/</link>
       <pubDate>Thu, 22 May 2025 20:48:17 +0800</pubDate>
-      <guid>http://localhost:1313/sutian/ooinn2/</guid>
+      <guid>https://www.kiantiong.com/sutian/ooinn2/</guid>
       <description>芋圓字典的REGEX語法會當揣例句，咱來揣一寡特殊的句型</description>
     </item>
     <item>
       <title>用芋圓字典比較「共」佮「佮」的精差</title>
-      <link>http://localhost:1313/sutian/ooinn1/</link>
+      <link>https://www.kiantiong.com/sutian/ooinn1/</link>
       <pubDate>Thu, 22 May 2025 11:48:17 +0800</pubDate>
-      <guid>http://localhost:1313/sutian/ooinn1/</guid>
+      <guid>https://www.kiantiong.com/sutian/ooinn1/</guid>
       <description>芋圓字典的REGEX語法會當揣例句，咱來揣出「共」佮「佮」的精差</description>
     </item>
   </channel>
