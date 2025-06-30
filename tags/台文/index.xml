@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>台文 on 陳建中｜Tân Kiàn-tiong</title>
+    <link>https://www.kiantiong.com/tags/%E5%8F%B0%E6%96%87/</link>
+    <description>Recent content in 台文 on 陳建中｜Tân Kiàn-tiong</description>
+    <generator>Hugo</generator>
+    <language>und-hani</language>
+    <lastBuildDate>Thu, 29 May 2025 11:48:17 +0800</lastBuildDate>
+    <atom:link href="https://www.kiantiong.com/tags/%E5%8F%B0%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>教典2025新漢字音</title>
+      <link>https://www.kiantiong.com/sutian/37/</link>
+      <pubDate>Thu, 29 May 2025 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/37/</guid>
+      <description>教典2025新收錄真濟新的詞目，內底有增加14个新定義的漢字讀音</description>
+    </item>
+    <item>
+      <title>台語有啥物句型？用 REGEX 語法共揣出來！</title>
+      <link>https://www.kiantiong.com/sutian/ooinn2/</link>
+      <pubDate>Thu, 22 May 2025 20:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/ooinn2/</guid>
+      <description>芋圓字典的REGEX語法會當揣例句，咱來揣一寡特殊的句型</description>
+    </item>
+    <item>
+      <title>用芋圓字典比較「共」佮「佮」的精差</title>
+      <link>https://www.kiantiong.com/sutian/ooinn1/</link>
+      <pubDate>Thu, 22 May 2025 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/ooinn1/</guid>
+      <description>芋圓字典的REGEX語法會當揣例句，咱來揣出「共」佮「佮」的精差</description>
+    </item>
+    <item>
+      <title>「術仔 su̍t-á」僻智識</title>
+      <link>https://www.kiantiong.com/sutian/36/</link>
+      <pubDate>Sun, 20 Apr 2025 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/36/</guid>
+      <description>教典的「術仔 su̍t-á」這个詞是當時收錄？「捽仔 sut-á」又閣是啥？</description>
+    </item>
+    <item>
+      <title>失控的教典俗諺語課</title>
+      <link>https://www.kiantiong.com/sutian/35/</link>
+      <pubDate>Fri, 18 Apr 2025 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/35/</guid>
+      <description>有一个撇步通好做一改揣著所有林良儒先生的聲音檔案，閣利用愛灣語提供的家私共放送出來</description>
+    </item>
+    <item>
+      <title>台語 MyGO Mî-im</title>
+      <link>https://www.kiantiong.com/blog/taigi-mygo/</link>
+      <pubDate>Mon, 10 Mar 2025 10:05:47 +0800</pubDate>
+      <guid>https://www.kiantiong.com/blog/taigi-mygo/</guid>
+      <description>模仿台語台雙語字幕做的台語 MyGO Mî-im</description>
+    </item>
+    <item>
+      <title>Lāu-khok-khok kho̍k-hî kho̍k kho̍k-hî</title>
+      <link>https://www.kiantiong.com/blog/laukhokkhokkhokhi/</link>
+      <pubDate>Tue, 26 Nov 2024 09:56:56 +0800</pubDate>
+      <guid>https://www.kiantiong.com/blog/laukhokkhokkhokhi/</guid>
+      <description>有一隻老硞硞的鱷魚咧硞嘓魚</description>
+    </item>
+    <item>
+      <title>教典十二生相</title>
+      <link>https://www.kiantiong.com/sutian/34/</link>
+      <pubDate>Mon, 09 Sep 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/34/</guid>
+      <description>教典十二生相的條目欲按怎做一改揣？有一个語法會當達成！</description>
+    </item>
+    <item>
+      <title>教典新收詞 Notion 表格</title>
+      <link>https://www.kiantiong.com/sutian/33/</link>
+      <pubDate>Thu, 22 Aug 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/33/</guid>
+      <description>教典2023佮2024新增加啥物詞？透過這个Notion表格來學習！</description>
+    </item>
+    <item>
+      <title>教典詞目詞性索引</title>
+      <link>https://www.kiantiong.com/sutian/32/</link>
+      <pubDate>Thu, 08 Aug 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/32/</guid>
+      <description>用詞性佮音節長度揣詞目的家私</description>
+    </item>
+    <item>
+      <title>教典的風聲</title>
+      <link>https://www.kiantiong.com/sutian/31/</link>
+      <pubDate>Wed, 10 Jul 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/31/</guid>
+      <description>教典的風按怎吹？風的聲音是啥？</description>
+    </item>
+    <item>
+      <title>正規表達式入門②——揣羅馬字的撇步</title>
+      <link>https://www.kiantiong.com/sutian/30/</link>
+      <pubDate>Fri, 14 Jun 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/30/</guid>
+      <description>教典正規表達式入門教學－羅馬字的部份</description>
+    </item>
+    <item>
+      <title>正規表達式入門①－基礎概念、按怎揣漢字</title>
+      <link>https://www.kiantiong.com/sutian/29/</link>
+      <pubDate>Sun, 09 Jun 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/29/</guid>
+      <description>教典正規表達式入門教學－漢字的部份</description>
+    </item>
+    <item>
+      <title>教典 ABC | CAB 詞目組</title>
+      <link>https://www.kiantiong.com/sutian/28/</link>
+      <pubDate>Fri, 07 Jun 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/28/</guid>
+      <description>教典內底有啥物「福利熊！熊福利！」格式的詞目組？</description>
+    </item>
+    <item>
+      <title>台語聽寫練習系統</title>
+      <link>https://www.kiantiong.com/sutian/27/</link>
+      <pubDate>Thu, 09 May 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/27/</guid>
+      <description>（猶咧修理）透過教典例句音檔練習詞彙聽寫的系統</description>
+    </item>
+    <item>
+      <title>教典上濟</title>
+      <link>https://www.kiantiong.com/sutian/26/</link>
+      <pubDate>Sat, 04 May 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/26/</guid>
+      <description>介紹各種教典「上濟」的記錄</description>
+    </item>
+    <item>
+      <title>教典上長</title>
+      <link>https://www.kiantiong.com/sutian/25/</link>
+      <pubDate>Fri, 03 May 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/25/</guid>
+      <description>介紹各種教典「上長」的記錄</description>
+    </item>
+    <item>
+      <title>連字符入門②－「詞組」內底的詞「基本上」分寫</title>
+      <link>https://www.kiantiong.com/sutian/24/</link>
+      <pubDate>Wed, 24 Apr 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/24/</guid>
+      <description>解說連字符號基本原則第二條佮第六條之間的衝突造成濟濟隨人有無仝解讀的現象</description>
+    </item>
+    <item>
+      <title>連字符入門①－「詞」內底的音節連寫</title>
+      <link>https://www.kiantiong.com/sutian/23/</link>
+      <pubDate>Tue, 23 Apr 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/23/</guid>
+      <description>連字符號有啥物基本規則？當時連寫當時分寫？這篇文章會介紹基本概念。</description>
+    </item>
+    <item>
+      <title>教典地方僻智識</title>
+      <link>https://www.kiantiong.com/sutian/22/</link>
+      <pubDate>Mon, 22 Apr 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/22/</guid>
+      <description>教典例句介紹著的臺灣各地文化有啥？啥物縣市的例句上濟？地方有啥物好食物通食？</description>
+    </item>
+    <item>
+      <title>教典例句四个發音人</title>
+      <link>https://www.kiantiong.com/sutian/21/</link>
+      <pubDate>Thu, 18 Apr 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/21/</guid>
+      <description>教典的例句有四个先生分工去錄音，有一个例句拄好四个人攏有錄著</description>
+    </item>
+    <item>
+      <title>教典阿明的一生——第二季</title>
+      <link>https://www.kiantiong.com/sutian/20/</link>
+      <pubDate>Wed, 17 Apr 2024 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/20/</guid>
+      <description>2024教典詞目更新，又閣有增加阿明的例句喔！</description>
+    </item>
+    <item>
+      <title>大量名姓做一改揣——做一改講我的名</title>
+      <link>https://www.kiantiong.com/sutian/19/</link>
+      <pubDate>Sat, 16 Dec 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/19/</guid>
+      <description>這篇文章提供的家私通予用 Google Sheet 做一改揣大量名姓讀音，適合做學生名單等等的用途。</description>
+    </item>
+    <item>
+      <title>教典收錄的假疊詞</title>
+      <link>https://www.kiantiong.com/sutian/18/</link>
+      <pubDate>Fri, 15 Dec 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/18/</guid>
+      <description>台語內底有一寡詞看起來是仝款的漢字重複，頭前後壁讀音煞無仝。這篇文章整理教典內底的 6 个例</description>
+    </item>
+    <item>
+      <title>仝款漢字無仝音義的詞</title>
+      <link>https://www.kiantiong.com/sutian/17/</link>
+      <pubDate>Wed, 27 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/17/</guid>
+      <description>啥物款的詞明明是仝款的漢字，讀無仝的音就會變做完全無仝的意思咧？這篇圖文解說共教典所有這款的例介紹予你！</description>
+    </item>
+    <item>
+      <title>教典十誡開放下載、列印</title>
+      <link>https://www.kiantiong.com/sutian/16/</link>
+      <pubDate>Tue, 26 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/16/</guid>
+      <description>共頂回揣著的大道理印出來貼佇冊桌仔頂面提醒家己！</description>
+    </item>
+    <item>
+      <title>教典教你按怎做人</title>
+      <link>https://www.kiantiong.com/sutian/15/</link>
+      <pubDate>Sat, 23 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/15/</guid>
+      <description>這篇文章招你做伙來探討教典對咱做人的道理有啥物教示！</description>
+    </item>
+    <item>
+      <title>連寫詞組當中有大寫的詞目</title>
+      <link>https://www.kiantiong.com/sutian/14/</link>
+      <pubDate>Fri, 22 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/14/</guid>
+      <description>大寫敢一定干焦出現佇詞的頭前？連寫詞組中央敢會出現大寫的羅馬字？</description>
+    </item>
+    <item>
+      <title>有​輕聲意思就無仝的詞</title>
+      <link>https://www.kiantiong.com/sutian/13/</link>
+      <pubDate>Wed, 20 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/13/</guid>
+      <description>仝款的音節，加上輕聲就變做無仝的意思，教典這類詞有幾組咧？</description>
+    </item>
+    <item>
+      <title>教典上討厭的三種人</title>
+      <link>https://www.kiantiong.com/sutian/12/</link>
+      <pubDate>Mon, 18 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/12/</guid>
+      <description>教典討厭啥物人？攏寫佇辭典例句內底！</description>
+    </item>
+    <item>
+      <title>關係教典俗諺的一寡僻智識</title>
+      <link>https://www.kiantiong.com/sutian/11/</link>
+      <pubDate>Sun, 17 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/11/</guid>
+      <description>俗諺語附錄有啥物特性？最近的更新有改變啥物內容？</description>
+    </item>
+    <item>
+      <title>注音做名姓嘛有讀音？</title>
+      <link>https://www.kiantiong.com/sutian/10/</link>
+      <pubDate>Sat, 16 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/10/</guid>
+      <description>注音符號「ㄠ」、「ㄟ」、「ㄙ」竟然有台語讀音？</description>
+    </item>
+    <item>
+      <title>「量量量量量」同學的名字有 32768 種讀法，你敢會曉唸？</title>
+      <link>https://www.kiantiong.com/sutian/9/</link>
+      <pubDate>Fri, 15 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/9/</guid>
+      <description>有關教典名姓查詢附錄通好揣著的上濟讀法的名姓，閣有名姓附錄的一寡僻智識。</description>
+    </item>
+    <item>
+      <title>遮的詞恁兜攏按怎講？教典內底的「方言無差表」</title>
+      <link>https://www.kiantiong.com/sutian/8/</link>
+      <pubDate>Thu, 14 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/8/</guid>
+      <description>教典的方言差表收錄各地講法的精差，煞有一寡條目是完全仝款的</description>
+    </item>
+    <item>
+      <title>教典的「華語借音詞」</title>
+      <link>https://www.kiantiong.com/sutian/7/</link>
+      <pubDate>Wed, 13 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/7/</guid>
+      <description>教典有收錄啥物對華語借音的詞咧？</description>
+    </item>
+    <item>
+      <title>教典相命術——揣著你的教典命運詞</title>
+      <link>https://www.kiantiong.com/sutian/6/</link>
+      <pubDate>Tue, 12 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/6/</guid>
+      <description>教典啥物詞佮你上有關連？緊來揣看覓！</description>
+    </item>
+    <item>
+      <title>教典大惡人——名姓袂當講出來的「彼个人」</title>
+      <link>https://www.kiantiong.com/sutian/5/</link>
+      <pubDate>Mon, 11 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/5/</guid>
+      <description>有一个人佇教典宇宙歹甲連老爸都敢拍，佮辭典的編輯體例有關係</description>
+    </item>
+    <item>
+      <title>教典阿明的一生</title>
+      <link>https://www.kiantiong.com/sutian/4/</link>
+      <pubDate>Sun, 10 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/4/</guid>
+      <description>只要佇例句搜揣功能拍「-」就通好揣著漢羅濫寫的例句</description>
+    </item>
+    <item>
+      <title>恁兜的滷肉飯是啥款？滷肉飯的詞目更新</title>
+      <link>https://www.kiantiong.com/sutian/3/</link>
+      <pubDate>Sat, 09 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/3/</guid>
+      <description>教典 2023 年 7 月更新滷肉飯義項文字，區分南北定義的精差</description>
+    </item>
+    <item>
+      <title>教典的「漢羅濫寫」例句</title>
+      <link>https://www.kiantiong.com/sutian/2/</link>
+      <pubDate>Fri, 08 Sep 2023 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/2/</guid>
+      <description>只要佇例句搜揣功能拍「-」就通好揣著漢羅濫寫的例句</description>
+    </item>
+    <item>
+      <title>巷仔內才知影的教典外來語詞</title>
+      <link>https://www.kiantiong.com/sutian/1/</link>
+      <pubDate>Thu, 07 Sep 2023 11:19:46 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/1/</guid>
+      <description>教典內底有一寡外來語詞藏佇詞彙比較表，通好利用特殊的搜揣撇步共揣出來</description>
+    </item>
+  </channel>
+</rss>
