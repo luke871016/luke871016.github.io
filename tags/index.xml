@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 陳建中｜Tân Kiàn-tiong</title>
-    <link>https://www.kiantiong.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
     <lastBuildDate>Thu, 29 May 2025 11:48:17 +0800</lastBuildDate>
-    <atom:link href="https://www.kiantiong.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>教典僻智識</title>
-      <link>https://www.kiantiong.com/tags/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</link>
+      <link>http://localhost:1313/tags/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</link>
       <pubDate>Thu, 29 May 2025 11:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/tags/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</guid>
+      <guid>http://localhost:1313/tags/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</guid>
       <description></description>
     </item>
     <item>
       <title>台文</title>
-      <link>https://www.kiantiong.com/tags/%E5%8F%B0%E6%96%87/</link>
+      <link>http://localhost:1313/tags/%E5%8F%B0%E6%96%87/</link>
       <pubDate>Thu, 29 May 2025 11:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/tags/%E5%8F%B0%E6%96%87/</guid>
+      <guid>http://localhost:1313/tags/%E5%8F%B0%E6%96%87/</guid>
       <description></description>
     </item>
     <item>
       <title>REGEX</title>
-      <link>https://www.kiantiong.com/tags/regex/</link>
+      <link>http://localhost:1313/tags/regex/</link>
       <pubDate>Thu, 22 May 2025 20:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/tags/regex/</guid>
+      <guid>http://localhost:1313/tags/regex/</guid>
       <description></description>
     </item>
     <item>
       <title>華文</title>
-      <link>https://www.kiantiong.com/tags/%E8%8F%AF%E6%96%87/</link>
+      <link>http://localhost:1313/tags/%E8%8F%AF%E6%96%87/</link>
       <pubDate>Thu, 22 May 2025 20:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/tags/%E8%8F%AF%E6%96%87/</guid>
+      <guid>http://localhost:1313/tags/%E8%8F%AF%E6%96%87/</guid>
       <description></description>
     </item>
     <item>
       <title>台華雙文</title>
-      <link>https://www.kiantiong.com/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/</link>
+      <link>http://localhost:1313/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/</link>
       <pubDate>Thu, 22 May 2025 20:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/</guid>
+      <guid>http://localhost:1313/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/</guid>
       <description></description>
     </item>
     <item>
       <title>芋圓字典REGEX</title>
-      <link>https://www.kiantiong.com/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/</link>
+      <link>http://localhost:1313/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/</link>
       <pubDate>Thu, 22 May 2025 20:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/</guid>
+      <guid>http://localhost:1313/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/</guid>
       <description></description>
     </item>
     <item>
       <title>台語</title>
-      <link>https://www.kiantiong.com/tags/%E5%8F%B0%E8%AA%9E/</link>
+      <link>http://localhost:1313/tags/%E5%8F%B0%E8%AA%9E/</link>
       <pubDate>Thu, 27 Jul 2023 01:53:06 +0800</pubDate>
-      <guid>https://www.kiantiong.com/tags/%E5%8F%B0%E8%AA%9E/</guid>
+      <guid>http://localhost:1313/tags/%E5%8F%B0%E8%AA%9E/</guid>
       <description></description>
     </item>
   </channel>

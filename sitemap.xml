@@ -2,171 +2,171 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.kiantiong.com/now/</loc>
+    <loc>http://localhost:1313/now/</loc>
     <lastmod>2025-06-29T10:50:00+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-05-29T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/37/</loc>
+    <loc>http://localhost:1313/sutian/37/</loc>
     <lastmod>2025-05-29T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/tags/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</loc>
+    <loc>http://localhost:1313/tags/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</loc>
     <lastmod>2025-05-29T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/tags/%E5%8F%B0%E6%96%87/</loc>
+    <loc>http://localhost:1313/tags/%E5%8F%B0%E6%96%87/</loc>
     <lastmod>2025-05-29T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/</loc>
+    <loc>http://localhost:1313/sutian/</loc>
     <lastmod>2025-05-29T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/tags/regex/</loc>
+    <loc>http://localhost:1313/tags/regex/</loc>
     <lastmod>2025-05-22T20:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/tags/%E8%8F%AF%E6%96%87/</loc>
+    <loc>http://localhost:1313/tags/%E8%8F%AF%E6%96%87/</loc>
     <lastmod>2025-05-22T20:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/</loc>
+    <loc>http://localhost:1313/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/</loc>
     <lastmod>2025-05-22T20:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/ooinn2/</loc>
+    <loc>http://localhost:1313/sutian/ooinn2/</loc>
     <lastmod>2025-05-22T20:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/</loc>
+    <loc>http://localhost:1313/tags/%E8%8A%8B%E5%9C%93%E5%AD%97%E5%85%B8regex/</loc>
     <lastmod>2025-05-22T20:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/ooinn1/</loc>
+    <loc>http://localhost:1313/sutian/ooinn1/</loc>
     <lastmod>2025-05-22T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/36/</loc>
+    <loc>http://localhost:1313/sutian/36/</loc>
     <lastmod>2025-04-20T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/35/</loc>
+    <loc>http://localhost:1313/sutian/35/</loc>
     <lastmod>2025-04-18T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-03-10T10:05:47+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/blog/taigi-mygo/</loc>
+    <loc>http://localhost:1313/blog/taigi-mygo/</loc>
     <lastmod>2025-03-10T10:05:47+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/blog/laukhokkhokkhokhi/</loc>
+    <loc>http://localhost:1313/blog/laukhokkhokkhokhi/</loc>
     <lastmod>2024-11-26T09:56:56+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/34/</loc>
+    <loc>http://localhost:1313/sutian/34/</loc>
     <lastmod>2024-09-09T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/33/</loc>
+    <loc>http://localhost:1313/sutian/33/</loc>
     <lastmod>2024-08-22T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/32/</loc>
+    <loc>http://localhost:1313/sutian/32/</loc>
     <lastmod>2024-08-08T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/31/</loc>
+    <loc>http://localhost:1313/sutian/31/</loc>
     <lastmod>2024-07-10T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/30/</loc>
+    <loc>http://localhost:1313/sutian/30/</loc>
     <lastmod>2024-06-14T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/29/</loc>
+    <loc>http://localhost:1313/sutian/29/</loc>
     <lastmod>2024-06-09T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/28/</loc>
+    <loc>http://localhost:1313/sutian/28/</loc>
     <lastmod>2024-06-07T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/27/</loc>
+    <loc>http://localhost:1313/sutian/27/</loc>
     <lastmod>2024-05-09T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/26/</loc>
+    <loc>http://localhost:1313/sutian/26/</loc>
     <lastmod>2024-05-04T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-05-03T13:32:33-05:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/25/</loc>
+    <loc>http://localhost:1313/sutian/25/</loc>
     <lastmod>2024-05-03T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/24/</loc>
+    <loc>http://localhost:1313/sutian/24/</loc>
     <lastmod>2024-04-24T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/23/</loc>
+    <loc>http://localhost:1313/sutian/23/</loc>
     <lastmod>2024-04-23T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/22/</loc>
+    <loc>http://localhost:1313/sutian/22/</loc>
     <lastmod>2024-04-22T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/21/</loc>
+    <loc>http://localhost:1313/sutian/21/</loc>
     <lastmod>2024-04-18T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/20/</loc>
+    <loc>http://localhost:1313/sutian/20/</loc>
     <lastmod>2024-04-17T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/19/</loc>
+    <loc>http://localhost:1313/sutian/19/</loc>
     <lastmod>2023-12-16T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/18/</loc>
+    <loc>http://localhost:1313/sutian/18/</loc>
     <lastmod>2023-12-15T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/17/</loc>
+    <loc>http://localhost:1313/sutian/17/</loc>
     <lastmod>2023-09-27T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/16/</loc>
+    <loc>http://localhost:1313/sutian/16/</loc>
     <lastmod>2023-09-26T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/15/</loc>
+    <loc>http://localhost:1313/sutian/15/</loc>
     <lastmod>2023-09-23T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/14/</loc>
+    <loc>http://localhost:1313/sutian/14/</loc>
     <lastmod>2023-09-22T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/13/</loc>
+    <loc>http://localhost:1313/sutian/13/</loc>
     <lastmod>2023-09-20T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/12/</loc>
+    <loc>http://localhost:1313/sutian/12/</loc>
     <lastmod>2023-09-18T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/11/</loc>
+    <loc>http://localhost:1313/sutian/11/</loc>
     <lastmod>2023-09-17T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/10/</loc>
+    <loc>http://localhost:1313/sutian/10/</loc>
     <lastmod>2023-09-16T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/9/</loc>
+    <loc>http://localhost:1313/sutian/9/</loc>
     <lastmod>2023-09-15T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/8/</loc>
+    <loc>http://localhost:1313/sutian/8/</loc>
     <lastmod>2023-09-14T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/7/</loc>
+    <loc>http://localhost:1313/sutian/7/</loc>
     <lastmod>2023-09-13T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/6/</loc>
+    <loc>http://localhost:1313/sutian/6/</loc>
     <lastmod>2023-09-12T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/5/</loc>
+    <loc>http://localhost:1313/sutian/5/</loc>
     <lastmod>2023-09-11T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/4/</loc>
+    <loc>http://localhost:1313/sutian/4/</loc>
     <lastmod>2023-09-10T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/3/</loc>
+    <loc>http://localhost:1313/sutian/3/</loc>
     <lastmod>2023-09-09T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/2/</loc>
+    <loc>http://localhost:1313/sutian/2/</loc>
     <lastmod>2023-09-08T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/sutian/1/</loc>
+    <loc>http://localhost:1313/sutian/1/</loc>
     <lastmod>2023-09-07T11:19:46+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/jihing/20230727_jf_lecture/</loc>
+    <loc>http://localhost:1313/jihing/20230727_jf_lecture/</loc>
     <lastmod>2023-07-27T01:53:06+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/tags/%E5%8F%B0%E8%AA%9E/</loc>
+    <loc>http://localhost:1313/tags/%E5%8F%B0%E8%AA%9E/</loc>
     <lastmod>2023-07-27T01:53:06+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/jihing/</loc>
+    <loc>http://localhost:1313/jihing/</loc>
     <lastmod>2023-07-27T01:53:06+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

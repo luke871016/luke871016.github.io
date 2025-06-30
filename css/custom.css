@@ -231,6 +231,12 @@ figcaption{
 #searchResults a { text-decoration: none !important; padding: 10px; display: inline-block; }
 #searchResults a:hover { outline: 0; background-color: #666; color: #fff; }
 
+figure{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 figure, .card img, figure img, .carousel-container, .carousel-track, .carousel-img {
     max-width: 100%;
     box-sizing: border-box;
