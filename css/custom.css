@@ -55,6 +55,18 @@ li{
     margin: 10px 0px;
 }
 
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 1.7rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
 
 .tag-container {
     padding-top: 1rem;
@@ -109,6 +121,7 @@ hr{
 
 .hero h1 {
     font-size: 1.7rem;
+    margin-bottom: 0.5rem;
 }
 
 @media (min-width: 641px) {
