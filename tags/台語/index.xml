@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>台語 on 陳建中｜Tân Kiàn-tiong</title>
-    <link>https://www.kiantiong.com/tags/%E5%8F%B0%E8%AA%9E/</link>
+    <link>http://localhost:1313/tags/%E5%8F%B0%E8%AA%9E/</link>
     <description>Recent content in 台語 on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
     <lastBuildDate>Thu, 27 Jul 2023 01:53:06 +0800</lastBuildDate>
-    <atom:link href="https://www.kiantiong.com/tags/%E5%8F%B0%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%8F%B0%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>台文按怎排？Hōo 編輯、自媒體 ê 台語文排版實作</title>
-      <link>https://www.kiantiong.com/jihing/20230727_jf_lecture/</link>
+      <link>http://localhost:1313/jihing/20230727_jf_lecture/</link>
       <pubDate>Thu, 27 Jul 2023 01:53:06 +0800</pubDate>
-      <guid>https://www.kiantiong.com/jihing/20230727_jf_lecture/</guid>
+      <guid>http://localhost:1313/jihing/20230727_jf_lecture/</guid>
       <description>2023 年七月佇 justfont 字戀小聚的台語字型講座，講著台語文字型佮排版的各種無奈佮解方</description>
     </item>
   </channel>

@@ -69,18 +69,21 @@ h2{
 
 
 .tag-container {
-    padding-top: 1rem;
+    padding-top: 0rem;
     padding-bottom: 1rem;
 }
 
 /* 語言註解樣式 */
 .language-note {
-    margin: 1rem 0 0.5rem 0;
-    /* margin: 0 0 0.5rem 0; */
+    margin: 0.5rem 0 0.5rem 0;
     font-size: 0.9rem;
     padding: 0;
     text-align: left;
     color: var(--caption-text);
+}
+
+.language-note p{
+    margin: 0;
 }
 
 hr{
@@ -464,4 +467,37 @@ figure img{
 code{
     background-color: #ddd;
     border-radius: 5px;
+}
+
+.e-content figcaption>p {
+    text-align: center;
+    font-style: normal;
+    max-width: 100%;
+    margin: 0.5rem auto;
+    font-size: 0.9rem;
+    color: var(--caption-text);
+}
+
+.series-top {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: var(--caption-text);
+}
+
+.series-list {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+}
+
+.series-list summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.series-list ol {
+    margin-left: 1.5em;
 }

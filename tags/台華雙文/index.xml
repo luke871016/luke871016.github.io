@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>台華雙文 on 陳建中｜Tân Kiàn-tiong</title>
-    <link>https://www.kiantiong.com/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/</link>
+    <link>http://localhost:1313/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/</link>
     <description>Recent content in 台華雙文 on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
     <lastBuildDate>Thu, 22 May 2025 20:48:17 +0800</lastBuildDate>
-    <atom:link href="https://www.kiantiong.com/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>台語有啥物句型？用 REGEX 語法共揣出來！</title>
-      <link>https://www.kiantiong.com/sutian/ooinn2/</link>
+      <link>http://localhost:1313/sutian/ooinn2/</link>
       <pubDate>Thu, 22 May 2025 20:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/sutian/ooinn2/</guid>
+      <guid>http://localhost:1313/sutian/ooinn2/</guid>
       <description>芋圓字典的REGEX語法會當揣例句，咱來揣一寡特殊的句型</description>
     </item>
     <item>
       <title>用芋圓字典比較「共」佮「佮」的精差</title>
-      <link>https://www.kiantiong.com/sutian/ooinn1/</link>
+      <link>http://localhost:1313/sutian/ooinn1/</link>
       <pubDate>Thu, 22 May 2025 11:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/sutian/ooinn1/</guid>
+      <guid>http://localhost:1313/sutian/ooinn1/</guid>
       <description>芋圓字典的REGEX語法會當揣例句，咱來揣出「共」佮「佮」的精差</description>
     </item>
     <item>
       <title>台語 MyGO Mî-im</title>
-      <link>https://www.kiantiong.com/blog/taigi-mygo/</link>
+      <link>http://localhost:1313/blog/taigi-mygo/</link>
       <pubDate>Mon, 10 Mar 2025 10:05:47 +0800</pubDate>
-      <guid>https://www.kiantiong.com/blog/taigi-mygo/</guid>
+      <guid>http://localhost:1313/blog/taigi-mygo/</guid>
       <description>模仿台語台雙語字幕做的台語 MyGO Mî-im</description>
     </item>
   </channel>

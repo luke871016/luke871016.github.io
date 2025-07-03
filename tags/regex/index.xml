@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>REGEX on 陳建中｜Tân Kiàn-tiong</title>
-    <link>https://www.kiantiong.com/tags/regex/</link>
+    <link>http://localhost:1313/tags/regex/</link>
     <description>Recent content in REGEX on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
     <lastBuildDate>Thu, 22 May 2025 20:48:17 +0800</lastBuildDate>
-    <atom:link href="https://www.kiantiong.com/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/regex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>台語有啥物句型？用 REGEX 語法共揣出來！</title>
-      <link>https://www.kiantiong.com/sutian/ooinn2/</link>
+      <link>http://localhost:1313/sutian/ooinn2/</link>
       <pubDate>Thu, 22 May 2025 20:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/sutian/ooinn2/</guid>
+      <guid>http://localhost:1313/sutian/ooinn2/</guid>
       <description>芋圓字典的REGEX語法會當揣例句，咱來揣一寡特殊的句型</description>
     </item>
     <item>
       <title>正規表達式入門②——揣羅馬字的撇步</title>
-      <link>https://www.kiantiong.com/sutian/30/</link>
+      <link>http://localhost:1313/sutian/30/</link>
       <pubDate>Fri, 14 Jun 2024 11:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/sutian/30/</guid>
+      <guid>http://localhost:1313/sutian/30/</guid>
       <description>教典正規表達式入門教學－羅馬字的部份</description>
     </item>
     <item>
       <title>正規表達式入門①－基礎概念、按怎揣漢字</title>
-      <link>https://www.kiantiong.com/sutian/29/</link>
+      <link>http://localhost:1313/sutian/29/</link>
       <pubDate>Sun, 09 Jun 2024 11:48:17 +0800</pubDate>
-      <guid>https://www.kiantiong.com/sutian/29/</guid>
+      <guid>http://localhost:1313/sutian/29/</guid>
       <description>教典正規表達式入門教學－漢字的部份</description>
     </item>
   </channel>
