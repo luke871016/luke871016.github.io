@@ -83,6 +83,7 @@ if (query) {
     document.getElementById('search-input').setAttribute('value', query)
 
     const idx = lunr(function () {
+        this.use(lunr.zh)
         this.ref('id')
         this.field('title', {
             boost: 15
@@ -96,7 +97,7 @@ if (query) {
             this.add({
                 id: key,
                 title: window.store[key].title,
-                tags: window.store[key].category,
+                tags: window.store[key].tags,
                 content: window.store[key].content
             })
         }
