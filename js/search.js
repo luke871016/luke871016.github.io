@@ -82,6 +82,12 @@ if (query) {
     // Retain the search input in the form when displaying results
     document.getElementById('search-input').setAttribute('value', query)
 
+    // 隱藏分頁區塊
+    var pagination = document.getElementById('pagination');
+    if (pagination) {
+        pagination.style.display = 'none';
+    }
+
     const idx = lunr(function () {
         this.use(lunr.zh)
         this.ref('id')
