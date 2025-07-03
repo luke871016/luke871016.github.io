@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>華文 on 陳建中｜Tân Kiàn-tiong</title>
+    <link>https://www.kiantiong.com/tags/%E8%8F%AF%E6%96%87/</link>
+    <description>Recent content in 華文 on 陳建中｜Tân Kiàn-tiong</description>
+    <generator>Hugo</generator>
+    <language>und-hani</language>
+    <lastBuildDate>Sat, 24 May 2025 20:48:17 +0800</lastBuildDate>
+    <atom:link href="https://www.kiantiong.com/tags/%E8%8F%AF%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>台語的「連……都……」句型</title>
+      <link>https://www.kiantiong.com/sutian/ooinn4/</link>
+      <pubDate>Sat, 24 May 2025 20:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/ooinn4/</guid>
+      <description>佇芋圓台語字典用這个語法，就通揣著各種「連……都……」的句型</description>
+    </item>
+    <item>
+      <title>台語有哪些罵人的話？佇芋圓字典用這兩个語法揣看覓！</title>
+      <link>https://www.kiantiong.com/sutian/ooinn3/</link>
+      <pubDate>Fri, 23 May 2025 20:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/ooinn3/</guid>
+      <description>辭典例句編輯有個不成文的傳統，負面語句袂當講明確的名姓，利用一个傳統就通好揣著罵人的語句</description>
+    </item>
+    <item>
+      <title>台語有啥物句型？用 REGEX 語法共揣出來！</title>
+      <link>https://www.kiantiong.com/sutian/ooinn2/</link>
+      <pubDate>Thu, 22 May 2025 20:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/ooinn2/</guid>
+      <description>芋圓字典的REGEX語法會當揣例句，咱來揣一寡特殊的句型</description>
+    </item>
+    <item>
+      <title>用芋圓字典比較「共」佮「佮」的精差</title>
+      <link>https://www.kiantiong.com/sutian/ooinn1/</link>
+      <pubDate>Thu, 22 May 2025 11:48:17 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/ooinn1/</guid>
+      <description>芋圓字典的REGEX語法會當揣例句，咱來揣出「共」佮「佮」的精差</description>
+    </item>
+    <item>
+      <title>台語 MyGO Mî-im</title>
+      <link>https://www.kiantiong.com/blog/taigi-mygo/</link>
+      <pubDate>Mon, 10 Mar 2025 10:05:47 +0800</pubDate>
+      <guid>https://www.kiantiong.com/blog/taigi-mygo/</guid>
+      <description>模仿台語台雙語字幕做的台語 MyGO Mî-im</description>
+    </item>
+  </channel>
+</rss>
