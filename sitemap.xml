@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.kiantiong.com/sutian/</loc>
+    <lastmod>2025-07-06T11:48:17+08:00</lastmod>
+  </url><url>
     <loc>https://www.kiantiong.com/series/</loc>
     <lastmod>2025-07-05T22:49:26+08:00</lastmod>
   </url><url>
@@ -36,9 +39,6 @@
     <lastmod>2025-05-29T11:48:17+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/series/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</loc>
-    <lastmod>2025-05-29T11:48:17+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/sutian/</loc>
     <lastmod>2025-05-29T11:48:17+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/regex/</loc>
