@@ -469,6 +469,14 @@ code{
     border-radius: 5px;
 }
 
+pre {
+    padding: 0em 1em;
+}
+
+pre>code{
+    background-color: transparent;
+}
+
 .e-content figcaption>p {
     text-align: center;
     font-style: normal;
