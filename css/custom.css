@@ -477,6 +477,12 @@ pre>code{
     background-color: transparent;
 }
 
+details{
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+}
+
 .e-content figcaption>p {
     text-align: center;
     font-style: normal;
@@ -528,4 +534,56 @@ pre>code{
     width: 25%;
     height: 34px;
     box-shadow: none;
+}
+
+/* ===== CopyBlock Shortcode 精緻化樣式 ===== */
+.copyblock-container {
+  background: #e0e0e0;
+  border-radius: 8px;
+  margin: 1.5em 0;
+  padding: 0.7em 1em 0.7em 1em;
+  max-width: 100%;
+}
+.copyblock-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin-bottom: 0.3em;
+}
+.copyblock-btn {
+  background: #e7e7e7;
+  color: #353d49;
+  border: 0.5px #aaa solid;
+  border-radius: 6px;
+  padding: 0.3em 0.7em;
+  font-size: 0.8em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: auto;
+  min-width: 2.5em;
+  margin: 0;
+}
+.copyblock-btn:hover {
+  background: #d0d0d0;
+}
+.copyblock-title {
+  font-weight: bold;
+  color: #353d49;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+}
+.copyblock-content {
+  overflow-x: auto;
+  font-size: 1em;
+  padding: 0.2em 0;
+  background: transparent;
+}
+
+.copyblock-content code {
+  background: transparent;
+  white-space: pre;
+  color: #252627;
+  font-size: 1em;
+  padding: 0;
 }
