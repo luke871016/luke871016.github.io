@@ -19,13 +19,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'NunitoPOJ';
-    src: url('/fonts/NunitoPOJ-Regular.ttf') format('truetype');
-    font-style: normal;
-}
-
-@font-face {
+/* @font-face {
     font-family: 'GenKiLomaji';
     src: url('/fonts/GenKiGothic2-TW-Lomaji-R.woff2') format('woff2');
     font-style: normal;
@@ -37,10 +31,15 @@
     src: url('/fonts/GenKiGothic2-TW-Lomaji-B.woff2') format('woff2');
     font-style: normal;
     font-weight: bold;
+} */
+
+@font-face {
+    font-family: 'TASAExplorer';
+    src: url('/fonts/TASAExplorer[wght].woff2') format('woff2');
 }
 
 body {
-    font-family: 'GenKiLomaji', 'GenYoExt', sans-serif;
+    font-family: 'TASAExplorer', 'GenYoExt', sans-serif;
     background-color: var(--primary-bg);
     line-height: 1.8;
     overflow-x: hidden; /* 防止橫向捲軸 */
