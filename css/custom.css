@@ -7,6 +7,10 @@
     --link-color: #5c8273;
     --shadow-color: rgba(0, 0, 0, 0.15);
     --borders: #555;
+    
+    /* 字型設定 */
+    --font-heading: 'TASAExplorer', 'GenYoExt', sans-serif;
+    --font-body: 'TASAOrbiter', 'GenYoExt', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,8 +42,15 @@
     src: url('/fonts/TASAExplorer[wght].woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'TASAOrbiter';
+    src: url('/fonts/TASAOrbiter[wght].woff2') format('woff2');
+}
+
+
+
 body {
-    font-family: 'TASAExplorer', 'GenYoExt', sans-serif;
+    font-family: var(--font-body);
     background-color: var(--primary-bg);
     line-height: 1.8;
     overflow-x: hidden; /* 防止橫向捲軸 */
@@ -54,8 +65,11 @@ li{
     margin: 10px 0px;
 }
 
-h1, h2, h3, h4, h5, h6{
+/* 標題字型設定 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
     line-height: 1.5;
+    font-weight: 600;
 }
 
 h1{
