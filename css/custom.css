@@ -633,3 +633,48 @@ details {
   font-size: 1em;
   padding: 0;
 }
+
+/* 表格橫向捲動設定 - 覆蓋 styles.css 的 grid 設定 */
+@media (max-width: 420px) {
+  /* 覆蓋原本的 grid 設定，讓表格保持正常結構 */
+  table tr {
+    display: table-row !important;
+  }
+
+  table th {
+    display: table-cell !important;
+  }
+
+  table td {
+    display: table-cell !important;
+  }
+}
+
+/* 為表格添加橫向捲動容器 */
+.post table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* iOS 平滑滾動 */
+}
+
+/* 確保表格標題和內容一起計算寬度，保持自動佈局 */
+.post {
+  overflow-x: auto; /* 讓 post 容器可以橫向捲動 */
+  -webkit-overflow-scrolling: touch;
+}
+
+.post table {
+  /* 移除 display: block，讓表格保持正常表格結構 */
+  width: 100%;
+  min-width: 450px; /* 可依需求調整最小寬度 */
+  /* 移除 overflow-x，因為由父容器處理捲動 */
+}
+
+/* 讓表格內容能夠換行，但不強制固定寬度 */
+.post table th,
+.post table td {
+  word-wrap: break-word; /* 長文字自動換行 */
+  overflow-wrap: break-word;
+  white-space: normal; /* 允許文字換行 */
+}
