@@ -14,6 +14,65 @@
       <pubDate>Mon, 26 May 2025 20:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/ooinn6/</guid>
       <description>佇芋圓辭典揣「[源借]自」就通好揣著所有的台語外來語</description>
+      
+      <language>
+          台華對照
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      
+
+<div class="mandarin-content" lang="zh-hant" data-language="mandarin">
+    <figure><img src="/images/ooinn6-1.jpg"
+    alt="部份的搜尋結果"><figcaption>
+      <p>部份的搜尋結果</p>
+    </figcaption>
+</figure>
+<p>REGEX 語法：<code>[源借]自</code></p>
+<p>在教育部辭典編輯的體例中，外來語一律在內文都是寫「源自/借自__語」</p>
+<p>而「源自/借自」的區別則是要看是「借漢字」還是「借音」，比如說截圖當中的「紺 khóng」是從日文漢字「紺」以台語發音吸收的外來語，所以是寫「源自」；而「麭 pháng」則是從日語「パン」借音吸收的外來語，用詞是「借字」。</p>
+<p>你可能對照截圖會覺得奇怪，「sè-hù」顯然是「セーフ」的借音詞，為什麼是寫「源自」而非「借自」呢？這是一個例外，目前只要是列在「外來語附錄」的這些規範上只有羅馬字的條目，全部的用詞都統一是「源自」，前面提到的邏輯僅適用於主詞目。</p>
+
+</div> 
+
+
+<div class="taiwanese-content" lang="und-hani" data-language="taiwanese">
+    <figure><img src="/images/ooinn6-1.jpg"
+    alt="部份的搜揣結果"><figcaption>
+      <p>部份的搜揣結果</p>
+    </figcaption>
+</figure>
+<p>REGEX 語法：<code>[源借]自</code></p>
+<p>佇教育部辭典編輯的體例中，外來語佇內文攏寫「源自/借自__語」</p>
+<p>啊「源自/借自」的區別著愛看是「借漢字」抑是「借音」，比論講截圖內底的「紺 khóng」是對日文漢字「紺」以台語發音吸收的外來語，所以是寫「源自」；「麭 pháng」是對日語「パン」借音吸收的外來語，用詞是「借字」。</p>
+<p>你可能看截圖會感覺怪怪，「sè-hù」真明顯是「セーフ」的借音詞，是按怎是寫「源自」煞毋寫「借自」咧？這是一個例外，目前只要是列佇「外來語附錄」的規範上寫羅馬字的條目，全部的用詞攏是「源自」，頭前講著的路則干焦通套佇主詞目。</p>
+
+</div> 
+
+
+
+
+
+<div class="callout callout-info">
+    
+    <div class="callout-header">
+        <div class="callout-icon">
+            ℹ️
+            
+            
+            
+            
+        </div>
+        <div class="callout-title">5.27 更新</div>
+    </div>
+    
+    <div class="callout-content">
+        後來經過寄批佮教育部反映，這馬已經理路有統一囉！猶毋過芋圓字典的部分閣愛等開發者去共資料更新。
+    </div>
+</div> 
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>台語辭典例句極加有連續幾个音節的輕聲？</title>
@@ -21,6 +80,85 @@
       <pubDate>Sun, 25 May 2025 20:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/ooinn5/</guid>
       <description>連續的輕聲連字符號欲按怎標？用這个語法佇芋圓字典揣看覓！</description>
+      
+      <language>
+          台華對照
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      
+
+<div class="mandarin-content" lang="zh-hant" data-language="mandarin">
+    <figure><img src="/images/ooinn5-1.jpg"
+    alt="部份的搜尋結果"><figcaption>
+      <p>部份的搜尋結果</p>
+    </figcaption>
+</figure>
+<p>REGEX 語法：<code>--[^ -]+--?[^ -]+--?[^ -]+--?[^ -]+</code></p>
+<p>在羅馬字的規範中，音節讀輕聲時，前面要標註「--」，常見在句尾的虛詞或助詞，如</p>
+<ul>
+<li>hó--bô?（好無？）</li>
+<li>hó--ah.（好矣。）</li>
+</ul>
+<p>輕聲也會連續出現，如</p>
+<ul>
+<li>hó--ah--lah（好矣啦）</li>
+</ul>
+<p>輕聲的部分如果有成詞，符合羅馬字的連寫規則，則音節之間仍是寫一橫連字符號「-」，如</p>
+<ul>
+<li>kiânn--tshut-khì（行出去）</li>
+</ul>
+<p>連續許多輕聲音節時，則可以從連字符號跟輕聲符號的組合看出字詞分組結構，如</p>
+<ul>
+<li>Koh thâi khuànn ē kiám--tām-po̍h-á--bô?</li>
+<li>Tsông--ji̍p-khì--ah--lah!</li>
+</ul>
+<p>辭典當中收錄最長的慣用輕聲的詞彙是「--二步七仔」，而例句當中出現最長的連續輕聲音節最多是四個音節喔。</p>
+<h2 id="語法解析">語法解析</h2>
+<p>寫一對<code>[]</code>與任意符號，再加上<code>^</code>則可以代表「除了括弧中符號以外的任意符號」
+一串羅馬字句子當中，每一個音節都是由「超過一個以上的非空白或連字符號的符號」組成，因此寫 <code>[^ -]+</code> 則可以代表「一個羅馬字音節」</p>
+<p>在符號的後面加上問號 <code>?</code> 則可以代表前面的符號有出現或沒出現都可以</p>
+<p>所以寫 <code>--[^ -]+--?[^ -]+</code> 則代表輕聲符號後面有兩個音節，兩個音節中間是用輕聲符號或一般連字符號相連。正文中的語法則是一次查詢四個以上的連續輕聲音節</p>
+
+</div> 
+
+
+<div class="taiwanese-content" lang="und-hani" data-language="taiwanese">
+    <figure><img src="/images/ooinn5-1.jpg"
+    alt="部份的搜揣結果"><figcaption>
+      <p>部份的搜揣結果</p>
+    </figcaption>
+</figure>
+<p>REGEX 語法：<code>--[^ -]+--?[^ -]+--?[^ -]+--?[^ -]+</code></p>
+<p>佇羅馬字的規範，音節讀輕聲的時陣，頭前愛寫「--」，定出現佇句尾的虛詞抑是助詞，像</p>
+<ul>
+<li>hó--bô?（好無？）</li>
+<li>hó--ah.（好矣。）</li>
+</ul>
+<p>輕聲嘛會連續出現，像</p>
+<ul>
+<li>hó--ah--lah（好矣啦）</li>
+</ul>
+<p>輕聲的部分假使有成詞，符合羅馬字的連寫規則，音節之間猶是愛寫一橫連字符號「-」，像</p>
+<ul>
+<li>kiânn--tshut-khì（行出去）</li>
+</ul>
+<p>連續幾若个輕聲音節的狀況，通好對連字符號佮輕聲符號的組合知影字詞分組結構，像</p>
+<ul>
+<li>Koh thâi khuànn ē kiám--tām-po̍h-á--bô?</li>
+<li>Tsông--ji̍p-khì--ah--lah!</li>
+</ul>
+<p>辭典當中收錄最長的慣用輕聲的詞彙是「--二步七仔」，啊若例句內底上長的連續輕聲音節極加是四个音節喔。</p>
+<h2 id="語法解析">語法解析</h2>
+<p>寫一對<code>[]</code>佮任意符號，閣再加<code>^</code>就通代表「括弧內底符號掠外的任意符號」</p>
+<p>一捾羅馬字語句內底，逐音節都是由「超過一个以上的非空白抑是連字符號的符號」組成，所以寫 <code>[^ -]+</code> 通代表「一個羅馬字音節」</p>
+<p>佇符號的後壁加上問號 <code>?</code> 就代表彼个符號有出現抑是無出現攏會用得</p>
+<p>所以寫 <code>--[^ -]+--?[^ -]+</code> 就代表輕聲符號後壁有兩个音節，兩个音節中間是用輕聲符號抑是一般連字符號相連。頭前的語法就是一改揣四個以上的連續輕聲音節</p>
+
+</div> 
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>有​輕聲意思就無仝的詞</title>
@@ -28,6 +166,85 @@
       <pubDate>Wed, 20 Sep 2023 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/13/</guid>
       <description>仝款的音節，加上輕聲就變做無仝的意思，教典這類詞有幾組咧？</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian13-cover.png"
+    alt="圖片內底的意思你敢攏有捌？"><figcaption>
+      <p>圖片內底的意思你敢攏有捌？</p>
+    </figcaption>
+</figure>
+
+<p>今仔日的教典僻智識內容較實用，共逐家分享教典內底所有的「有 ​ 輕聲意思就無仝的詞」，攏總有八組，是透過表格工具寫一寡函數對教典開放下載的文字資料篩選出來的。
+這種例整理起來不止仔趣味，有一寡的意思嘛是我以早分無啥清楚的，分享予逐家，嘛歡迎逐家加補充其他敢閣有啥物類似的例教典無特別收錄的。</p>
+<div class="carousel-container">
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <img src="/images/kautian13-1.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-2.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-3.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-4.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-5.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-6.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-7.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-8.png" class="carousel-img" loading="lazy" />
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel-indicator">
+      <span class="carousel-current">1</span>/<span class="carousel-total"
+        >8</span
+      >
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+</div>
+<script>
+  (function () {
+    const container = document.currentScript.previousElementSibling;
+    const track = container.querySelector(".carousel-track");
+    const images = track.querySelectorAll("img");
+    const prevBtn = container.querySelector(".carousel-btn.prev");
+    const nextBtn = container.querySelector(".carousel-btn.next");
+    const indicator = container.querySelector(".carousel-indicator");
+    const current = indicator.querySelector(".carousel-current");
+    let idx = 0;
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      current.textContent = idx + 1;
+    }
+    prevBtn.onclick = function () {
+      idx = (idx - 1 + images.length) % images.length;
+      update();
+    };
+    nextBtn.onclick = function () {
+      idx = (idx + 1) % images.length;
+      update();
+    };
+    
+    let startX = null;
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener("touchend", (e) => {
+      if (startX === null) return;
+      let dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) nextBtn.onclick();
+        else prevBtn.onclick();
+      }
+      startX = null;
+    });
+  })();
+</script>
+
+
+      ]]></content:encoded>
     </item>
   </channel>
 </rss>

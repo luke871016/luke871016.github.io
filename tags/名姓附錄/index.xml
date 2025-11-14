@@ -6,14 +6,140 @@
     <description>Recent content in 名姓附錄 on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
-    <lastBuildDate>Sat, 16 Dec 2023 11:48:17 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Nov 2025 10:00:00 +0800</lastBuildDate>
     <atom:link href="https://www.kiantiong.com/tags/%E5%90%8D%E5%A7%93%E9%99%84%E9%8C%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大量台語名姓搜揣網頁版</title>
+      <link>https://www.kiantiong.com/sutian/44/</link>
+      <pubDate>Fri, 14 Nov 2025 10:00:00 +0800</pubDate>
+      <guid>https://www.kiantiong.com/sutian/44/</guid>
+      <description>利用這个網頁一改搜揣大量名姓台語讀音，適合做名單等等的用途。毋免像以早的「做一改講我的名」閣需要設定，嘛會當離線使用</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian44-cover.png"
+    alt="搜揣結果"><figcaption>
+      <p>搜揣結果</p>
+    </figcaption>
+</figure>
+
+<p>
+<a href="https://www.kiantiong.com/taigi-names" target="_blank" rel="noopener"><strong>網頁連結</strong> </a></p>
+<p>欲兩冬前我捌推出一个叫做「
+<a href="https://kiantiong.com/sutian/19/" target="_blank" rel="noopener">做一改講我的名 </a>」的 Google Sheet 家私，會當一改搜揣大量名姓的讀音，對真濟佇教育現場咧拍拚的先生是真方便。毋過因為是用 Google App Script 寫的，欲使用進前需要進行麻煩閣礙虐的驗證。這改規氣推出網頁版本的，拍開共名姓貼入去就會當使用矣，揣著的結果嘛會當直接貼去你慣勢使用的表格軟體做後續的應用，無論欲貼去 Excel、Numbers、Google Sheet 抑是 LibreOffice Calc 攏會用得。</p>
+<h2 id="離線使用">離線使用</h2>
+<p>網站是單純的靜態網頁，會當離線使用，去 
+<a href="https://github.com/luke871016/taigi-names" target="_blank" rel="noopener">Github </a> 共檔案掠落來，用瀏覽器拍開 <code>index.html</code> 這个檔案就會使矣。若是想欲家己增加讀音資料，嘛會當去編輯 <code>embedded-data.js</code> 增加你欲愛的讀音。</p>
+<h2 id="感謝">感謝</h2>
+<ul>
+<li>感謝
+<a href="https://sutian.moe.edu.tw/und-hani/piantsip/pankhuan-singbing/" target="_blank" rel="noopener">教育部臺灣台語常用詞辭典 </a>開放文字資料授權，又閣提供真簡單的文字資料格式予人通好應用。</li>
+<li>感謝
+<a href="https://cursor.com/" target="_blank" rel="noopener">Cursor </a>，有 AI 輔助寫程式了後，有足濟以早完全毋敢想的代誌變做有可能會達成。</li>
+<li>感謝 
+<a href="https://www.kiantiong.com/jihing/tasa_typeface_collection_intro/" target="_blank" rel="noopener">TASA 字型 </a>，予網頁內底的羅馬字會當正常顯示。</li>
+</ul>
+<h2 id="相關文章">相關文章</h2>
+<ul>
+<li>
+<a href="/sutian/19/">大量名姓做一改揣——做一改講我的名 </a></li>
+<li>
+<a href="/sutian/19/">「量量量量量」同學的名字有 32768 種讀法，你敢會曉唸？ </a></li>
+</ul>
+
+      ]]></content:encoded>
+    </item>
     <item>
       <title>大量名姓做一改揣——做一改講我的名</title>
       <link>https://www.kiantiong.com/sutian/19/</link>
       <pubDate>Sat, 16 Dec 2023 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/19/</guid>
       <description>這篇文章提供的家私通予用 Google Sheet 做一改揣大量名姓讀音，適合做學生名單等等的用途。</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian19-cover.png"
+    alt="用 Google Sheet 做一改揣大量名姓讀音"><figcaption>
+      <p>用 Google Sheet 做一改揣大量名姓讀音</p>
+    </figcaption>
+</figure>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1LM2CQJLEGlLGcRX-yYd0ADoWYfnISoElEclw35uhZD0/edit?usp=sharing" target="_blank" rel="noopener"><strong>表格連結</strong> </a></p>
+<p>最近做
+<a href="https://taisuan.taigitv.org.tw/" target="_blank" rel="noopener">台語台的選舉網站 </a>，為著欲處理大量立委候選人的名字臺羅，開發出這个做一改處理大量名姓讀音查詢的程式。佇遮開放予所有有需求的人使用，各位學校的先生若欲處理學生名單應該會真方便。
+這个程式是利用教典名姓查詢附錄的原始資料創的，關係名姓查詢附錄的發展過程 Liz Lim 先生前幾工才佇伊的面冊介紹過，是一个真好的民間佮官方合作的案例，歡迎逐家去讀佳怡先生的文章。
+另外教典的原始資料其實有收老泉韻母 ir er 的讀音，毋過教典是袂顯示的，毋知啥物原因，可能是意傳的語音合成功能無支援，這个表格嘛會共列出來喔。
+檔案的連結佇頂面，頭一改操作需要先經過一个誠可疑的授權過程，請照這篇文章的圖片說明操作佮處理喔。
+歡迎逐家共這个工具鬥分享予有需求的人，有啥物使用心得嘛反應留話反應。</p>
+<div class="carousel-container">
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <img src="/images/kautian19-1.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian19-2.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian19-3.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian19-4.png" class="carousel-img" loading="lazy" />
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel-indicator">
+      <span class="carousel-current">1</span>/<span class="carousel-total"
+        >4</span
+      >
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+</div>
+<script>
+  (function () {
+    const container = document.currentScript.previousElementSibling;
+    const track = container.querySelector(".carousel-track");
+    const images = track.querySelectorAll("img");
+    const prevBtn = container.querySelector(".carousel-btn.prev");
+    const nextBtn = container.querySelector(".carousel-btn.next");
+    const indicator = container.querySelector(".carousel-indicator");
+    const current = indicator.querySelector(".carousel-current");
+    let idx = 0;
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      current.textContent = idx + 1;
+    }
+    prevBtn.onclick = function () {
+      idx = (idx - 1 + images.length) % images.length;
+      update();
+    };
+    nextBtn.onclick = function () {
+      idx = (idx + 1) % images.length;
+      update();
+    };
+    
+    let startX = null;
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener("touchend", (e) => {
+      if (startX === null) return;
+      let dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) nextBtn.onclick();
+        else prevBtn.onclick();
+      }
+      startX = null;
+    });
+  })();
+</script>
+
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>注音做名姓嘛有讀音？</title>
@@ -21,6 +147,33 @@
       <pubDate>Sat, 16 Sep 2023 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/10/</guid>
       <description>注音符號「ㄠ」、「ㄟ」、「ㄙ」竟然有台語讀音？</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian10-cover.jpg"
+    alt="搜揣結果佮甘字典的原文"><figcaption>
+      <p>搜揣結果佮甘字典的原文</p>
+    </figcaption>
+</figure>
+
+<p>頂禮拜若是去教典的「名姓查詢系統」輸入注音符號「ㄠㄟㄙ」，會發現教典竟然共你講這三字唸做「ㄠ iau」「ㄟ hut/lia̍t」「ㄙ bóo/su」喔！，像「陳ㄠㄟㄙ」就是唸「Tân-iau Hut-bóo」
+這个 bug 的原因其實誠單純，教典名姓資料除了原底教典就有的讀音以外，上主要的來源是甘字典的資料。甘字典內底有紀錄三个漢字「幺」、「乀」、「厶」的讀音，這三字攏是漢字毋是注音符號，其中像「幺」、「厶」是部首。這三字佇以早甘字典數位化的時陣應該是彼陣的編輯失誤，致使這三字用著生做足成的注音符號的編碼矣，這馬去台語信望愛的甘字典查詢查注音猶查會著這三筆資料。就按呢致使教典名姓查詢資料收著這三筆奇怪的讀音矣。
+這个問題寫批以後教育部已經修改矣，這馬去查「ㄠㄟㄙ」查袂著物件，查「幺乀厶」就查會著矣喔，部長批桶處理問題真正誠有效率，這種誠明顯的問題攏改真緊，邀請逐家做伙寫批予教典閣較好，齒盤社運成本低閣有效！
+另外，教典管理單位是終身教育司，批信分類請選「社會教育」，主題選「行政革興之建議」喔<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>20250623 註：2024 年尾更新了後，這馬教典有獨立的意見回饋表單通好寫矣喔&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>「量量量量量」同學的名字有 32768 種讀法，你敢會曉唸？</title>
@@ -28,6 +181,38 @@
       <pubDate>Fri, 15 Sep 2023 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/9/</guid>
       <description>有關教典名姓查詢附錄通好揣著的上濟讀法的名姓，閣有名姓附錄的一寡僻智識。</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian9-cover.jpg"
+    alt="「量量量量量」同學的名字有 32768 種讀法，你敢會曉唸？"><figcaption>
+      <p>「量量量量量」同學的名字有 32768 種讀法，你敢會曉唸？</p>
+    </figcaption>
+</figure>
+
+<p>莫閣討論啥物
+<a href="https://www.youtube.com/watch?v=dJJxgNB1HeE" target="_blank" rel="noopener">下午下班，坐車到下營…… </a>有偌濟唸法矣，你敢知影「量量量量量」同學的名字有 <strong>32768</strong> 種讀法--leh？🤪</p>
+<p>今仔日的教典僻智識共逐家分享教典「名姓查詢附錄」的一寡僻智識，「名姓查詢附錄」的前身是獨立的網站「講我的名」，今年教典網頁更新了後就整合入來新網站矣。以早的教典收的漢字讀音其實欲處理名姓是無夠的，畢竟教典主要處理的是「常用詞」，毋是「漢字音讀」。像 justfont 的當務字集嘛是共名姓用字分開處理。</p>
+<p>教育部對 2019 年開始規畫「名姓查詢功能工作計畫」，針對名姓的讀音建立一个新的資料庫，教典無收的主要就對甘字典補，閣照名姓的原則佮慣勢共字音排列出優先順序。閣較詳細的名姓規則會當去教典的「編輯說明 → 辭典附錄」看</p>
+<p>佇名姓的資料庫當中，音讀上濟的字是「量」，這字干焦有收佇「名」的讀音，有「liông、liōng、liâng、liāng、niû、niôo、niū、niōo」八種讀音，姓無收，所以圖片當中會看著頭前第一个符號是小寫的，毋是大寫。拍五个「量」就會得著 8^5=32768 種讀音組合，嘛是名姓查詢附錄上濟的讀音組合。</p>
+<p>另外「姜」佇名當中嘛有「kiong、khiong、kiang、khiang、khiunn、kiunn、khionn、kionn」八个讀音、「相」嘛是「siong、siang、siòng、siàng、siunn、sionn、siùnn、siònn」八个讀音，毋過這兩字若是姓就干焦兩个讀音「Siùnn、siònn」佮「Khiong、Kiang」，所致「姜姜姜姜姜」佮「相相相相相」的組合就干焦 2^2 + 8^3 = 508 種讀音矣。</p>
+<p>閣，名姓原始資料其實有收老泉腔韻母 ir 佮 er，像「茹」的讀音甚至有 9 个「lû、lîr、jî、jîr、jú、lú、lír、jí、jír」，網站煞袂顯示有老泉腔韻母的音節「lîr、jîr、lír、jír」，可能是意傳的語音合成無支援 ir er ，抑是教典的其他考量才查袂著老泉腔音讀。抑無「茹茹茹茹茹」同學的名姓讀音就有 9^5=59049 種囉！<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>（以上關係「量量量量量」的僻智識由 
+<a href="https://www.facebook.com/siniong.te.9" target="_blank" rel="noopener">Tè Sîn-iông </a> 投稿提供）</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>20250623 註：目前編輯團隊共文字資料的 ir er 韻母相關的資料先提掉矣&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      ]]></content:encoded>
     </item>
   </channel>
 </rss>

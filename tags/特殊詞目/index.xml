@@ -14,6 +14,24 @@
       <pubDate>Mon, 09 Sep 2024 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/34/</guid>
       <description>教典十二生相的條目欲按怎做一改揣？有一个語法會當達成！</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian34-cover.jpg"
+    alt="揣「十二生肖排序第」"><figcaption>
+      <p>揣「十二生肖排序第」</p>
+    </figcaption>
+</figure>
+
+<p>只要佇「用華語查全文」揣「十二生肖排序第」 就通好揣著十二生相的詞目，拄拄仔好十二條。</p>
+<p>若講著 2023 教典改版有啥物改變，逐家可能會想著新的介面、例句音檔、新的捷運站名附錄、俗諺語的新例句等等，閣有以早潘科元先生有講著的外來語明確標「源自／借自」閣有來源語言的文字，除了以上，閣有一个改變，就是十二生相的詞目有加一逝字標明伊的排序喔。</p>
+<p>（今仔日講的這个有影足僻足僻著毋 😆）</p>
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>教典 ABC | CAB 詞目組</title>
@@ -21,6 +39,73 @@
       <pubDate>Fri, 07 Jun 2024 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/28/</guid>
       <description>教典內底有啥物「福利熊！熊福利！」格式的詞目組？</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <div class="carousel-container">
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <img src="/images/kautian28-1.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian28-2.jpg" class="carousel-img" loading="lazy" />
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel-indicator">
+      <span class="carousel-current">1</span>/<span class="carousel-total"
+        >2</span
+      >
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+</div>
+<script>
+  (function () {
+    const container = document.currentScript.previousElementSibling;
+    const track = container.querySelector(".carousel-track");
+    const images = track.querySelectorAll("img");
+    const prevBtn = container.querySelector(".carousel-btn.prev");
+    const nextBtn = container.querySelector(".carousel-btn.next");
+    const indicator = container.querySelector(".carousel-indicator");
+    const current = indicator.querySelector(".carousel-current");
+    let idx = 0;
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      current.textContent = idx + 1;
+    }
+    prevBtn.onclick = function () {
+      idx = (idx - 1 + images.length) % images.length;
+      update();
+    };
+    nextBtn.onclick = function () {
+      idx = (idx + 1) % images.length;
+      update();
+    };
+    
+    let startX = null;
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener("touchend", (e) => {
+      if (startX === null) return;
+      let dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) nextBtn.onclick();
+        else prevBtn.onclick();
+      }
+      startX = null;
+    });
+  })();
+</script>
+
+<p>教典內底攏總有十組互相是 ABC | CAB 關係的詞目組，我嘛毋知整理這會當創啥 😅 可能會當做變調教材抑是寫老人群組訊息予伊四界湠？若是你閣想會著啥物教典無的例，歡迎共我分享，感謝。</p>
+<p>是講我看著遮的詞，頭殼內底專專「福利熊！熊福利！福利熊！熊福利！」</p>
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>教典收錄的假疊詞</title>
@@ -28,6 +113,79 @@
       <pubDate>Fri, 15 Dec 2023 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/18/</guid>
       <description>台語內底有一寡詞看起來是仝款的漢字重複，頭前後壁讀音煞無仝。這篇文章整理教典內底的 6 个例</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <div class="carousel-container">
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <img src="/images/kautian18-cover.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian18-1.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian18-2.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian18-3.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian18-4.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian18-5.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian18-6.png" class="carousel-img" loading="lazy" />
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel-indicator">
+      <span class="carousel-current">1</span>/<span class="carousel-total"
+        >7</span
+      >
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+</div>
+<script>
+  (function () {
+    const container = document.currentScript.previousElementSibling;
+    const track = container.querySelector(".carousel-track");
+    const images = track.querySelectorAll("img");
+    const prevBtn = container.querySelector(".carousel-btn.prev");
+    const nextBtn = container.querySelector(".carousel-btn.next");
+    const indicator = container.querySelector(".carousel-indicator");
+    const current = indicator.querySelector(".carousel-current");
+    let idx = 0;
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      current.textContent = idx + 1;
+    }
+    prevBtn.onclick = function () {
+      idx = (idx - 1 + images.length) % images.length;
+      update();
+    };
+    nextBtn.onclick = function () {
+      idx = (idx + 1) % images.length;
+      update();
+    };
+    
+    let startX = null;
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener("touchend", (e) => {
+      if (startX === null) return;
+      let dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) nextBtn.onclick();
+        else prevBtn.onclick();
+      }
+      startX = null;
+    });
+  })();
+</script>
+
+<p>台語教材定定會看著佮疊詞相關的討論，像二疊詞佮三疊詞的程度精差、三疊詞的特殊變調，閣有 AABB ABAB 這種型式。
+這篇教典僻智識共逐家介紹六條教典內底看起來足成疊詞煞毋是疊詞的詞彙，攏是仝款的漢字煞兩字三字愛讀無仝的讀音。初開始學台語文的時陣看著這款詞定定會唸毋著捎無意思呢。
+教典僻智識系列真久無更新囉，最近閣有一寡有的無的通好分享，若是你閣知影啥物其他類似的假疊詞歡迎留話分享。</p>
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>仝款漢字無仝音義的詞</title>
@@ -35,6 +193,87 @@
       <pubDate>Wed, 27 Sep 2023 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/17/</guid>
       <description>啥物款的詞明明是仝款的漢字，讀無仝的音就會變做完全無仝的意思咧？這篇圖文解說共教典所有這款的例介紹予你！</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian17-cover.jpg"
+    alt="仝款漢字無仝音義的詞"><figcaption>
+      <p>封面四个例句，柑仔色的詞彙意思分別是啥？</p>
+    </figcaption>
+</figure>
+
+<p>今仔日的教典僻智識又閣是較實用的內容囉，頂禮拜面友 
+<a href="https://www.facebook.com/I.am.u.jim" target="_blank" rel="noopener">Lim Iu-sing </a> 問講敢會當整理教典中像「交易 ka-ia̍h/kau-i̍k」這種唸無仝讀音意義就無仝的詞目，透過表格工具寫一寡函數就會當為教典文字資料篩選出來矣。
+這其中包括頂禮拜已經介紹過的 8 組輕聲詞彙，攏總有 41 組像按呢的詞彙，遮共八組我個人較佮意的詞目整理做貼文分享予逐家。完整的列表囥佇留話區，歡迎閣再點入去看。
+文尾閣再明品一下，各位若是欲共教典僻智識的內容提去做教材抑是提去趁錢攏真歡迎，《教典十誡》有講「做人愛有量，才會有福報。」喔!</p>
+<div class="carousel-container">
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <img src="/images/kautian17-1.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian17-2.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian17-3.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian17-4.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian17-5.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian17-6.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian17-7.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian17-8.jpg" class="carousel-img" loading="lazy" />
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel-indicator">
+      <span class="carousel-current">1</span>/<span class="carousel-total"
+        >8</span
+      >
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+</div>
+<script>
+  (function () {
+    const container = document.currentScript.previousElementSibling;
+    const track = container.querySelector(".carousel-track");
+    const images = track.querySelectorAll("img");
+    const prevBtn = container.querySelector(".carousel-btn.prev");
+    const nextBtn = container.querySelector(".carousel-btn.next");
+    const indicator = container.querySelector(".carousel-indicator");
+    const current = indicator.querySelector(".carousel-current");
+    let idx = 0;
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      current.textContent = idx + 1;
+    }
+    prevBtn.onclick = function () {
+      idx = (idx - 1 + images.length) % images.length;
+      update();
+    };
+    nextBtn.onclick = function () {
+      idx = (idx + 1) % images.length;
+      update();
+    };
+    
+    let startX = null;
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener("touchend", (e) => {
+      if (startX === null) return;
+      let dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) nextBtn.onclick();
+        else prevBtn.onclick();
+      }
+      startX = null;
+    });
+  })();
+</script>
+
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>連寫詞組當中有大寫的詞目</title>
@@ -42,6 +281,72 @@
       <pubDate>Fri, 22 Sep 2023 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/14/</guid>
       <description>大寫敢一定干焦出現佇詞的頭前？連寫詞組中央敢會出現大寫的羅馬字？</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian14-cover.jpg"
+    alt="圖片內底的意思你敢攏有捌？"><figcaption>
+      <p>圖片內底的意思你敢攏有捌？</p>
+    </figcaption>
+</figure>
+
+<p>昨昏
+<a href="https://www.facebook.com/liz462/posts/pfbid023c5Rzkh4c6TazFw2fjbFQ4YkpDQcbokpQW1WLGjvAVV92UWHrbXq7kWnfuewTUJfl" target="_blank" rel="noopener">林佳怡先生的文章 </a>咧討論「征露丸」的羅馬字大小寫問題，簡單來講就是有兩組二選一的問題：</p>
+<ul>
+<li>若是當做藥品專名，頭字愛大寫</li>
+<li>若是強調「露」是地名「露西亞 Lōo-se-a」，露的頭字嘛愛大寫
+就按呢有四種結果：</li>
+</ul>
+<ol>
+<li>Tsing-Lōo-uân</li>
+<li>Tsing-lōo-uân</li>
+<li>tsing-Lōo-uân</li>
+<li>tsing-lōo-uân</li>
+</ol>
+<p>下晡留話就有人問教典當中敢有這種連寫詞組中央有大寫字母的詞目，我透過正規表達式共教典當中所有的這種詞目揣出來矣，攏總有九條：</p>
+<ol>
+<li>漳泉濫 Tsiang-Tsuân-lām</li>
+<li>王哥柳哥 Ông--ko-Liú--ko</li>
+<li>陳三五娘 Tân-sann-Gōo-niû</li>
+<li>山伯英台 San-phik-Ing-tâi</li>
+<li>范姜 Huān-Kiong</li>
+<li>張李 Tiunn-Lí</li>
+<li>張許 Tiunn-Khóo</li>
+<li>張廖 Tiunn-Liāu</li>
+<li>張簡 Tiunn-Kán</li>
+</ol>
+<p>第一條「漳泉濫 Tsiang-Tsuân-lām」就佮林先生討論的「征露丸」是類似情形的例，詞當中有需要強調的地名所以大寫。第二至第四條的「王哥柳哥」、「陳三五娘」、「山伯英台」攏是兩个人名詞彙化變做有延伸意思的熟語，所以連寫閣中央有大寫。賰的五條攏是雙姓，是臺羅手冊內底有規定愛按呢寫的
+（補充：像「歐陽」這種複姓就頭字大寫就好，寫 Au-iûnn）</p>
+<p>本篇文章的截圖為著照顧多數人對閩南兩字會過敏的目睭，共教典原文當中的「閩南語」替換做國家語言發展法建議的「臺灣台語」，建中又及。</p>
+<h2 id="補充">補充</h2>
+<figure><img src="/images/kautian14-2.png"
+    alt="例句的其他連寫詞中大寫的例"><figcaption>
+      <p>例句的其他連寫詞中大寫的例</p>
+    </figcaption>
+</figure>
+
+<p>例句當中閣有這三个例，其中「Tâi-Pak」真明顯是編輯失誤，已經寫批反應矣，<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>「Tsiang-Tsuân-piànn」佮文中講的 Tsiang-Tsuân-lām 仝款是漳泉兩个地名 ；「Pak-káng-Má」因為 Pak-káng、Má-tsóo 攏是愛大寫的專有名詞，組合起來 Má 當然愛維持大寫。</p>
+<figure><img src="/images/kautian14-3.png"
+    alt="唐山媽的情形"><figcaption>
+      <p>唐山媽的情形</p>
+    </figcaption>
+</figure>
+
+<p>若是唐山媽就免大寫，嘛免連字符號喔，因為「唐山媽」的「媽」就真正是「公媽 kong-má」的媽。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>這个問題寫批反應隔轉工維護團隊就已經有修正矣，效率真好 👍&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>有​輕聲意思就無仝的詞</title>
@@ -49,6 +354,85 @@
       <pubDate>Wed, 20 Sep 2023 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/13/</guid>
       <description>仝款的音節，加上輕聲就變做無仝的意思，教典這類詞有幾組咧？</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian13-cover.png"
+    alt="圖片內底的意思你敢攏有捌？"><figcaption>
+      <p>圖片內底的意思你敢攏有捌？</p>
+    </figcaption>
+</figure>
+
+<p>今仔日的教典僻智識內容較實用，共逐家分享教典內底所有的「有 ​ 輕聲意思就無仝的詞」，攏總有八組，是透過表格工具寫一寡函數對教典開放下載的文字資料篩選出來的。
+這種例整理起來不止仔趣味，有一寡的意思嘛是我以早分無啥清楚的，分享予逐家，嘛歡迎逐家加補充其他敢閣有啥物類似的例教典無特別收錄的。</p>
+<div class="carousel-container">
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <img src="/images/kautian13-1.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-2.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-3.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-4.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-5.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-6.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-7.png" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian13-8.png" class="carousel-img" loading="lazy" />
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel-indicator">
+      <span class="carousel-current">1</span>/<span class="carousel-total"
+        >8</span
+      >
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+</div>
+<script>
+  (function () {
+    const container = document.currentScript.previousElementSibling;
+    const track = container.querySelector(".carousel-track");
+    const images = track.querySelectorAll("img");
+    const prevBtn = container.querySelector(".carousel-btn.prev");
+    const nextBtn = container.querySelector(".carousel-btn.next");
+    const indicator = container.querySelector(".carousel-indicator");
+    const current = indicator.querySelector(".carousel-current");
+    let idx = 0;
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      current.textContent = idx + 1;
+    }
+    prevBtn.onclick = function () {
+      idx = (idx - 1 + images.length) % images.length;
+      update();
+    };
+    nextBtn.onclick = function () {
+      idx = (idx + 1) % images.length;
+      update();
+    };
+    
+    let startX = null;
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener("touchend", (e) => {
+      if (startX === null) return;
+      let dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) nextBtn.onclick();
+        else prevBtn.onclick();
+      }
+      startX = null;
+    });
+  })();
+</script>
+
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>教典的「華語借音詞」</title>
@@ -56,6 +440,35 @@
       <pubDate>Wed, 13 Sep 2023 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/7/</guid>
       <description>教典有收錄啥物對華語借音的詞咧？</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian7-cover.jpg"
+    alt="三條教典的華語借音詞"><figcaption>
+      <p>三條教典的華語借音詞</p>
+    </figcaption>
+</figure>
+
+<p>逐家攏知影臺語有足濟「臺華共同詞」，嘛有一寡詞算是「華語外來詞」，你敢知影教典甚至閣有收「華語借音詞」？</p>
+<p>今仔日的教典僻智識欲共逐家分享教典內底收的三條「華語借音詞」，分別是收佇主詞條的「落跑 làu-phâu」、收佇「挩鍊仔 thuah-liān-á」方言差表的「拉鍊 la55-lian53<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>」佮收佇「尪仔 ang-á」方言差表的「洋娃娃 ia̋ng-uá-ua」。落跑算是較特別的一半臺語音一半華語音的詞，la55-lian53 佮 ia̋ng-uá-ua 就完全是華語音借過來矣。</p>
+<p>想起以早捌聽朱約信先生佇演講講耍笑講「『麥當勞』的臺語就是『mài-táng-lâu』」，教典內底有影是有類似的例呢 🤣。</p>
+<p>猶是愛先共一件代誌講予清楚，教典的方言差表較算是「補充性質」，是教典內底規矩較無嚴格的所在，「詞彙欄」有臺語漢字、華語漢字、閣有日文，「音讀欄」嘛有的外來語是數字音值，有的外來語有逆推本調，才會有數字音值的 la55-lian53 佮逆推本調的 ia̋ng-uá-ua，教育部有佇批信當中講過方言差表當咧進行重新檢視佮更新，後來編輯委員會欲按怎處理方言差猶愛等 in 決定。逐家會當做伙來關心喔。</p>
+<h2 id="有關教典僻智識的文章再利用">有關教典僻智識的文章再利用</h2>
+<p>昨昏的教典相命術誠受著逐家的歡迎，看逐家做伙討論感覺誠心適，閣佇米粉老師遐看著教育現場的先生隨共這變做 in 的教學活動，有影是真感動。我嘛佇遮先明呼明唱，教典僻智識系列文章誠歡迎逐家提去分享，抑是共這當做任何創作的題材、重製家己的版本，攏會用得。免特別共我問，毋過你若願意共我講我會真歡喜 😄。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>這是目前教典唯一猶是用數字音值標示的詞目，無確定以後敢會嘛綴日語外來詞嘛套用逆推本調的體例。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      ]]></content:encoded>
     </item>
   </channel>
 </rss>

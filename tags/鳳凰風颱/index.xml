@@ -14,6 +14,58 @@
       <pubDate>Tue, 11 Nov 2025 22:00:00 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/43/</guid>
       <description>鳳凰風颱的讀音變做社群討論的話題，教你欲按怎善用教典綴時行，做伙創作鳳凰風颱盤喙錦</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian43-cover.png"
+    alt="教典內底的「鳳凰好朋友」"><figcaption>
+      <p>教典內底的「鳳凰好朋友」</p>
+    </figcaption>
+</figure>
+
+<p>欲按怎揣著各種教典內底的「鳳凰好朋友」，加入鳳凰風颱盤喙錦創作比賽<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>咧？遮來予你一寡 REGEX 咒語，𤆬你對入門到出師，共各種「鳳凰好朋友」攏揣出來 💪</p>
+<p>下跤會詳細解說思考的理路，若是袂曉 REGEX 嘛無要緊，下跤每一條的頭前嘛有連結共你攢便便，揤落去就通好看，予你一寡創作的素材佮靈感 😎</p>
+<ol>
+<li>
+<p>
+<a href="https://sutian.moe.edu.tw/und-hani/tshiau/?lui=tai_su&amp;tsha=hong%5Cd" target="_blank" rel="noopener"><code>hong\d</code> </a>：佇教典欲揣著「無限定聲調」的音節，會當用 <code>\d</code> 語法代表「任何一个數字」，所以揣 <code>hong\d</code> 就會當揣著「任何包含 hong 聲韻，無限定聲調的詞目」。有 648 个條目</p>
+</li>
+<li>
+<p>
+<a href="https://sutian.moe.edu.tw/und-hani/tshiau/?lui=tai_su&amp;tsha=%5Ehong%5Cd%24" target="_blank" rel="noopener"><code>^hong\d$</code> </a>：頭前按呢揣傷闊矣，閣會揣著咱用袂著的「thong」、「tshong」、「khong」等等的音節，咱會當用 <code>^</code> 佮 <code>$</code> 共頭前後壁箍起來，限定揣孤一字，揣 <code>^hong\d$</code> 就通好列出「所有聲韻是 hong 的漢字」。有 54 个條目</p>
+</li>
+<li>
+<p>
+<a href="https://sutian.moe.edu.tw/und-hani/tshiau/?lui=tai_su&amp;tsha=%5Eh%28ong%7Coo%3F%29%5Cd%24&amp;iahbe=1&amp;pitsoo=20" target="_blank" rel="noopener"><code>^h(ong|oo?)\d$</code> </a>：其實欲做「鳳凰好朋友」無一定愛是 hong 才會使，hoo 佮 ho 唸起來嘛真倚，咱會使善用 <code>(|)</code>的語法一改揣兩个韻母條件，閣利用 <code>oo?</code> 做一改揣 o 佮 oo 兩種韻母，揣 <code>^h(ong|oo?)\d$</code> 會列出「所有聲韻是 hong、hoo 抑是 ho 的漢字」</p>
+</li>
+<li>
+<p>
+<a href="https://sutian.moe.edu.tw/und-hani/tshiau/?lui=tai_su&amp;tsha=%28%5E%7C%5Cs%29h%28ong%7Coo%3F%29%5Cd&#43;h%28ong%7Coo%3F%29%5Cd%24" target="_blank" rel="noopener"><code>(^|\s)h(ong|oo?)\d h(ong|oo?)\d$</code> </a>：咱會當試一下揣兩个音節以上的組合，上頭前彼个音節愛會記得排除 thong 抑是 tshong 這種咱無欲愛的組合，所以佇頭前加上 <code>(^|\s)</code>，限定結果「愛是開頭抑是空白」，落尾咱就會當用 <code>(^|\s)h(ong|oo?)\d h(ong|oo?)\d$</code> 揣著 12 條雙音節以上的鳳凰好朋友矣喔</p>
+</li>
+</ol>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ul>
+<li>
+<a href="/sutian/29">正規表達式入門 ①－基礎概念、按怎揣漢字 </a></li>
+<li>
+<a href="/sutian/30">正規表達式入門 ②－揣羅馬字的撇步 </a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>毋知影這馬咧衝啥的朋友，請參考
+<a href="https://www.youtube.com/watch?v=WbfDW7BVFf0" target="_blank" rel="noopener">公視台語台新聞 </a>閣有
+<a href="https://www.threads.com/@ohtaigi/post/DQ4LsvfE_co" target="_blank" rel="noopener">ohtaigi 鳳凰颱風台語繞口令 </a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      ]]></content:encoded>
     </item>
   </channel>
 </rss>

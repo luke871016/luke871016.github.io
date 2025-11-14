@@ -14,6 +14,58 @@
       <pubDate>Fri, 18 Apr 2025 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/35/</guid>
       <description>有一个撇步通好做一改揣著所有林良儒先生的聲音檔案，閣利用愛灣語提供的家私共放送出來</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian35-cover.jpg"
+    alt="執行畫面"><figcaption>
+      <p>執行畫面</p>
+    </figcaption>
+</figure>
+
+<p>░▒▓█ ​ 失控的教典俗諺語課 ​ █▓▒░</p>
+<p>只要照下跤的步數，就通好聽 
+<a href="https://www.facebook.com/taigikho" target="_blank" rel="noopener">失控的台語課 Yokita </a> 先生唸所有教典俗諺語例句予你聽，毋免加簽，不管時攏通好來做伙上「失控的俗諺語課」</p>
+<p>---- - -　-　-　-　　-　　-　　-</p>
+<p>▍ 操作順序</p>
+<ol>
+<li>揤「用臺灣台語查用例」揣全形引號<code>「</code></li>
+<li>安裝 
+<a href="https://www.facebook.com/Aiuanyu" target="_blank" rel="noopener">Aiuanyu 愛灣語 </a> 提供的教典自動唸讀跤本「<strong>KIPSutian-autoplay</strong>」（安裝方式請看
+<a href="https://www.facebook.com/Aiuanyu/videos/2374117156314446" target="_blank" rel="noopener">伊的文章 </a>）</li>
+<li>揤青色的放送揤鈕，就有 519 條例句通好聽，其中有 491 條（將近九成五！）攏是教典俗諺語的例句，也就是 Yokita 先生的聲喔</li>
+</ol>
+<p>---- - -　-　-　-　　-　　-　　-</p>
+<p>▍ 有關俗諺語例句的僻智識
+俗諺語的例句是 2023 教典臺灣學術網路第二版新增加的內容，教典團隊共每一條例句的義項說明全部攏重寫，閣有增加例句，而且攏有發音，俗諺語詞目佮例句的音檔錄音工課是失控的台語課 Yokita 先生提供的聲音，嘛是逐家去考教育部檢定的聽力測驗定定會聽著的聲喔。
+所有的俗諺語例句內底攏有用引號共俗諺語箍起來，毋才佇用例搜揣功能直接揣引號會當揣著多數的俗諺語例句。</p>
+<p>---- - -　-　-　-　　-　　-　　-</p>
+<p>▍ 進階搜揣俗諺語的技巧
+以早捌介紹過，俗諺語詞目除了「仙人拍鼓有時錯，跤步踏差啥人無？」掠外，所有的俗諺語詞目攏是以句點「。」做結尾，只要揣「。」就通好揣著教典的俗諺語詞目。</p>
+<p>善用 REGEX 語法會當予咱去搜揣著包含特定關鍵字的俗諺語<br>
+以下舉例（會當直接共語法 khóo-phih 去教典搜揣）</p>
+<p>❶ 親情朋友俗諺語：<br>
+<code>[兄弟姊妹爸母公媽姨舅姑丈叔伯祖].+。$</code><br>
+➋ 十二生相俗諺語：<br>
+<code>[鼠牛虎兔龍蛇馬羊猴雞狗豬].+。$</code><br>
+➌ 數字俗諺語：<br>
+<code>[一二三四五六七八九十].+。$</code></p>
+<p>揣出來的結果嘛通好配合 KIPSutian-autoplay 逐條放送出來聽喔！</p>
+<p>━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━</p>
+<p>❍ 註一．本篇文章格式模仿失控的台語課，這个迷眾頁有濟濟專業豐富的台語文智識，推薦逐家加讀 Yokita 先生的文章<br>
+❍❍ 註二．本篇文章感謝 
+<a href="https://www.facebook.com/tshua573217" target="_blank" rel="noopener">Patrick Tshua </a> 佮 
+<a href="https://www.facebook.com/Aiuanyu" target="_blank" rel="noopener">Aiuanyu 愛灣語 </a> 兩个朋友予我靈感</p>
+<p>--- - - -　-　-　-　 -　 -　 -</p>
+<p>本文直接連結：
+<a href="https://www.kiantiong.com/sutian/35/" target="_blank" rel="noopener">https://www.kiantiong.com/sutian/35/ </a></p>
+<p>-　 -　 -　 -　-　-　- - - ---</p>
+
+      ]]></content:encoded>
     </item>
   </channel>
 </rss>

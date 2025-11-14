@@ -14,6 +14,113 @@
       <pubDate>Fri, 14 Jun 2024 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/30/</guid>
       <description>教典正規表達式入門教學－羅馬字的部份</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <p>讀這篇教典僻智識以前愛先共
+<a href="/sutian/29">前一篇 </a>先讀予完，一寡基礎的語法袂閣再餾喔！</p>
+<p>會曉揣羅馬字若是欲寫歌詞、寫詩抑是四句聯攏真好用（留話有教典僻智識主題曲），ChhoeTaigi 台語辭典+ 閣有針對羅馬字設計一寡閣較簡單的語法通好用，逐家除了教典以外，嘛通好善用 ChhoeTaigi 喔。</p>
+<p>ChhoeTaigi 的教典資料較舊，並無這兩冬新增加的五百幾條詞目，伊上重要的功能猶是揣教典以外的其他文獻，若是欲揣教典猶是建議開教典揣喔）
+揣羅馬字的重點就是看你欲限制聲母、韻母抑是聲調，愛透過羅馬字的原理去共 regex 規則寫出來，因為需要先了解羅馬字資料的格式佮特性，才通照需求家己變通，所以這改嘛無貧惰包通好 khóo-phih 喔。</p>
+<div class="carousel-container">
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <img src="/images/kautian30-1.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian30-2.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian30-3.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian30-4.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian30-5.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian30-6.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian30-7.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian30-8.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian30-9.jpg" class="carousel-img" loading="lazy" />
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel-indicator">
+      <span class="carousel-current">1</span>/<span class="carousel-total"
+        >9</span
+      >
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+</div>
+<script>
+  (function () {
+    const container = document.currentScript.previousElementSibling;
+    const track = container.querySelector(".carousel-track");
+    const images = track.querySelectorAll("img");
+    const prevBtn = container.querySelector(".carousel-btn.prev");
+    const nextBtn = container.querySelector(".carousel-btn.next");
+    const indicator = container.querySelector(".carousel-indicator");
+    const current = indicator.querySelector(".carousel-current");
+    let idx = 0;
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      current.textContent = idx + 1;
+    }
+    prevBtn.onclick = function () {
+      idx = (idx - 1 + images.length) % images.length;
+      update();
+    };
+    nextBtn.onclick = function () {
+      idx = (idx + 1) % images.length;
+      update();
+    };
+    
+    let startX = null;
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener("touchend", (e) => {
+      if (startX === null) return;
+      let dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) nextBtn.onclick();
+        else prevBtn.onclick();
+      }
+      startX = null;
+    });
+  })();
+</script>
+
+<h2 id="教典僻智識主題曲">教典僻智識主題曲</h2>
+<p>演唱 by Suno AI<br>
+
+<a href="https://suno.com/song/caf85743-aaa3-47f1-b990-b7900202dd5b" target="_blank" rel="noopener">版本 1 </a> 
+<a href="https://suno.com/song/4c5ded9d-e9b9-4b6e-b738-d523c8950f18" target="_blank" rel="noopener">版本 2 </a></p>
+<blockquote>
+<p>教典僻智識　有阿明的戲劇<br>
+Kàu-tián phiah-tì-sik, ū A-bîng ê hì-ki̍k</p>
+<p>精彩的戲曲　攏是伊的記憶<br>
+tsing-tshái ê hì-khik, lóng sī i ê kì-ik</p>
+<p>無欲做桂竹　欲就做刺竹<br>
+bô beh tsò kuì-tik, beh tō tsò tshì-tik</p>
+<p>故事欲刺激　做人愛有氣魄<br>
+kòo-sū beh tshì-kik, tsò-lâng ài ū khì-phik</p>
+<p>發揮智力　展出好氣色<br>
+huat-hui tì-li̍k, tián tshut hó khì-sik</p>
+<p>替你想好對策　聽教典主題曲<br>
+thè lí siūnn hó tuì-tshik, thiann Kàu-tián tsú-tê-khik</p></blockquote>
+<p><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>註：regex 會當用 <code>\S</code> 表示「非空白符號」，寫 <code>\S</code> 取代 <code>[^ ]</code> 語法會當寫閣較短&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>註：regex 會當用 <code>\d</code> 表示「數字」，寫 <code>\d</code> 取代 <code>[1-8]</code> 語法會當寫閣較短&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>正規表達式入門①－基礎概念、按怎揣漢字</title>
@@ -21,6 +128,124 @@
       <pubDate>Sun, 09 Jun 2024 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/29/</guid>
       <description>教典正規表達式入門教學－漢字的部份</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      
+
+
+
+
+<div class="callout callout-note">
+    
+    <div class="callout-content">
+        註 1：羅馬字較複雜，後一篇才會詳細講<br>
+註 2：上下底有囥貧惰包，無欲了解原理嘛通好 khóo 去用
+    </div>
+</div> 
+<p>2023 教典更新允准人用正規表達式（Regular Expression, regex）搜揣辭典內容，正規表達式是一種會當描寫文字組成規則的語法，通好予咱揣著家己需要的詞的結構，欲揣疊詞抑是一寡主題性的詞目類型攏真方便。這篇圖文解說有提供真濟例，希望會當予逐家對 regex 的應用有閣較濟的想法。</p>
+<p>後一篇會來講羅馬字按怎揣，羅馬字的規則會較僫寫。另外 ChhoeTaigi 辭典真早就有正規表達式功能矣，嘛有針對羅馬字設計真濟方便的功能，後一篇可能會做伙介紹喔。</p>
+<p>當然，正規表達式嘛通好提來揣一寡奇奇怪怪的物件，然後共寫做教典僻智識，嚴格來講這篇教學應該算是<strong>教典僻智識的僻智識</strong>😜</p>
+<div class="carousel-container">
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <img src="/images/kautian29-2.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian29-3.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian29-4.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian29-5.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian29-6.jpg" class="carousel-img" loading="lazy" />
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel-indicator">
+      <span class="carousel-current">1</span>/<span class="carousel-total"
+        >5</span
+      >
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+</div>
+<script>
+  (function () {
+    const container = document.currentScript.previousElementSibling;
+    const track = container.querySelector(".carousel-track");
+    const images = track.querySelectorAll("img");
+    const prevBtn = container.querySelector(".carousel-btn.prev");
+    const nextBtn = container.querySelector(".carousel-btn.next");
+    const indicator = container.querySelector(".carousel-indicator");
+    const current = indicator.querySelector(".carousel-current");
+    let idx = 0;
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      current.textContent = idx + 1;
+    }
+    prevBtn.onclick = function () {
+      idx = (idx - 1 + images.length) % images.length;
+      update();
+    };
+    nextBtn.onclick = function () {
+      idx = (idx + 1) % images.length;
+      update();
+    };
+    
+    let startX = null;
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener("touchend", (e) => {
+      if (startX === null) return;
+      let dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) nextBtn.onclick();
+        else prevBtn.onclick();
+      }
+      startX = null;
+    });
+  })();
+</script>
+
+<h2 id="咒語貧惰包">咒語貧惰包</h2>
+<p>揣所有 4 字詞（數字會當換做其他的）：<br>
+<code>[^a-z]{4}</code></p>
+<p>AA 仔 B：<br>
+<code>^(.)\1仔.$</code></p>
+<p>有無四字詞：<br>
+<code>^[有無].[有無].$</code></p>
+<p>色水 ABB 形容詞：<br>
+<code>^[紅黃青綠藍紫烏白](.)\1$</code></p>
+<p>數字四字詞：<br>
+<code>^[一二三四五六七八九].[一二三四五六七八九].$</code></p>
+<p>A 跤 B 手：<br>
+<code>^.跤.手$</code></p>
+<p>會/袂環綴三字詞：<br>
+<code>^[會袂].[得通過]$</code></p>
+<p>AA 疊詞：<br>
+<code>^(.)\1$</code></p>
+<p>AAB 疊詞：<br>
+<code>^([^a-z])\1.$</code></p>
+<p>ABB 疊詞：<br>
+<code>^.(.)\1$</code></p>
+<p>ABA 疊詞：<br>
+<code>^(.).\1$</code></p>
+<p>AABB 疊詞：<br>
+<code>^(.)\1(.)\2$</code></p>
+<p>ABBA 疊詞：<br>
+<code>^(.)(.)\2\1$</code></p>
+<p>ABCA 疊詞：<br>
+<code>^(.)..\1$</code></p>
+<p>ABAB 疊詞：<br>
+<code>^(.)(.)\1\2$</code></p>
+<p>ABAC 疊詞：<br>
+<code>^([^a-z]).\1.$</code></p>
+<p>ABCB 疊詞：<br>
+<code>^.(.).\1$</code></p>
+
+      ]]></content:encoded>
     </item>
   </channel>
 </rss>

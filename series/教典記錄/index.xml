@@ -14,6 +14,90 @@
       <pubDate>Sat, 04 May 2024 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/26/</guid>
       <description>介紹各種教典「上濟」的記錄</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <p>昨昏講教典「上長」，今仔日的教典僻智識來講教典的「上濟」<br>
+教典啥物詞的音讀上濟？<br>
+佗一个羅馬字出現上濟改？<br>
+啥物詞的義項上濟？<br>
+請看圖文解說，各種奇奇怪怪的數據分享予恁聽：）</p>
+<div class="carousel-container">
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <img src="/images/kautian26-cover.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian26-1.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian26-2.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian26-3.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian26-4.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian26-5.jpg" class="carousel-img" loading="lazy" />
+      <img src="/images/kautian26-6.jpg" class="carousel-img" loading="lazy" />
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel-indicator">
+      <span class="carousel-current">1</span>/<span class="carousel-total"
+        >7</span
+      >
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+</div>
+<script>
+  (function () {
+    const container = document.currentScript.previousElementSibling;
+    const track = container.querySelector(".carousel-track");
+    const images = track.querySelectorAll("img");
+    const prevBtn = container.querySelector(".carousel-btn.prev");
+    const nextBtn = container.querySelector(".carousel-btn.next");
+    const indicator = container.querySelector(".carousel-indicator");
+    const current = indicator.querySelector(".carousel-current");
+    let idx = 0;
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      current.textContent = idx + 1;
+    }
+    prevBtn.onclick = function () {
+      idx = (idx - 1 + images.length) % images.length;
+      update();
+    };
+    nextBtn.onclick = function () {
+      idx = (idx + 1) % images.length;
+      update();
+    };
+    
+    let startX = null;
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener("touchend", (e) => {
+      if (startX === null) return;
+      let dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) {
+        if (dx < 0) nextBtn.onclick();
+        else prevBtn.onclick();
+      }
+      startX = null;
+    });
+  })();
+</script>
+
+<h2 id="補充下真正有七个音">補充：下真正有七个音</h2>
+<p>外口定定咧風聲講啥物
+<a href="https://www.youtube.com/watch?v=7wqfys1DOLA" target="_blank" rel="noopener">「下」午「下」班,坐車到「下」營「下」車,在樹「下」「「下」棋比高「下」。用台語發音「下」共七種發音 </a>，教典的「下」這字有影是有七个音啦，毋過佮人想的無仝。</p>
+<figure><img src="/images/kautian26-7.jpg"
+    alt="「下」真正有七个音"><figcaption>
+      <p>「下」真正有七个音</p>
+    </figcaption>
+</figure>
+
+
+      ]]></content:encoded>
     </item>
     <item>
       <title>教典上長</title>
@@ -21,6 +105,32 @@
       <pubDate>Fri, 03 May 2024 11:48:17 +0800</pubDate>
       <guid>https://www.kiantiong.com/sutian/25/</guid>
       <description>介紹各種教典「上長」的記錄</description>
+      
+      <language>
+          台文
+          
+      </language>
+      
+      <content:encoded>&lt;![CDATA[
+      <figure><img src="/images/kautian25-cover.jpg"
+    alt="教典上長"><figcaption>
+      <p>教典上長</p>
+    </figcaption>
+</figure>
+
+<p>今仔日的教典僻智識共逐家介紹各種教典「上長」的記錄</p>
+<h2 id="1-上長的詞目">1. 上長的詞目</h2>
+<p>詞目「臭頭仔嘛會做皇帝，做總統你嘛有機會。 Tshàu-thâu-á mā ē tsò hông-tè, tsò tsóng-thóng lí mā ū ki-huē.」是教典上長的詞目，有 16 个音節</p>
+<h2 id="2-上長的詞目俗諺莫算">2. 上長的詞目（俗諺莫算）</h2>
+<p>若是俗諺莫算入去，詞目「臺北市立天文科學教育館 Tâi-pak Tshī-li̍p Thian-bûn Kho-ha̍k Kàu-io̍k-kuán」是上長的詞目，攏總 11 个音節</p>
+<h2 id="3-上長的主詞目俗諺附錄莫算">3. 上長的主詞目（俗諺、附錄莫算）</h2>
+<p>若是附錄地名嘛莫算，干焦看主詞目，上長的有五个條目，攏是 5 的音節的，「雞喙變鴨喙 ke-tshuì piàn ah-tshuì」、「高麗菜穎仔」、「報鳥鼠仔冤 ko-lê-tshài-ínn-á」、「司公仔象桮 sai-kong-á-siūnn-pue」、「戴小鬼仔殼 tì siáu-kuí-á-khak」五个條目並列第一名</p>
+<h2 id="4-上長的例句">4. 上長的例句</h2>
+<p>詞目「艱苦頭，快活尾。 kan-khóo thâu, khuìnn-ua̍h bué.」內底有教典上長的例句，攏總 118 字，內容真豐富，咧介紹「教典阿發」的人生故事，對國校仔畢業做塗水，一直到娶某生囝、退休遊山玩水的細節。規本教典阿發干焦兩个例句爾，煞有真完整的人物設定呢！</p>
+<h2 id="5-上長的連寫詞">5. 上長的連寫詞</h2>
+<p>地名「奇萊主山北峰 Kî-lâi-tsú-suann-pak-hong」佮「大人大種 tuā-lâng-tuā-tsíng」的近義詞「大母人大母種 tuā-bú-lâng-tuā-bú-tsíng」是教典當中上長的連寫詞，共 6 个音節連寫做伙</p>
+
+      ]]></content:encoded>
     </item>
   </channel>
 </rss>
