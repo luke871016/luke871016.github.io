@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Language_type on 陳建中｜Tân Kiàn-tiong</title>
     <link>https://www.kiantiong.com/language_type/</link>
@@ -14,10 +14,6 @@
       <pubDate>Fri, 14 Nov 2025 10:00:00 +0800</pubDate>
       <guid>https://www.kiantiong.com/language_type/taiwanese/</guid>
       <description></description>
-      
-      <content:encoded>&lt;![CDATA[
-      
-      ]]></content:encoded>
     </item>
     <item>
       <title>Mandarin</title>
@@ -25,10 +21,6 @@
       <pubDate>Sat, 16 Aug 2025 10:05:47 +0800</pubDate>
       <guid>https://www.kiantiong.com/language_type/mandarin/</guid>
       <description></description>
-      
-      <content:encoded>&lt;![CDATA[
-      
-      ]]></content:encoded>
     </item>
     <item>
       <title>Bilingual</title>
@@ -36,10 +28,6 @@
       <pubDate>Sun, 29 Jun 2025 10:50:00 +0800</pubDate>
       <guid>https://www.kiantiong.com/language_type/bilingual/</guid>
       <description></description>
-      
-      <content:encoded>&lt;![CDATA[
-      
-      ]]></content:encoded>
     </item>
   </channel>
 </rss>
