@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.kiantiong.com/sutian/</loc>
+    <lastmod>2025-11-26T11:19:46+08:00</lastmod>
+  </url><url>
     <loc>https://www.kiantiong.com/language_type/</loc>
     <lastmod>2025-11-19T10:00:00+08:00</lastmod>
   </url><url>
@@ -36,9 +39,6 @@
     <lastmod>2025-11-16T00:30:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/series/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</loc>
-    <lastmod>2025-11-16T00:30:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/sutian/</loc>
     <lastmod>2025-11-16T00:30:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/sutian/44/</loc>
@@ -326,22 +326,10 @@
     <loc>https://www.kiantiong.com/sutian/2/</loc>
     <lastmod>2023-09-08T11:48:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/tags/%E5%85%AC%E8%A6%96%E5%8F%B0%E8%AA%9E%E5%8F%B0/</loc>
-    <lastmod>2023-09-07T11:19:46+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/tags/%E5%8F%B0%E8%AA%9E%E6%96%B0%E8%A9%9E%E8%BE%AD%E5%BA%AB/</loc>
-    <lastmod>2023-09-07T11:19:46+08:00</lastmod>
-  </url><url>
     <loc>https://www.kiantiong.com/tags/%E5%A4%96%E4%BE%86%E8%AA%9E/</loc>
     <lastmod>2023-09-07T11:19:46+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/sutian/1/</loc>
-    <lastmod>2023-09-07T11:19:46+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/tags/%E6%96%B0%E8%A9%9E/</loc>
-    <lastmod>2023-09-07T11:19:46+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/sutian/sintaigi/</loc>
     <lastmod>2023-09-07T11:19:46+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/%E6%8E%92%E7%89%88/</loc>
