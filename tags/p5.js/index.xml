@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>P5.js on 陳建中｜Tân Kiàn-tiong</title>
+    <link>http://localhost:1313/tags/p5.js/</link>
+    <description>Recent content in P5.js on 陳建中｜Tân Kiàn-tiong</description>
+    <generator>Hugo</generator>
+    <language>und-hani</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/p5.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello p5.js???</title>
+      <link>http://localhost:1313/sketches/hello-p5/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sketches/hello-p5/</guid>
+      <description>
+        &lt;p&gt;???這是一個簡單的 p5.js 作品範例。你可以編輯 &lt;code&gt;sketch.js&lt;/code&gt; 來創作你的作品。&lt;/p&gt;&#xA;&lt;h2 id=&#34;使用說明&#34;&gt;使用說明&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;每個作品都是一個獨立的資料夾&lt;/li&gt;&#xA;&lt;li&gt;資料夾內包含 &lt;code&gt;index.md&lt;/code&gt;（這篇文章）和 &lt;code&gt;sketch.js&lt;/code&gt;（p5.js 程式碼）&lt;/li&gt;&#xA;&lt;li&gt;在 &lt;code&gt;sketch.js&lt;/code&gt; 中使用 p5.js 的 instance mode，程式碼會自動掛載到頁面中&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;front-matter-參數&#34;&gt;Front Matter 參數&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;canvas_width&lt;/code&gt;: Canvas 的最大寬度（預設：800px）&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;canvas_bg&lt;/code&gt;: Canvas 容器的背景顏色（預設：#ffffff）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;
+      </description>
+    </item>
+  </channel>
+</rss>
