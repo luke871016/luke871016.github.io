@@ -1,3 +1,5 @@
+@import url("https://font.emtech.cc/css/GenYoGothicTW");
+
 /* Root Variables */
 :root {
   --primary-bg: #efefef;
@@ -9,8 +11,8 @@
   --borders: #555;
 
   /* 字型設定 */
-  --font-heading: "TASAExplorer", "GenYoExt", sans-serif;
-  --font-body: "TASAOrbiter", "GenYoExt", sans-serif;
+  --font-heading: "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif;
+  --font-body: "TASAOrbiter", "GenYoExt", , "GenYoGothicTW", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
