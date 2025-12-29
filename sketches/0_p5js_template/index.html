@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="und-hani"><head>
-	<meta name="generator" content="Hugo 0.149.1">
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <link href="/images/fav/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
     <link href="/images/fav/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="/images/fav/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
     <link href="/images/fav/site.webmanifest" rel="manifest"/>
-    <title>陳建中｜Tân Kiàn-tiong</title>
+    <title>Hello p5.js | 陳建中｜Tân Kiàn-tiong</title>
     <link href="
 https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.css
 " rel="stylesheet">
@@ -51,213 +50,483 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
   </nav>
 </header>
 
-    <section class="hero">
-        <h1 class="p-name">陳建中｜Tân Kiàn-tiong</h1>
-        <p class="subtitle">建中的各種資源、文章佮作品攏佇遮</p>
-        <p><p>有代誌抑是工課欲共我講，歡迎寫批去 
-<a href="mailto:kiantiong7235@gmail.com">kiantiong7235@gmail.com </a></p>
-</p>
-        <form action='' class="form-inline" id="search" method="get">
-    <label for="search-input" hidden="">揣網頁內容</label>
-    <input id="search-input" name="query" placeholder="揣網頁內容" type="text"/>
-    <button type="submit" value="search">揣</button>
-</form>
+    
+    
 
-    </section>
-    <main class="h-entry e-content container col">
-        
-        
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hello p5.js",
+  "description": "\u003cp\u003e這是一個簡單的 p5.js 作品範例。你可以編輯 \u003ccode\u003esketch.js\u003c\/code\u003e 來創作你的作品。\u003c\/p\u003e\n      \n           \n            \n\n\u003cdiv\n  class=\u0022sketch-embed-wrapper\u0022\n  style=\u0022width: 100%; max-width: 1000px; margin: 2em auto;\u0022\n\u003e\n  \n  \u003cdiv\n    style=\u0022\n      display: flex;\n      align-items: center;\n      gap: 0.75em;\n      margin-bottom: 0.75em;\n    \u0022\n  \u003e\n    \n    \u003cdiv style=\u0022display: flex; gap: 0.5em; align-items: center\u0022\u003e\n      \n      \u003cbutton\n        id=\u0022sketch-iframe-82d390234de17887877f80f13b962c5a-play-btn\u0022\n        onclick=\u0022playSketch(\u0027sketch-iframe-82d390234de17887877f80f13b962c5a\u0027)\u0022\n        class=\u0022sketch-control-btn sketch-play-btn\u0022\n        style=\u0022\n          width: 40px;\n          height: 40px;\n          border-radius: 50%;\n          border: none;\n          background: #5c8273;\n          cursor: pointer;\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          padding: 0;\n          transition: all 0.2s ease;\n          margin: 0;\n        \u0022\n        title=\u0022播放\u0022\n      \u003e\n        \u003csvg\n          width=\u002216\u0022\n          height=\u002216\u0022\n          viewBox=\u00220 0 24 24\u0022\n          fill=\u0022none\u0022\n          stroke=\u0022white\u0022\n          stroke-width=\u00222\u0022\n          stroke-linecap=\u0022round\u0022\n          stroke-linejoin=\u0022round\u0022\n        \u003e\n          \u003cpolygon points=\u00225 3 19 12 5 21 5 3\u0022\u003e\u003c\/polygon\u003e\n        \u003c\/svg\u003e\n      \u003c\/button\u003e\n\n      \n      \u003cbutton\n        id=\u0022sketch-iframe-82d390234de17887877f80f13b962c5a-stop-btn\u0022\n        onclick=\u0022stopSketch(\u0027sketch-iframe-82d390234de17887877f80f13b962c5a\u0027)\u0022\n        class=\u0022sketch-control-btn sketch-stop-btn\u0022\n        style=\u0022\n          width: 40px;\n          height: 40px;\n          border-radius: 50%;\n          border: none;\n          background: #e0e0e0;\n          cursor: pointer;\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          padding: 0;\n          transition: all 0.2s ease;\n          margin: 0;\n        \u0022\n        title=\u0022停止\u0022\n      \u003e\n        \u003csvg\n          width=\u002216\u0022\n          height=\u002216\u0022\n          viewBox=\u00220 0 24 24\u0022\n          fill=\u0022none\u0022\n          stroke=\u0022#666\u0022\n          stroke-width=\u00222\u0022\n          stroke-linecap=\u0022round\u0022\n          stroke-linejoin=\u0022round\u0022\n        \u003e\n          \u003crect x=\u00226\u0022 y=\u00226\u0022 width=\u002212\u0022 height=\u002212\u0022\u003e\u003c\/rect\u003e\n        \u003c\/svg\u003e\n      \u003c\/button\u003e\n    \u003c\/div\u003e\n\n    \n    \u003ca\n      href=\u0022\/sketches\/0_p5js_template\/?sketch_only=true\u0022\n      target=\u0022_blank\u0022\n      rel=\u0022noopener noreferrer\u0022\n      style=\u0022\n        font-size: 0.95em;\n        color: #333;\n        font-weight: 500;\n        text-decoration: none;\n        transition: color 0.2s ease;\n      \u0022\n      onmouseover=\u0022this.style.color=\u0027var(--link-color, #5c8273)\u0027\u0022\n      onmouseout=\u0022this.style.color=\u0027#333\u0027\u0022\n      \u003eHello p5.js\u003c\/a\n    \u003e\n  \u003c\/div\u003e\n  \n\n  \u003cdiv\n    class=\u0022sketch-embed\u0022\n    style=\u0022\n                width: 100%;\n                position: relative;\n                border-radius: 8px;\n                overflow: hidden;\n                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n                aspect-ratio: 1000 \/ 1000;\n            \u0022\n  \u003e\n    \u003ciframe\n      id=\u0022sketch-iframe-82d390234de17887877f80f13b962c5a\u0022\n      src=\u0022\/sketches\/0_p5js_template\/?sketch_only=true\u0022\n      width=\u0022100%\u0022\n      height=\u0022100%\u0022\n      frameborder=\u00220\u0022\n      scrolling=\u0022no\u0022\n      style=\u0022\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        border: none;\n      \u0022\n      loading=\u0022lazy\u0022\n      title=\u0022Hello p5.js - p5.js Sketch\u0022\n    \u003e\n    \u003c\/iframe\u003e\n  \u003c\/div\u003e\n\u003c\/div\u003e\n\n\n\u003cscript\u003e\n  (function () {\n    const iframeId = \u0022sketch-iframe-82d390234de17887877f80f13b962c5a\u0022;\n    let isPlaying = true;\n    const linkColor = \u0022#5c8273\u0022;\n    const grayBg = \u0022#e0e0e0\u0022;\n    const grayIcon = \u0022#666\u0022;\n    const whiteIcon = \u0022#fff\u0022;\n\n    function updateButtonStates(id, playing) {\n      const playBtn = document.getElementById(id \u002b \u0022-play-btn\u0022);\n      const stopBtn = document.getElementById(id \u002b \u0022-stop-btn\u0022);\n\n      if (playing) {\n        \n        if (playBtn) {\n          playBtn.style.background = linkColor;\n          const svg = playBtn.querySelector(\u0022svg\u0022);\n          if (svg) {\n            svg.setAttribute(\u0022stroke\u0022, whiteIcon);\n          }\n        }\n        if (stopBtn) {\n          stopBtn.style.background = grayBg;\n          const svg = stopBtn.querySelector(\u0022svg\u0022);\n          if (svg) {\n            svg.setAttribute(\u0022stroke\u0022, grayIcon);\n          }\n        }\n      } else {\n        \n        if (playBtn) {\n          playBtn.style.background = grayBg;\n          const svg = playBtn.querySelector(\u0022svg\u0022);\n          if (svg) {\n            svg.setAttribute(\u0022stroke\u0022, grayIcon);\n          }\n        }\n        if (stopBtn) {\n          stopBtn.style.background = linkColor;\n          const svg = stopBtn.querySelector(\u0022svg\u0022);\n          if (svg) {\n            svg.setAttribute(\u0022stroke\u0022, whiteIcon);\n          }\n        }\n      }\n    }\n\n    function playSketch(id) {\n      const iframe = document.getElementById(id);\n      if (iframe) {\n        \n        iframe.src =\n          iframe.src.split(\u0022?\u0022)[0] \u002b \u0022?sketch_only=true\u0026t=\u0022 \u002b Date.now();\n        isPlaying = true;\n        updateButtonStates(id, true);\n      }\n    }\n\n    function stopSketch(id) {\n      const iframe = document.getElementById(id);\n      if (iframe \u0026\u0026 isPlaying) {\n        \n        try {\n          iframe.contentWindow.postMessage({ type: \u0022pause-sketch\u0022 }, \u0022*\u0022);\n          isPlaying = false;\n          updateButtonStates(id, false);\n        } catch (e) {\n          \n          console.warn(\u0022無法發送暫停訊息，嘗試重新載入\u0022);\n          iframe.src =\n            iframe.src.split(\u0022?\u0022)[0] \u002b \u0022?sketch_only=true\u0026t=\u0022 \u002b Date.now();\n        }\n      }\n    }\n\n    \n    updateButtonStates(iframeId, true);\n\n    \n    window[\u0022playSketch_\u0022 \u002b iframeId] = function () {\n      playSketch(iframeId);\n    };\n    window[\u0022stopSketch_\u0022 \u002b iframeId] = function () {\n      stopSketch(iframeId);\n    };\n\n    \n    window[\u0022playSketch\u0022] = function (id) {\n      playSketch(id);\n    };\n    window[\u0022stopSketch\u0022] = function (id) {\n      stopSketch(id);\n    };\n  })();\n\u003c\/script\u003e\n \n\n\u003ch2 id=\u0022作品結構\u0022\u003e作品結構\u003c\/h2\u003e\n\u003cp\u003e每個 p5.js 作品都是一個獨立的資料夾，包含：\u003c\/p\u003e",
+  "author": {
+    "@type": "Person",
+    "name": "陳建中｜Tân Kiàn-tiong"
+  },
+  "datePublished": "2025-01-15T00:00:00Z",
+  "dateModified": "2025-01-15T00:00:00Z",
+  "publisher": {
+    "@type": "Organization",
+    "name": "陳建中｜Tân Kiàn-tiong"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https:\/\/www.kiantiong.com\/sketches\/0_p5js_template\/"
+  },
+  "inLanguage": "zh-hant"
+}
+</script>
+ 
+    
+    
+    
+    
+    <div id="sketch-only-container" style="display: none;">
+        <div id="p5-canvas-wrapper" style="width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999; background-color: #fff; display: flex; align-items: center; justify-content: center;"></div>
+        <div id="p5-loading" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #666; font-family: sans-serif; z-index: 10000;">載入中...</div>
+    </div>
+    
+    
+    <main class="post h-entry container row">
+        <div class="post">
+            <div>
+                <h1 class="p-name" id="textOverlay">Hello p5.js</h1>
+                
+                <p class="subtitle">第一個 p5.js 作品範例</p>
+                
+            </div>
+            <div class="post-data row">
+                <time class="dt-published" datetime="2025-01-15 00:00:00 &#43;0000 UTC">
+                    <a class="u-url" href="https://www.kiantiong.com/sketches/0_p5js_template/">Jan 15, 2025</a>
+                </time>
+                <span rel="author" class="p-author h-card">
+                    <img class="u-photo hidden" src="/images/logo.png" />
+                    <span class="p-name hidden" rel="me">陳建中｜Tân Kiàn-tiong</span>
+                </span>
+                
+            </div>
+            
+            <div class="e-content">
+                <p>這是一個簡單的 p5.js 作品範例。你可以編輯 <code>sketch.js</code> 來創作你的作品。</p>
+      
+           
+            
 
+<div
+  class="sketch-embed-wrapper"
+  style="width: 100%; max-width: 1000px; margin: 2em auto;"
+>
+  
+  <div
+    style="
+      display: flex;
+      align-items: center;
+      gap: 0.75em;
+      margin-bottom: 0.75em;
+    "
+  >
+    
+    <div style="display: flex; gap: 0.5em; align-items: center">
+      
+      <button
+        id="sketch-iframe-82d390234de17887877f80f13b962c5a-play-btn"
+        onclick="playSketch('sketch-iframe-82d390234de17887877f80f13b962c5a')"
+        class="sketch-control-btn sketch-play-btn"
+        style="
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          background: #5c8273;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          transition: all 0.2s ease;
+          margin: 0;
+        "
+        title="播放"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </button>
 
-  
-  
-  
-  
+      
+      <button
+        id="sketch-iframe-82d390234de17887877f80f13b962c5a-stop-btn"
+        onclick="stopSketch('sketch-iframe-82d390234de17887877f80f13b962c5a')"
+        class="sketch-control-btn sketch-stop-btn"
+        style="
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          background: #e0e0e0;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          transition: all 0.2s ease;
+          margin: 0;
+        "
+        title="停止"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#666"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="6" y="6" width="12" height="12"></rect>
+        </svg>
+      </button>
+    </div>
+
+    
+    <a
+      href="/sketches/0_p5js_template/?sketch_only=true"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="
+        font-size: 0.95em;
+        color: #333;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      "
+      onmouseover="this.style.color='var(--link-color, #5c8273)'"
+      onmouseout="this.style.color='#333'"
+      >Hello p5.js</a
+    >
+  </div>
   
 
-
-
-
-
-
-<div class="cards" id="results">
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/24/" class="u-url">
-        
-          <img src="/images/kautian24-cover.jpg" alt="連字符入門②－「詞組」內底的詞「基本上」分寫" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">連字符入門②－「詞組」內底的詞「基本上」分寫</h2>
-          <p class="small e-content card-summary">解說連字符號基本原則第二條佮第六條之間的衝突造成濟濟隨人有無仝解讀的現象</p>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/23/" class="u-url">
-        
-          <img src="/images/kautian23-cover.png" alt="連字符入門①－「詞」內底的音節連寫" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">連字符入門①－「詞」內底的音節連寫</h2>
-          <p class="small e-content card-summary">連字符號有啥物基本規則？當時連寫當時分寫？這篇文章會介紹基本概念。</p>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/22/" class="u-url">
-        
-          <img src="/images/kautian22-cover.jpg" alt="教典地方僻智識" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">教典地方僻智識</h2>
-          <p class="small e-content card-summary">教典例句介紹著的臺灣各地文化有啥？啥物縣市的例句上濟？地方有啥物好食物通食？</p>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/21/" class="u-url">
-        
-          <img src="/images/kautian21-cover.jpg" alt="教典例句四个發音人" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">教典例句四个發音人</h2>
-          <p class="small e-content card-summary">教典的例句有四个先生分工去錄音，有一个例句拄好四个人攏有錄著</p>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/20/" class="u-url">
-        
-          <img src="/images/kautian20-cover.jpg" alt="教典阿明的一生——第二季" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">教典阿明的一生——第二季</h2>
-          <p class="small e-content card-summary">2024教典詞目更新，又閣有增加阿明的例句喔！</p>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/19/" class="u-url">
-        
-          <img src="/images/kautian19-cover.png" alt="大量名姓做一改揣——做一改講我的名" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">大量名姓做一改揣——做一改講我的名</h2>
-          <p class="small e-content card-summary">這篇文章提供的家私通予用 Google Sheet 做一改揣大量名姓讀音，適合做學生名單等等的用途。</p>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/18/" class="u-url">
-        
-          <img src="/images/kautian18-cover.png" alt="教典收錄的假疊詞" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">教典收錄的假疊詞</h2>
-          <p class="small e-content card-summary">台語內底有一寡詞看起來是仝款的漢字重複，頭前後壁讀音煞無仝。這篇文章整理教典內底的 6 个例</p>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/17/" class="u-url">
-        
-          <img src="/images/kautian17-cover.jpg" alt="仝款漢字無仝音義的詞" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">仝款漢字無仝音義的詞</h2>
-          <p class="small e-content card-summary">啥物款的詞明明是仝款的漢字，讀無仝的音就會變做完全無仝的意思咧？這篇圖文解說共教典所有這款的例介紹予你！</p>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/16/" class="u-url">
-        
-          <img src="/images/kautian16-cover.jpg" alt="教典十誡開放下載、列印" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">教典十誡開放下載、列印</h2>
-          <p class="small e-content card-summary">共頂回揣著的大道理印出來貼佇冊桌仔頂面提醒家己！</p>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sutian/15/" class="u-url">
-        
-          <img src="/images/kautian15-cover.jpg" alt="教典教你按怎做人" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">教典教你按怎做人</h2>
-          <p class="small e-content card-summary">這篇文章招你做伙來探討教典對咱做人的道理有啥物教示！</p>
-        </div>
-      </a>
-    </div>
-  
+  <div
+    class="sketch-embed"
+    style="
+                width: 100%;
+                position: relative;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                aspect-ratio: 1000 / 1000;
+            "
+  >
+    <iframe
+      id="sketch-iframe-82d390234de17887877f80f13b962c5a"
+      src="/sketches/0_p5js_template/?sketch_only=true"
+      width="100%"
+      height="100%"
+      frameborder="0"
+      scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      "
+      loading="lazy"
+      title="Hello p5.js - p5.js Sketch"
+    >
+    </iframe>
+  </div>
 </div>
 
 
+<script>
+  (function () {
+    const iframeId = "sketch-iframe-82d390234de17887877f80f13b962c5a";
+    let isPlaying = true;
+    const linkColor = "#5c8273";
+    const grayBg = "#e0e0e0";
+    const grayIcon = "#666";
+    const whiteIcon = "#fff";
 
-  <div class="pagination" id="pagination">
-    
-      <a href="/page/4/">前一頁</a>
-    
-    <div class="pages">
-      
-        <a href="/">
-          1
-        </a>
-      
-        <a href="/page/2/">
-          2
-        </a>
-      
-        <a href="/page/3/">
-          3
-        </a>
-      
-        <a href="/page/4/">
-          4
-        </a>
-      
-        <a href="/page/5/" class="active">
-          5
-        </a>
-      
-        <a href="/page/6/">
-          6
-        </a>
-      
-        <a href="/page/7/">
-          7
-        </a>
-      
-    </div>
-    
-      <a href="/page/6/">後一頁</a>
-    
-  </div>
+    function updateButtonStates(id, playing) {
+      const playBtn = document.getElementById(id + "-play-btn");
+      const stopBtn = document.getElementById(id + "-stop-btn");
 
+      if (playing) {
+        
+        if (playBtn) {
+          playBtn.style.background = linkColor;
+          const svg = playBtn.querySelector("svg");
+          if (svg) {
+            svg.setAttribute("stroke", whiteIcon);
+          }
+        }
+        if (stopBtn) {
+          stopBtn.style.background = grayBg;
+          const svg = stopBtn.querySelector("svg");
+          if (svg) {
+            svg.setAttribute("stroke", grayIcon);
+          }
+        }
+      } else {
+        
+        if (playBtn) {
+          playBtn.style.background = grayBg;
+          const svg = playBtn.querySelector("svg");
+          if (svg) {
+            svg.setAttribute("stroke", grayIcon);
+          }
+        }
+        if (stopBtn) {
+          stopBtn.style.background = linkColor;
+          const svg = stopBtn.querySelector("svg");
+          if (svg) {
+            svg.setAttribute("stroke", whiteIcon);
+          }
+        }
+      }
+    }
 
+    function playSketch(id) {
+      const iframe = document.getElementById(id);
+      if (iframe) {
+        
+        iframe.src =
+          iframe.src.split("?")[0] + "?sketch_only=true&t=" + Date.now();
+        isPlaying = true;
+        updateButtonStates(id, true);
+      }
+    }
+
+    function stopSketch(id) {
+      const iframe = document.getElementById(id);
+      if (iframe && isPlaying) {
+        
+        try {
+          iframe.contentWindow.postMessage({ type: "pause-sketch" }, "*");
+          isPlaying = false;
+          updateButtonStates(id, false);
+        } catch (e) {
+          
+          console.warn("無法發送暫停訊息，嘗試重新載入");
+          iframe.src =
+            iframe.src.split("?")[0] + "?sketch_only=true&t=" + Date.now();
+        }
+      }
+    }
+
+    
+    updateButtonStates(iframeId, true);
+
+    
+    window["playSketch_" + iframeId] = function () {
+      playSketch(iframeId);
+    };
+    window["stopSketch_" + iframeId] = function () {
+      stopSketch(iframeId);
+    };
+
+    
+    window["playSketch"] = function (id) {
+      playSketch(id);
+    };
+    window["stopSketch"] = function (id) {
+      stopSketch(id);
+    };
+  })();
+</script>
+ 
+
+<h2 id="作品結構">作品結構</h2>
+<p>每個 p5.js 作品都是一個獨立的資料夾，包含：</p>
+<ul>
+<li><code>index.md</code> - 這篇文章，用來說明作品和使用方式</li>
+<li><code>sketch.js</code> - p5.js 程式碼檔案</li>
+</ul>
+<h2 id="撰寫-sketchjs">撰寫 sketch.js</h2>
+<p>在 <code>sketch.js</code> 中使用 <strong>p5.js 的 global mode</strong>，可以直接使用 <code>setup()</code> 和 <code>draw()</code> 等函數，不需要 <code>p.</code> 前綴：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setup</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">createCanvas</span>(<span style="color:#a6e22e">windowWidth</span>, <span style="color:#a6e22e">windowHeight</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">background</span>(<span style="color:#ae81ff">255</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">draw</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">circle</span>(<span style="color:#a6e22e">mouseX</span>, <span style="color:#a6e22e">mouseY</span>, <span style="color:#ae81ff">100</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="響應式設計">響應式設計</h3>
+<p>系統會自動處理響應式：</p>
+<ul>
+<li>在獨立頁面模式（<code>?sketch_only=true</code>）下，canvas 會自動適應整個視窗</li>
+<li>在 iframe 嵌入模式下，canvas 會自動適應 iframe 的尺寸</li>
+<li>使用 <code>windowResized()</code> 函數來處理視窗大小變化</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">windowResized</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">resizeCanvas</span>(<span style="color:#a6e22e">windowWidth</span>, <span style="color:#a6e22e">windowHeight</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="在文章中使用">在文章中使用</h2>
+<p>你可以在任何文章中使用 <code>sketch</code> shortcode 來嵌入這個作品：</p>
+<h3 id="基本用法">基本用法</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>{{ &#34;{{&#34; }}&lt; <span style="color:#f92672">sketch</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hello-p5&#34;</span> &gt;{{ &#34;}}&#34; }}
+</span></span></code></pre></div><h3 id="自訂尺寸">自訂尺寸</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>{{ &#34;{{&#34; }}&lt; <span style="color:#f92672">sketch</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hello-p5&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600&#34;</span> &gt;{{ &#34;}}&#34; }}              - 自訂寬度（高度預設 400px）
+</span></span><span style="display:flex;"><span>{{ &#34;{{&#34; }}&lt; <span style="color:#f92672">sketch</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hello-p5&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;400&#34;</span> &gt;{{ &#34;}}&#34; }}  - 自訂寬度和高度
+</span></span><span style="display:flex;"><span>{{ &#34;{{&#34; }}&lt; <span style="color:#f92672">sketch</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hello-p5&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;500&#34;</span> &gt;{{ &#34;}}&#34; }} - 使用百分比寬度
+</span></span></code></pre></div><h3 id="重新播放功能">重新播放功能</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>{{ &#34;{{&#34; }}&lt; <span style="color:#f92672">sketch</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hello-p5&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;400&#34;</span> <span style="color:#a6e22e">reload</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> &gt;{{ &#34;}}&#34; }}
+</span></span></code></pre></div><p>加上 <code>reload=&quot;true&quot;</code> 參數，會在 iframe 上方顯示「重新播放」按鈕，點擊後會重新載入 sketch。</p>
+<h2 id="獨立頁面訪問">獨立頁面訪問</h2>
+<p>每個 sketch 都有一個完全獨立的頁面，只顯示 canvas，沒有任何其他網頁元素：</p>
+<ul>
+<li>訪問方式：<code>/sketches/hello-p5/?sketch_only=true</code></li>
+<li>用途：適合全螢幕展示、測試響應式設計、或分享給他人</li>
+</ul>
+<h2 id="front-matter-參數">Front Matter 參數</h2>
+<p>在 <code>index.md</code> 的 front matter 中可以設定：</p>
+<ul>
+<li><code>canvas_bg</code>: 獨立頁面的背景顏色（預設：<code>&quot;#ffffff&quot;</code>）
+<ul>
+<li>這個參數只影響獨立頁面模式（<code>?sketch_only=true</code>）的背景顏色</li>
+<li>iframe 嵌入時，背景色由 sketch 程式碼中的 <code>background()</code> 函數控制</li>
+</ul>
+</li>
+</ul>
+<h2 id="創作建議">創作建議</h2>
+<ol>
+<li><strong>專注於創作</strong>：在 <code>sketch.js</code> 中只需要專注於 p5.js 程式碼，不需要考慮網頁的其他元素</li>
+<li><strong>使用 global mode</strong>：直接使用 <code>setup()</code>、<code>draw()</code> 等函數，更簡潔直觀</li>
+<li><strong>響應式設計</strong>：使用 <code>windowWidth</code>、<code>windowHeight</code> 和 <code>windowResized()</code> 來處理不同尺寸</li>
+<li><strong>測試獨立頁面</strong>：在開發時，可以訪問 <code>?sketch_only=true</code> 來測試獨立頁面的效果</li>
+</ol>
+
+            </div>
+            
+            <hr>
+            
+            <nav class="post-pagination">
+                
+                    <a class="prev-post" href="/sketches/eclipse/">&larr; Eclipse 蝕</a>
+                
+                
+            </nav>
+        </div>
     </main>
+    
+    
+    
+    <script src="/js/p5.min.js"></script>
+    <script>
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const isSketchOnly = urlParams.get('sketch_only') === 'true';
+            
+            if (isSketchOnly) {
+                
+                document.querySelector('header')?.style.setProperty('display', 'none', 'important');
+                document.querySelector('footer')?.style.setProperty('display', 'none', 'important');
+                document.querySelector('main')?.style.setProperty('display', 'none', 'important');
+                
+                
+                const sketchContainer = document.getElementById('sketch-only-container');
+                if (sketchContainer) {
+                    sketchContainer.style.display = 'block';
+                }
+                
+                
+                document.body.style.margin = '0';
+                document.body.style.padding = '0';
+                document.body.style.overflow = 'hidden';
+                
+            const loadingEl = document.getElementById('p5-loading');
+                const container = document.getElementById('p5-canvas-wrapper');
+            const sketchUrl = '\/sketches\/0_p5js_template\/sketch.js';
+            
+            function loadSketch() {
+                if (typeof p5 === 'undefined') {
+                    setTimeout(loadSketch, 50);
+                    return;
+                }
+                
+                const script = document.createElement('script');
+                script.src = sketchUrl;
+                script.onload = function() {
+                        const observer = new MutationObserver(function(mutations) {
+                            const canvas = document.querySelector('canvas');
+                            if (canvas && container && !container.contains(canvas)) {
+                                container.appendChild(canvas);
+                                
+                                requestAnimationFrame(function() {
+                                    if (typeof windowResized === 'function') {
+                                        windowResized();
+                                    }
+                                });
+                                
+                                observer.disconnect();
+                                if (loadingEl) {
+                                    loadingEl.style.display = 'none';
+                                }
+                                
+                                
+                                if (window.parent !== window.self) {
+                                    window.parent.postMessage({ type: 'sketch-loaded', sketch: 'index' }, '*');
+                                }
+                            }
+                        });
+                        
+                        observer.observe(document.body, {
+                            childList: true,
+                            subtree: true
+                        });
+                        
+                        setTimeout(function() {
+                            const canvas = document.querySelector('canvas');
+                            if (canvas && container && !container.contains(canvas)) {
+                                container.appendChild(canvas);
+                                if (typeof windowResized === 'function') {
+                                    windowResized();
+                                }
+                            }
+                    if (loadingEl) {
+                        loadingEl.style.display = 'none';
+                    }
+                            observer.disconnect();
+                        }, 100);
+                };
+                script.onerror = function() {
+                    if (loadingEl) {
+                            loadingEl.innerHTML = '<p style="color: #d32f2f;">載入失敗</p>';
+                    }
+                };
+                document.head.appendChild(script);
+            }
+            
+                
+                window.addEventListener('message', function(event) {
+                    if (event.data && event.data.type === 'reload-sketch') {
+                        location.reload();
+                    }
+                });
+                
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', loadSketch);
+            } else {
+                loadSketch();
+                }
+            }
+        })();
+    </script>
+    
 <footer>
     <div class="social-media">
         
