@@ -55,6 +55,11 @@ body {
   overflow-x: hidden; /* 防止橫向捲軸 */
 }
 
+p {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
 .post {
   width: 100%;
   box-sizing: border-box;
