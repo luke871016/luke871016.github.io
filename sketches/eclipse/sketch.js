@@ -11,6 +11,10 @@ let scaleRatio = 1;
 let canvasWidth = BASE_WIDTH;
 let canvasHeight = BASE_HEIGHT;
 let p5Initialized = false;
+let y = 0; // 初始化 y 變數
+let sunX = 0; // 太陽 X 座標
+let sunY = 0; // 太陽 Y 座標
+let sunD = 0; // 太陽直徑
 
 // 監聽來自父頁面的控制訊息
 window.addEventListener("message", function (event) {
@@ -32,16 +36,31 @@ function setup() {
     // 如果沒有容器，使用預設尺寸
     createCanvas(BASE_WIDTH, BASE_HEIGHT);
     pixelDensity(1);
-    background(0);
+
+    // 初始化 y 變數和太陽位置
+    y = random(300, 400);
+    sunX = random(100, BASE_WIDTH - 100);
+    sunY = random(50, 150);
+    sunD = random(30, 50);
+
+    // 繪製背景和太陽
+    drawBackgroundAndSun();
+
     p5Initialized = true; // 標記 p5.js 已初始化
     return;
   }
 
-  // 計算容器尺寸
-  const containerWidth =
+  // 計算容器尺寸（使用 requestAnimationFrame 確保 DOM 已準備好）
+  let containerWidth =
     container.offsetWidth || container.clientWidth || window.innerWidth;
-  const containerHeight =
+  let containerHeight =
     container.offsetHeight || container.clientHeight || window.innerHeight;
+
+  // 如果容器尺寸為 0，使用視窗尺寸
+  if (containerWidth === 0 || containerHeight === 0) {
+    containerWidth = window.innerWidth;
+    containerHeight = window.innerHeight;
+  }
 
   // 計算縮放比例（保持寬高比）
   const scaleX = containerWidth / BASE_WIDTH;
@@ -52,8 +71,14 @@ function setup() {
   canvasWidth = BASE_WIDTH * scaleRatio;
   canvasHeight = BASE_HEIGHT * scaleRatio;
 
-  // 建立 canvas
+  // 建立 canvas（p5.js 會自動將它添加到 body）
   createCanvas(canvasWidth, canvasHeight);
+
+  // 確保 canvas 在容器中（如果還沒有）
+  const canvas = document.querySelector("canvas");
+  if (canvas && container && !container.contains(canvas)) {
+    container.appendChild(canvas);
+  }
 
   // 根據縮放比例和設備像素比設定 pixelDensity
   // 目標：維持相同的視覺 PPI（每英寸像素數）
@@ -65,56 +90,27 @@ function setup() {
   const finalDensity = Math.max(1, Math.min(targetDensity, 3));
   pixelDensity(finalDensity);
 
+  // 初始化 y 變數和太陽位置
+  y = random(300, 400);
+  sunX = random(100, BASE_WIDTH - 100);
+  sunY = random(50, 150);
+  sunD = random(30, 50);
+
+  // 繪製背景和太陽
+  drawBackgroundAndSun();
+
   // 標記 p5.js 已初始化，現在可以安全使用 noLoop() 和 loop()
   p5Initialized = true;
 }
 
-function windowResized() {
-  // 取得容器
-  const container = document.getElementById("p5-canvas-wrapper");
-  if (!container) return;
-
-  // 計算容器尺寸
-  const containerWidth =
-    container.offsetWidth || container.clientWidth || window.innerWidth;
-  const containerHeight =
-    container.offsetHeight || container.clientHeight || window.innerHeight;
-
-  // 計算縮放比例（保持寬高比）
-  const scaleX = containerWidth / BASE_WIDTH;
-  const scaleY = containerHeight / BASE_HEIGHT;
-  scaleRatio = min(scaleX, scaleY);
-
-  // 計算實際 canvas 尺寸
-  canvasWidth = BASE_WIDTH * scaleRatio;
-  canvasHeight = BASE_HEIGHT * scaleRatio;
-
-  // 調整 canvas 大小
-  resizeCanvas(canvasWidth, canvasHeight);
-
-  // 根據縮放比例和設備像素比設定 pixelDensity（與 setup 中相同的邏輯）
-  const devicePixelRatio = window.devicePixelRatio || 1;
-  const targetDensity = devicePixelRatio * scaleRatio;
-
-  // 限制在合理範圍內（1-3）以平衡畫質和效能
-  const finalDensity = Math.max(1, Math.min(targetDensity, 3));
-  pixelDensity(finalDensity);
-
-  // 重新繪製以應用新的縮放比例
-  redraw();
-
-  push();
-
-  scale(scaleRatio);
-
+// 繪製背景和太陽的函數（可在 setup 和 windowResized 中重用）
+function drawBackgroundAndSun() {
+  // 設定背景
   background(10);
 
-  y = random(300, 400);
-
-  let sunX = random(100, BASE_WIDTH - 100);
-  let sunY = random(50, 150);
-
-  let sunD = random(30, 50);
+  // 繪製太陽（使用縮放後的座標系統）
+  push();
+  scale(scaleRatio);
 
   push();
   translate(sunX, sunY);
@@ -131,6 +127,48 @@ function windowResized() {
 
   pop();
 }
+
+// function windowResized() {
+//   // 取得容器
+//   const container = document.getElementById("p5-canvas-wrapper");
+//   if (!container) return;
+
+//   // 如果 p5.js 還沒初始化完成，不執行
+//   if (!p5Initialized) return;
+
+//   // 計算容器尺寸
+//   const containerWidth =
+//     container.offsetWidth || container.clientWidth || window.innerWidth;
+//   const containerHeight =
+//     container.offsetHeight || container.clientHeight || window.innerHeight;
+
+//   // 計算縮放比例（保持寬高比）
+//   const scaleX = containerWidth / BASE_WIDTH;
+//   const scaleY = containerHeight / BASE_HEIGHT;
+//   scaleRatio = min(scaleX, scaleY);
+
+//   // 計算實際 canvas 尺寸
+//   canvasWidth = BASE_WIDTH * scaleRatio;
+//   canvasHeight = BASE_HEIGHT * scaleRatio;
+
+//   // 調整 canvas 大小（這會清除 canvas 內容）
+//   resizeCanvas(canvasWidth, canvasHeight);
+
+//   // 根據縮放比例和設備像素比設定 pixelDensity（與 setup 中相同的邏輯）
+//   const devicePixelRatio = window.devicePixelRatio || 1;
+//   const targetDensity = devicePixelRatio * scaleRatio;
+
+//   // 限制在合理範圍內（1-3）以平衡畫質和效能
+//   const finalDensity = Math.max(1, Math.min(targetDensity, 3));
+//   pixelDensity(finalDensity);
+
+//   // 重新繪製背景和太陽（因為 resizeCanvas 會清除內容）
+//   drawBackgroundAndSun();
+
+//   // 重新繪製以應用新的縮放比例
+//   // 注意：redraw() 只會調用一次 draw()，所以不會影響動畫循環
+//   redraw();
+// }
 
 function draw() {
   push();

@@ -82,6 +82,7 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     
     
     <div id="sketch-only-container" style="display: none;">
+        
         <div id="p5-canvas-wrapper" style="width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999; background-color: #000; display: flex; align-items: center; justify-content: center;"></div>
         <div id="p5-loading" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #666; font-family: sans-serif; z-index: 10000;">載入中...</div>
     </div>
@@ -415,47 +416,60 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
                 const script = document.createElement('script');
                 script.src = sketchUrl;
                 script.onload = function() {
-                        const observer = new MutationObserver(function(mutations) {
-                            const canvas = document.querySelector('canvas');
-                            if (canvas && container && !container.contains(canvas)) {
+                    
+                    let attempts = 0;
+                    const maxAttempts = 100; 
+                    const checkCanvas = function() {
+                        const canvas = document.querySelector('canvas');
+                        if (canvas) {
+                            
+                            if (container && !container.contains(canvas)) {
                                 container.appendChild(canvas);
-                                
-                                requestAnimationFrame(function() {
+                            }
+                            
+                            
+                            requestAnimationFrame(function() {
+                                setTimeout(function() {
                                     if (typeof windowResized === 'function') {
                                         windowResized();
                                     }
-                                });
-                                
-                                observer.disconnect();
-                                if (loadingEl) {
-                                    loadingEl.style.display = 'none';
-                                }
-                                
-                                
-                                if (window.parent !== window.self) {
-                                    window.parent.postMessage({ type: 'sketch-loaded', sketch: 'index' }, '*');
-                                }
+                                    if (loadingEl) {
+                                        loadingEl.style.display = 'none';
+                                    }
+                                    
+                                    if (window.parent !== window.self) {
+                                        window.parent.postMessage({ type: 'sketch-loaded', sketch: 'index' }, '*');
+                                    }
+                                }, 100);
+                            });
+                        } else if (attempts < maxAttempts) {
+                            attempts++;
+                            setTimeout(checkCanvas, 50);
+                        } else {
+                            
+                            if (loadingEl) {
+                                loadingEl.innerHTML = '<p style="color: #d32f2f;">無法載入 canvas</p>';
                             }
-                        });
-                        
-                        observer.observe(document.body, {
-                            childList: true,
-                            subtree: true
-                        });
-                        
-                        setTimeout(function() {
-                            const canvas = document.querySelector('canvas');
-                            if (canvas && container && !container.contains(canvas)) {
-                                container.appendChild(canvas);
-                                if (typeof windowResized === 'function') {
-                                    windowResized();
-                                }
-                            }
-                    if (loadingEl) {
-                        loadingEl.style.display = 'none';
-                    }
+                            console.error('無法找到 canvas 元素，可能 sketch.js 載入失敗或 setup() 未執行');
+                        }
+                    };
+                    
+                    
+                    const observer = new MutationObserver(function(mutations) {
+                        const canvas = document.querySelector('canvas');
+                        if (canvas) {
+                            checkCanvas();
                             observer.disconnect();
-                        }, 100);
+                        }
+                    });
+                    
+                    observer.observe(document.body, {
+                        childList: true,
+                        subtree: true
+                    });
+                    
+                    
+                    checkCanvas();
                 };
                 script.onerror = function() {
                     if (loadingEl) {
