@@ -58,7 +58,7 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "p5.js 創作模板",
-  "description": "\u003cp\u003e這是一个 p5.js 創作模板，提供完整的畫布尺寸調整、響應式設計和暫停\/播放功能。\u003c\/p\u003e\n\u003ch2 id=\u0022使用方式\u0022\u003e使用方式\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e複製模板資料夾\u003c\/strong\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e複製 \u003ccode\u003e0_p5js_template\u003c\/code\u003e 資料夾\u003c\/li\u003e\n\u003cli\u003e重新命名為你的作品名稱（例如：\u003ccode\u003emy-sketch\u003c\/code\u003e）\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e修改 \u003ccode\u003eindex.md\u003c\/code\u003e\u003c\/strong\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e設定標題、日期、標籤等 Front Matter\u003c\/li\u003e\n\u003cli\u003e使用 \u003ccode\u003e {{\u0026lt; sketch name=\u0026quot;your-sketch-name\u0026quot; width=\u0026quot;500px\u0026quot; height=\u0026quot;700px\u0026quot; \u0026gt;}}\u003c\/code\u003e 嵌入作品\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e修改 \u003ccode\u003esketch.js\u003c\/code\u003e\u003c\/strong\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e調整 \u003ccode\u003eBASE_WIDTH\u003c\/code\u003e 和 \u003ccode\u003eBASE_HEIGHT\u003c\/code\u003e 為你的設計尺寸\u003c\/li\u003e\n\u003cli\u003e在 \u003ccode\u003esetup()\u003c\/code\u003e 函數中初始化你的變數\u003c\/li\u003e\n\u003cli\u003e在 \u003ccode\u003edraw()\u003c\/code\u003e 函數中撰寫你的創作程式碼\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003ch2 id=\u0022重要參數說明\u0022\u003e重要參數說明\u003c\/h2\u003e\n\u003ch3 id=\u0022base_width-和-base_height\u0022\u003eBASE_WIDTH 和 BASE_HEIGHT\u003c\/h3\u003e\n\u003cp\u003e這是你的設計基準尺寸。所有座標系統都基於這個尺寸，實際顯示時會自動縮放。\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-javascript\u0022 data-lang=\u0022javascript\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003econst\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003eBASE_WIDTH\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e500\u003c\/span\u003e; \u003cspan style=\u0022color:#75715e\u0022\u003e\/\/ 你的設計寬度\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#75715e\u0022\u003e\u003c\/span\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003econst\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003eBASE_HEIGHT\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e700\u003c\/span\u003e; \u003cspan style=\u0022color:#75715e\u0022\u003e\/\/ 你的設計高度\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003ch3 id=\u0022座標系統\u0022\u003e座標系統\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e在 \u003ccode\u003edraw()\u003c\/code\u003e 函數中，你可以直接使用 \u003ccode\u003eBASE_WIDTH\u003c\/code\u003e 和 \u003ccode\u003eBASE_HEIGHT\u003c\/code\u003e 作為參考\u003c\/li\u003e\n\u003cli\u003e例如：\u003ccode\u003ecircle(BASE_WIDTH \/ 2, BASE_HEIGHT \/ 2, 50)\u003c\/code\u003e 會在畫布中心繪製圓形\u003c\/li\u003e\n\u003cli\u003e\u003ccode\u003emouseX\u003c\/code\u003e 和 \u003ccode\u003emouseY\u003c\/code\u003e 需要除以 \u003ccode\u003escaleRatio\u003c\/code\u003e 來取得正確座標：\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-javascript\u0022 data-lang=\u0022javascript\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003elet\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003emx\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003emouseX\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e\/\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003escaleRatio\u003c\/span\u003e;\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003elet\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003emy\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003emouseY\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e\/\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003escaleRatio\u003c\/span\u003e;\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022變數初始化\u0022\u003e變數初始化\u003c\/h3\u003e\n\u003cp\u003e在 \u003ccode\u003esetup()\u003c\/code\u003e 函數中初始化你的變數，例如：\u003c\/p\u003e",
+  "description": "\u003cp\u003eMade for Genuary2025-28 \u0026quot;Infinite Scroll.\u0026quot;\u003c\/p\u003e\n\u003ch2 id=\u0022使用方式\u0022\u003e使用方式\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e複製模板資料夾\u003c\/strong\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e複製 \u003ccode\u003e0_p5js_template\u003c\/code\u003e 資料夾\u003c\/li\u003e\n\u003cli\u003e重新命名為你的作品名稱（例如：\u003ccode\u003emy-sketch\u003c\/code\u003e）\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e修改 \u003ccode\u003eindex.md\u003c\/code\u003e\u003c\/strong\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e設定標題、日期、標籤等 Front Matter\u003c\/li\u003e\n\u003cli\u003e使用 \u003ccode\u003e \u003c\/code\u003e 嵌入作品\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e修改 \u003ccode\u003esketch.js\u003c\/code\u003e\u003c\/strong\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e調整 \u003ccode\u003eBASE_WIDTH\u003c\/code\u003e 和 \u003ccode\u003eBASE_HEIGHT\u003c\/code\u003e 為你的設計尺寸\u003c\/li\u003e\n\u003cli\u003e在 \u003ccode\u003esetup()\u003c\/code\u003e 函數中初始化你的變數\u003c\/li\u003e\n\u003cli\u003e在 \u003ccode\u003edraw()\u003c\/code\u003e 函數中撰寫你的創作程式碼\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003ch2 id=\u0022重要參數說明\u0022\u003e重要參數說明\u003c\/h2\u003e\n\u003ch3 id=\u0022base_width-和-base_height\u0022\u003eBASE_WIDTH 和 BASE_HEIGHT\u003c\/h3\u003e\n\u003cp\u003e這是你的設計基準尺寸。所有座標系統都基於這個尺寸，實際顯示時會自動縮放。\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-javascript\u0022 data-lang=\u0022javascript\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003econst\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003eBASE_WIDTH\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e500\u003c\/span\u003e; \u003cspan style=\u0022color:#75715e\u0022\u003e\/\/ 你的設計寬度\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#75715e\u0022\u003e\u003c\/span\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003econst\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003eBASE_HEIGHT\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e700\u003c\/span\u003e; \u003cspan style=\u0022color:#75715e\u0022\u003e\/\/ 你的設計高度\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003ch3 id=\u0022座標系統\u0022\u003e座標系統\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e在 \u003ccode\u003edraw()\u003c\/code\u003e 函數中，你可以直接使用 \u003ccode\u003eBASE_WIDTH\u003c\/code\u003e 和 \u003ccode\u003eBASE_HEIGHT\u003c\/code\u003e 作為參考\u003c\/li\u003e\n\u003cli\u003e例如：\u003ccode\u003ecircle(BASE_WIDTH \/ 2, BASE_HEIGHT \/ 2, 50)\u003c\/code\u003e 會在畫布中心繪製圓形\u003c\/li\u003e\n\u003cli\u003e\u003ccode\u003emouseX\u003c\/code\u003e 和 \u003ccode\u003emouseY\u003c\/code\u003e 需要除以 \u003ccode\u003escaleRatio\u003c\/code\u003e 來取得正確座標：\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-javascript\u0022 data-lang=\u0022javascript\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003elet\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003emx\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003emouseX\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e\/\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003escaleRatio\u003c\/span\u003e;\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003elet\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003emy\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003emouseY\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e\/\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003escaleRatio\u003c\/span\u003e;\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003ch3 id=\u0022變數初始化\u0022\u003e變數初始化\u003c\/h3\u003e\n\u003cp\u003e在 \u003ccode\u003esetup()\u003c\/code\u003e 函數中初始化你的變數，例如：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-javascript\u0022 data-lang=\u0022javascript\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003elet\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003ex\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e0\u003c\/span\u003e;\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003elet\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003ey\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003eBASE_HEIGHT\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e\/\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e2\u003c\/span\u003e;\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003e\u003cspan style=\u0022color:#66d9ef\u0022\u003elet\u003c\/span\u003e \u003cspan style=\u0022color:#a6e22e\u0022\u003espeed\u003c\/span\u003e \u003cspan style=\u0022color:#f92672\u0022\u003e=\u003c\/span\u003e \u003cspan style=\u0022color:#ae81ff\u0022\u003e2\u003c\/span\u003e;\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003ch3 id=\u0022背景設定\u0022\u003e背景設定\u003c\/h3\u003e\n\u003cp\u003e如果需要設定背景色，在 \u003ccode\u003esetup()\u003c\/code\u003e 中呼叫：\u003c\/p\u003e",
   "author": {
     "@type": "Person",
     "name": "陳建中｜Tân Kiàn-tiong"
@@ -93,8 +93,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
             <div>
                 <h1 class="p-name" id="textOverlay">p5.js 創作模板</h1>
                 
-                <p class="subtitle">#WCCChallenge topic &#34;Eclipse 🌑&#34;</p>
-                
             </div>
             <div class="post-data row">
                 <time class="dt-published" datetime="0001-01-01 00:00:00 &#43;0000 UTC">
@@ -116,7 +114,7 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
             </div>
             
             <div class="e-content">
-                <p>這是一个 p5.js 創作模板，提供完整的畫布尺寸調整、響應式設計和暫停/播放功能。</p>
+                <p>Made for Genuary2025-28 &quot;Infinite Scroll.&quot;</p>
 <h2 id="使用方式">使用方式</h2>
 <ol>
 <li>
@@ -130,7 +128,7 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
 <p><strong>修改 <code>index.md</code></strong></p>
 <ul>
 <li>設定標題、日期、標籤等 Front Matter</li>
-<li>使用 <code> {{&lt; sketch name=&quot;your-sketch-name&quot; width=&quot;500px&quot; height=&quot;700px&quot; &gt;}}</code> 嵌入作品</li>
+<li>使用 <code> </code> 嵌入作品</li>
 </ul>
 </li>
 <li>
@@ -236,9 +234,7 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
 </ol>
 <h2 id="嵌入到其他文章">嵌入到其他文章</h2>
 <p>在其他文章中使用 shortcode 嵌入：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>      
-           
-        
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>                                  
 <div
   style="
     padding: 2em;
@@ -314,33 +310,36 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
                     
                     let attempts = 0;
                     const maxAttempts = 100; 
+                    let canvasFound = false;
+                    
                     const checkCanvas = function() {
                         const canvas = document.querySelector('canvas');
-                        if (canvas) {
+                        if (canvas && !canvasFound) {
+                            canvasFound = true;
+                            
                             
                             if (container && !container.contains(canvas)) {
                                 container.appendChild(canvas);
                             }
                             
                             
+                            
                             requestAnimationFrame(function() {
-                                setTimeout(function() {
-                                    if (typeof windowResized === 'function') {
-                                        windowResized();
-                                    }
-                                    if (loadingEl) {
-                                        loadingEl.style.display = 'none';
-                                    }
+                                
+                                if (typeof windowResized === 'function') {
                                     
-                                    if (window.parent !== window.self) {
-                                        window.parent.postMessage({ type: 'sketch-loaded', sketch: 'index' }, '*');
-                                    }
-                                }, 100);
+                                    requestAnimationFrame(function() {
+                                        windowResized();
+                                        finishLoading();
+                                    });
+                                } else {
+                                    finishLoading();
+                                }
                             });
-                        } else if (attempts < maxAttempts) {
+                        } else if (!canvasFound && attempts < maxAttempts) {
                             attempts++;
                             setTimeout(checkCanvas, 50);
-                        } else {
+                        } else if (!canvasFound && attempts >= maxAttempts) {
                             
                             if (loadingEl) {
                                 loadingEl.innerHTML = '<p style="color: #d32f2f;">無法載入 canvas</p>';
@@ -349,12 +348,24 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
                         }
                     };
                     
+                    const finishLoading = function() {
+                        if (loadingEl) {
+                            loadingEl.style.display = 'none';
+                        }
+                        
+                        if (window.parent !== window.self) {
+                            window.parent.postMessage({ type: 'sketch-loaded', sketch: 'index' }, '*');
+                        }
+                    };
+                    
                     
                     const observer = new MutationObserver(function(mutations) {
-                        const canvas = document.querySelector('canvas');
-                        if (canvas) {
-                            checkCanvas();
-                            observer.disconnect();
+                        if (!canvasFound) {
+                            const canvas = document.querySelector('canvas');
+                            if (canvas) {
+                                checkCanvas();
+                                observer.disconnect();
+                            }
                         }
                     });
                     
@@ -398,7 +409,7 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         <a class="u-url" href="http://localhost:1313/">
             <img alt="Site Logo" class="site-logo u-photo" src="/images/logo.png"/>
         </a>
-        <p>2025
+        <p>2026
             陳建中｜Tân Kiàn-tiong</p>
     </div>
     <nav>
@@ -417,12 +428,56 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     window.store = {
     
     
+    "http:\/\/localhost:1313\/sketches\/": {
+        
+        "title": "Creative Coding Sketches",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/sketches\/",
+    "image": "",
+    "description": "建中的程式藝術創作"
+        },
+    
+    
+    "http:\/\/localhost:1313\/sketches\/genuary2026_1\/": {
+        
+        "title": "One color, one shape.",
+            "tags": [ "", ],
+    "content": "hello\nOne color, one shape. ", 
+    "url": "http:\/\/localhost:1313\/sketches\/genuary2026_1\/",
+    "image": "\/images\/",
+    "description": ""
+        },
+    
+    
+    "http:\/\/localhost:1313\/sutian\/46\/": {
+        
+        "title": "2025 教典更新 Recap",
+            "tags": [ "台文",  "教典",  "講座", ],
+    "content": "年底到矣，逐平台攏咧做年度回顧，這篇文章𤆬你來回顧今年教典攏總有修改啥物所在！\n這篇文章會比對 2024/12/10 ~ 2025/12/10 教典文字資料的所有修改，盡量共所有的更新重點報予逐家知，文章嘛會附完整的辭典差異比較報告予逐家參考。歡迎逐家提轉去加研究。\n今年實際上攏總新增加 1744 个詞目，其中包含 278 个主詞目、47 个附錄、 449 个華台共同詞佮 962 條近反義詞不單列詞目者；刣掉 288 條詞目；另外有 643 个詞目有修改內容。\n", 
+    "url": "http:\/\/localhost:1313\/sutian\/46\/",
+    "image": "\/images\/kautian46-cover.png",
+    "description": "2025 教典更新 Recap"
+        },
+    
+    
     "http:\/\/localhost:1313\/language_type\/": {
         
         "title": "Language_type",
             "tags": [],
     "content": "", 
     "url": "http:\/\/localhost:1313\/language_type\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
+    "http:\/\/localhost:1313\/series\/": {
+        
+        "title": "Series",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/series\/",
     "image": "",
     "description": ""
         },
@@ -450,17 +505,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         },
     
     
-    "http:\/\/localhost:1313\/tags\/%E5%85%AC%E8%A6%96%E5%8F%B0%E8%AA%9E%E5%8F%B0\/": {
-        
-        "title": "公視台語台",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/tags\/%E5%85%AC%E8%A6%96%E5%8F%B0%E8%AA%9E%E5%8F%B0\/",
-    "image": "",
-    "description": ""
-        },
-    
-    
     "http:\/\/localhost:1313\/tags\/%E8%AC%9B%E5%BA%A7\/": {
         
         "title": "講座",
@@ -472,12 +516,56 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         },
     
     
+    "http:\/\/localhost:1313\/tags\/%E6%95%99%E5%85%B8\/": {
+        
+        "title": "教典",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/tags\/%E6%95%99%E5%85%B8\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
+    "http:\/\/localhost:1313\/series\/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98\/": {
+        
+        "title": "教典僻智識",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/series\/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
     "http:\/\/localhost:1313\/tags\/%E5%8F%B0%E6%96%87\/": {
         
         "title": "台文",
             "tags": [],
     "content": "", 
     "url": "http:\/\/localhost:1313\/tags\/%E5%8F%B0%E6%96%87\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
+    "http:\/\/localhost:1313\/sutian\/": {
+        
+        "title": "字辭典僻智識",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/sutian\/",
+    "image": "",
+    "description": "有關台語字辭典的各種細節佮特性，介紹予你聽"
+        },
+    
+    
+    "http:\/\/localhost:1313\/tags\/%E5%85%AC%E8%A6%96%E5%8F%B0%E8%AA%9E%E5%8F%B0\/": {
+        
+        "title": "公視台語台",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/tags\/%E5%85%AC%E8%A6%96%E5%8F%B0%E8%AA%9E%E5%8F%B0\/",
     "image": "",
     "description": ""
         },
@@ -513,17 +601,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     "url": "http:\/\/localhost:1313\/sutian\/sintaigi\/",
     "image": "\/images\/sintaigi.png",
     "description": "公視台語台新興詞彙華台對譯推廣講座的講座補充資料"
-        },
-    
-    
-    "http:\/\/localhost:1313\/sutian\/": {
-        
-        "title": "字辭典僻智識",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/sutian\/",
-    "image": "",
-    "description": "有關台語字辭典的各種細節佮特性，介紹予你聽"
         },
     
     
@@ -568,39 +645,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     "url": "http:\/\/localhost:1313\/sutian\/45\/",
     "image": "\/images\/kautian45-cover.png",
     "description": "活用教典101"
-        },
-    
-    
-    "http:\/\/localhost:1313\/series\/": {
-        
-        "title": "Series",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/series\/",
-    "image": "",
-    "description": ""
-        },
-    
-    
-    "http:\/\/localhost:1313\/tags\/%E6%95%99%E5%85%B8\/": {
-        
-        "title": "教典",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/tags\/%E6%95%99%E5%85%B8\/",
-    "image": "",
-    "description": ""
-        },
-    
-    
-    "http:\/\/localhost:1313\/series\/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98\/": {
-        
-        "title": "教典僻智識",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/series\/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98\/",
-    "image": "",
-    "description": ""
         },
     
     
@@ -659,14 +703,69 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         },
     
     
-    "http:\/\/localhost:1313\/sutian\/42\/": {
+    "http:\/\/localhost:1313\/language_type\/bilingual\/": {
         
-        "title": "教典的閩南相關用詞重整理",
+        "title": "Bilingual",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/language_type\/bilingual\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
+    "http:\/\/localhost:1313\/jihing\/tshut_tiunn_ke\/": {
+        
+        "title": "出張架 Tshut-tiunn-kè",
+            "tags": [ "台華雙文",  "台文",  "華文", ],
+    "content": " ℹ️ 有關這篇文章 這篇文章是源自聯合文學雜誌編舟計畫編輯邀請我寫的稿，華文原文刊佇 2025 年 5 月聯合文學雜誌，這馬又閣重寫做台文版刊佇我的網頁，嘛會投稿去台文通訊 BONG 報。 忙碌的鑄字行裡面，鑄字師傅將鉛角（iân-kak，鉛錠）熔成鉛水（iân-tsuí），再透過銅模（tâng-bôo）將鉛水鑄造成一個又一個的鉛字，雖然是「鑄字行」，但鑄字機其實只佔店裡的一個小角落，店裡絕大多數的空間都是存放鉛字的「字架仔（jī-kè-á）」。\n抾字師傅（khioh-jī sai-hū）在字架仔前來來去去，快速地將今天需要的字從架上一一取出，放入檢字盒，熟練的師傅一天可以完成上萬字的檢字工作，憑藉經驗與直覺就能快速地知道每個鉛字放在架上的哪個方向。鉛字在架上整齊地排排站成整面牆，就像本攤開的字典，除了依部首、筆畫排列，還依照常用度分成了三個區塊。少用的漢字放在「罕用字架（hán-iōng-jī-kè）」，較常用的漢字放在「常用字架（siong-iông-jī-kè）」，放置最常用的漢字的架子則有一個特別的名字：出張架（tshut-tiunn-kè）。\n出張（tshut-tiunn）源自日語「出張（しゅっちょう）」，意為出差，放在出張架的鉛字幾乎每天都會用到，就好比每天都需要出差而得其名。出張架上面放置最常用的漢字，例如基本的人稱代詞「你、我、他」，在活版印刷業最強盛的時期最主要印刷物為報紙，因此如「年、月、日、民國」等字也在出張架上。\n在數位印刷、數位字型逐漸取代傳統鉛字的過程中，「漢字的常用度」此一概念也有被納入標準與電腦技術規格中，教育部於一九八二年公布「常用國字標準字體表」以及「次常用國字標準字體表」，後續成為台灣電腦主流編碼標準 BIG-5 的基礎，而後也被整合入全球標準 Unicode 當中，字型設計師與廠商製作字型時也會依常用度決定字型的覆蓋範圍。\n可惜的是，台語文在這段文字數位轉型的歷史被忽視與遺忘，許多常用字如第三人稱代名詞「𪜶（in）」、形容厲害的「𠢕（gâu）」在現代電腦系統的基本字體都無法正常顯示。羅馬字的調符（如 pe̍h、m̄ 等等）以及傳統白話字的 o͘ 韻母也會遇到字型支援問題。\n儘管活版印刷最初引入台灣其實就是為了台語文，馬雅各牧師帶來台灣的第一台印刷機，以及巴克禮牧師所成立的印刷所「聚珍堂（Tsū-tin-tông）」，其目的就是用來印製以臺語白話字（Pe̍h-uē-jī）書寫的《台灣府城教會報（Tâi-uân Hú-siânn Kàu-huē-pò）》1，鉛字最繁盛的時代也曾有豐富的漢字台文歌仔冊印刷品，但在數位文字標準建立的過程中，因爲語言政策與環境的種種因素，台語文終究被邊緣化。電腦文字標準本應配合語言，台語文的文字標準卻需要反過來配合電腦規格2。\n值得慶幸的是，經過眾多先賢的努力，如今 Unicode 已收錄教育部的所有台語文漢字，羅馬字的各種調符也都可以透過字型特性處理，教育部更於二〇二四年公告《教育部本土語言成果參考字表》供廠商參考，字型廠商 justfont 公告的 jf7000 參考字表也有「本土語言擴充包」，涵蓋台語、客語、原住民語相關的需求。相信只要持續努力普及本土語文意識與需求，各個語言的文字在電腦中，最終都能平坐徛（pênn-tsē-khiā，平起平坐）。\n臺語白話字寫做 \u0026quot;Pe̍h-ōe-jī(白話字)\u0026quot;, \u0026quot;Chū-tin-tông(聚珍堂)\u0026quot;, \u0026quot;Tâi-oân Hú-siâⁿ Kàu-hōe-pò(台灣府城教會報)\u0026quot;\u0026#160;\u0026#x21a9;\u0026#xfe0e;\n在兩千年代前後許多發明或改動台語文拼寫文字的方案常常都以「配合電腦能顯示」為訴求，如使用數字取代傳統調符、使用 ou/oo 取代 o͘ 等作法，都是台語文在文字數位化過程趨於劣勢所做的妥協。\u0026#160;\u0026#x21a9;\u0026#xfe0e;\n鑄字行內底當咧無閒𩑾𩑾，鑄字師傅操作鑄字機，共鉛角熔做鉛水，閣共鉛水灌入去銅模，共鉛字一个一个鑄出來。雖然講者是「鑄字行」，毋過鑄字機其實佔規間店細細塊的空間，遮多數的所在攏是囥鉛字的「字架仔」。\n抾字師傅佇字架仔頭前來去，跤手真猛掠共今仔日欲愛的鉛字對架仔頂抾入去盒仔內底。一个師傅若欲出師，一工著愛通抾萬幾个字才會用得。師傅靠𪜶的經驗佮直覺，隨就知影佗一字佇佗一个方向。鉛字佇架仔頂排做壁，若親像是規本字典展開徛咧。除了照部首、筆畫排列，閣照常用度分做三个區域。\n", 
+    "url": "http:\/\/localhost:1313\/jihing\/tshut_tiunn_ke\/",
+    "image": "",
+    "description": "2025年5月刊佇聯合文學雜誌，有關鉛字、台語文字型佮編碼的短文"
+        },
+    
+    
+    "http:\/\/localhost:1313\/tags\/%E8%8F%AF%E6%96%87\/": {
+        
+        "title": "華文",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/tags\/%E8%8F%AF%E6%96%87\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
+    "http:\/\/localhost:1313\/tags\/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87\/": {
+        
+        "title": "台華雙文",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/tags\/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
+    "http:\/\/localhost:1313\/jihing\/": {
+        
+        "title": "字型",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/jihing\/",
+    "image": "",
+    "description": "有關台語文字型的文章"
+        },
+    
+    
+    "http:\/\/localhost:1313\/sutian\/%E8%A9%9E%E7%9B%AE%E7%94%A8%E4%BF%97%E9%9F%B3_draft\/": {
+        
+        "title": "幾若个趣味的連字符號佮輕聲的案例",
             "tags": [ "台文",  "教典",  "教典改版",  "語言名稱", ],
-    "content": " 2025 新詞目「滑溜 ku̍t-liū」的例句\n教典佇舊年 8 月正式照國家語言發展報告的語言名稱建議用詞改名做「教育部臺灣台語常用詞辭典」，相關的網站佮文件像包含「臺灣閩南語羅馬字拼音方案」、「臺灣閩南語動畫網」、「臺灣閩南語能力認證考試」等等的全部攏改做臺灣台語矣，到今賰課綱猶未改爾。1\n舊年八月辭典雖然有改名，內文的語言相關用詞煞無調整，無論是例句、義項攏猶是維持舊的文字。這个問題窮實是無遐爾簡單，毋是直接共所有的「閩南」取代做「臺灣」就會用得，真正咧講「中國閩南地區」的文字就是無應該修改的部份。所以有關這个問題真正是需要逐條校對佮修改。舊年我寄批共團隊問的時陣𪜶就應講有整理相關的文字項目予編輯委員處理矣。\n經過一冬，教典佇今年八月底有整理過遮的用詞矣，我共所有修改的項目攏整理佇這篇文章予逐家參考，毋知這个修改有符合逐家的理想無？歡迎來討論。\n語言相關用詞整理的規則 辭典猶未針對這改的修改原則做任何的公告，就我的觀察，應該是照下底五个規則咧做修改：\n原底義項佮例句華語解說內底的「臺灣話」、「臺語」、「閩南語」、「閩南話」多數攏改「臺灣台語」，有的毋免講語言意思嘛會通的就規氣提掉。 原底例句有「臺語」佮「臺灣話」，攏改做其他例句矣，2025 新詞目【 滑溜 ku̍t-liū 】的例句有「台語」，對應的華語解說寫「臺灣台語」 「華語」多數攏維持寫「華語」，並列咧比較的情境才會寫「臺灣華語」（見【 聲調 siann-tiāu 】條目） 「客語」干焦出現佇 【入聲 ji̍p-siann】 條目，是佮台語並列的情形，用詞改「臺灣客語」 真正咧指稱福建南部的「閩南文化」、「閩南傳統」、「閩南菜系」、「閩南粽」、「閩南地區」等等的用詞保留。 下跤是我提 8.12 佮 8.30 兩个時間的教典文字資料做比對的整理，整理所有有關語言名稱的文字修改，標題攏有教典詞目的連結，揤 lueh 就會當看著上新的網頁內容。\n例句修改內容 下跤的四个例句是以早教典例句內底有出現「臺語」、「臺灣話」的例，這改攏共改做其他內容，這馬干焦今年新的 滑溜 ku̍t-liū 詞目內底有講著「Tâi-gí」，漢字是「台語」、對應華語是「臺灣台語」。\n可能是「走音 tsáu-im」詞目的外國人佮「滑溜 ku̍t-liū」詞目的傳教士是仝一位，以早講台語會走音，這馬是學甲真滑溜矣，華語猶咧學所以會走音 🤪\n27224: 離鄉，無離腔。 (Lī hiunn, bô lī khiunn.) 項目 舊值 新值 義項 21845 - 例句 1 - 漢字 伊自少年就對下港起去臺北做生理，佇遐娶某生囝，到今五十外冬矣，毋過「離鄉，無離腔」，講臺語的時猶原有下港腔。 伊自少年就對下港起去臺北做生理，佇遐娶某生囝，到今五十外冬矣，毋過「離鄉，無離腔」，講話的時猶原有下港腔。 義項 21845 - 例句 1 - 羅馬字 I tsū siàu-liân tō tuì ē-káng khí-khì Tâi-pak tsò-sing-lí, tī hia tshuā-bóo senn-kiánn, kàu-tann gōo-tsa̍p-guā tang--ah, m̄-koh “lī hiunn, bô lī khiunn”, kóng Tâi-gí ê sî iu-guân ū ē-káng khiunn. I tsū siàu-liân tō tuì ē-káng khí-khì Tâi-pak tsò-sing-lí, tī hia tshuā-bóo senn-kiánn, kàu-tann gōo-tsa̍p-guā tang--ah, m̄-koh “lī hiunn, bô lī khiunn”, kóng-uē ê sî iu-guân ū ē-káng khiunn. 義項 21845 - 例句 1 - 華語 他年輕時就從南部上去臺北做生意，在那裡娶妻生子，至今五十多年了，不過「離鄉，不離腔」，說臺語時仍然有南部腔。 他年輕時就從南部上去臺北做生意，在那裡娶妻生子，至今五十多年了，不過「離鄉，不離腔」，說話時仍然有南部腔。 3446: 走音 (tsáu-im) 項目 舊值 新值 義項 4820 - 例句 1 - 漢字 彼个外國人講臺語定定會走音。 彼个外國人講華語定定會走音。 義項 4820 - 例句 1 - 羅馬字 Hit ê guā-kok-lâng kóng Tâi-gí tiānn-tiānn ē tsáu-im. Hit ê guā-kok-lâng kóng Huâ-gí tiānn-tiānn ē tsáu-im. 義項 4820 - 例句 1 - 華語 那個外國人說臺語常常會走音。 那個外國人說華語常常會走音。 27320: 平棒 (pênn-pāng/pînn-pāng) 項目 舊值 新值 義項 21941 - 例句 1 - 漢字 臺語欲講甲會平棒閣紲拍，著愛下工夫。 你若欲去參加演講比賽，想欲講甲會平棒閣紲拍，著愛下工夫。 義項 21941 - 例句 1 - 羅馬字 Tâi-gí beh kóng kah ē pênn-pāng koh suà-phah, tio̍h-ài hē kang-hu. Lí nā beh khì tsham-ka ián-káng pí-sài, siūnn-beh kóng kah ē pênn-pāng koh suà-phah, tio̍h-ài hē kang-hu. 義項 21941 - 例句 1 - 華語 臺語要講得四平八穩又流利，必得下功夫。 你若想去參加演講比賽，想要講得四平八穩又流利，必得下功夫。 27283: 端的 (tuan-tiah) 項目 舊值 新值 義項 21906 - 例句 1 - 漢字 伊臺語講甲足端的的，所以予電視台倩去報臺語新聞。 伊英語講甲足端的的，所以予電視台倩去報英語新聞。 義項 21906 - 例句 1 - 羅馬字 I Tâi-gí kóng kah tsiok tuan-tiah--ê, sóo-í hōo tiān-sī-tâi tshiànn khì pò Tâi-gí sin-bûn. I Ing-gí kóng kah tsiok tuan-tiah--ê, sóo-í hōo tiān-sī-tâi tshiànn khì pò Ing-gí sin-bûn. 義項 21906 - 例句 1 - 華語 他臺語說得非常道地，所以受聘電視台播報臺語新聞。 他英語說得非常道地，所以受聘電視台播報英語新聞。 義項修改內容 義項的修改內容就較濟矣，攏總有 28 个詞目的義項有修改語言名稱相關的內容，逐家會當逐條做比對，我有共語言相關的用詞以粗體表示。\n158: 入聲 (ji̍p-siann/li̍p-siann) 項目 舊值 新值 義項 218 - 解說 漢語的調類之一，指以塞音為韻尾的促音節，現今華語音中已無入聲，但是在閩南語和客語中仍有保留。 漢語的調類之一，指以塞音為韻尾的促音節，現今華語音中已無入聲，但是在臺灣台語和臺灣客語中仍有保留。 1173: 水鴨 (tsuí-ah) 項目 舊值 新值 義項 1593 - 解說 水鴨、野鴨。禽鳥類。野生，善游泳，會飛翔。閩南語中常和鴛鴦並列，認為鴛鴦為水鴨的一種。 水鴨、野鴨。禽鳥類。野生，善游泳，會飛翔。常和鴛鴦並列，認為鴛鴦為水鴨的一種。 1175: 水龜 (tsuí-ku) 項目 舊值 新值 義項 1595 - 解說 龍蝨。昆蟲名。生活在水田或池塘中的甲蟲。外型有點像烏龜，所以閩南人稱為「水龜」。 龍蝨。昆蟲名。生活在水田或池塘中的甲蟲。外型有點像烏龜，所以稱為「水龜」。 1192: 水雞 (tsuí-ke/tsuí-kue) 項目 舊值 新值 義項 1617 - 解說 女人的生殖器。臺灣南部的閩南話「水雞」又指女性的生殖器，為了避諱，便把青蛙叫做「四跤仔」(sì-kha-á)。 女人的生殖器。臺灣南部的「水雞」又指女性的生殖器，為了避諱，便把青蛙叫做「四跤仔」(sì-kha-á)。 1260: 王梨 (ông-lâi) 項目 舊值 新值 義項 1708 - 解說 鳳梨。瓜果類。原產南美洲，臺灣於清代康熙末年開始栽培。鳳梨一年四季都有生產，但生產旺季在四至八月。依照民間習俗，在商家開市拜拜或候選人競選時，大家總是拿鳳梨來祈福，因為它除了食用外，還存有閩南語「旺來」的吉祥含意。 鳳梨。瓜果類。原產南美洲，臺灣於清代康熙末年開始栽培。鳳梨一年四季都有生產，但生產旺季在四至八月。依照民間習俗，在商家開市拜拜或候選人競選時，大家總是拿鳳梨來祈福，因為它除了食用外，還存有「旺來」(ōng lâi)的吉祥含意。 1845: 田 (tshân) 項目 舊值 新值 義項 2546 - 解說 可供耕作或作資源開發的土地。「田」裡有水，在閩南話中，「田」是指「水田」，「園」是指「旱田」。 可供耕作或作資源開發的土地。「田」裡有水，「田」是指「水田」，「園」是指「旱田」。 2266: 在欉黃 (tsāi-tsâng-n̂g) 項目 舊值 新值 義項 3136 - 解說 樹頭鮮。成熟度為八、九分以上才摘取下來的水果。它的味道比六、七分熟就摘取下來催熟的水果甜美。引申「催熟」臺灣閩南語說成「隱」。「在欉黃」的水果不需催熟，說成「無隱」，諧音「無穩」，意思就是「不穩當」。 樹頭鮮。成熟度為八、九分以上才摘取下來的水果。它的味道比六、七分熟就摘取下來催熟的水果甜美。 2610: 百二 (pah-jī/pah-lī) 項目 舊值 新值 義項 3646 - 解說 一百二十。這是一種閩南語對於數字的獨特表述模式，從一百一十到一百九十，通常會省略百數之前的一及十位之後的十，如一百二十省略成「百二」(pah-jī)。「百二」常用來祝人長壽。千萬位數亦有同類模式，如「千三、萬二」。 一百二十。這是一種臺灣台語對於數字的獨特表述模式，從一百一十到一百九十，通常會省略百數之前的一及十位之後的十，如一百二十省略成「百二」(pah-jī)。「百二」常用來祝人長壽。千萬位數亦有同類模式，如「千三、萬二」。 2798: 米篩目 (bí-thai-ba̍k) 項目 舊值 新值 義項 3855 - 解說 米苔目。一種臺灣傳統的米食，用等量的在來米和太白粉做成米胚，然後用壓、搓的方式做成條狀的食物，在一般的麵食攤上，經常可以看到。華語的說法是按閩南話音譯的方式來表現。在新加坡、馬來西亞的華語叫「老鼠粉」。 米苔目。一種臺灣傳統的米食，用等量的在來米和太白粉做成米胚，然後用壓、搓的方式做成條狀的食物，在一般的麵食攤上，經常可以看到。華語的說法是依「米篩目」音譯的方式來表現。在新加坡、馬來西亞的華語叫「老鼠粉」。 5231: 相公 (siòng-kong) 項目 舊值 新值 義項 7335 - 解說 古時候妻子對丈夫的尊稱，現在只會出現在臺灣閩南語戲劇裡。 古時候妻子對丈夫的尊稱，現在只會出現在古裝劇裡。 5418: 紅菜 (âng-tshài) 項目 舊值 新值 義項 7582 - 解說 紅鳳菜。葉菜類。為多年生宿根草本菊科植物，莖幹分枝繁多，葉呈橢圓形或倒披針形，葉背為紫紅色，且煮熟後的汁液亦呈紫紅色，因此閩南語大都稱做「紅菜」。 紅鳳菜。葉菜類。為多年生宿根草本菊科植物，莖幹分枝繁多，葉呈橢圓形或倒披針形，葉背為紫紅色，且煮熟後的汁液亦呈紫紅色，因此大都稱做「紅菜」。 5673: 食膨餅 (tsia̍h-phòng-piánn) 項目 舊值 新值 義項 7917 - 解說 膨餅，是一種傳統的小吃甜食。其音為 phòng-piánn，與華語「碰壁」的臺灣閩南語讀音 phòng piah 非常近似。因此，「食膨餅」的意思就是兼取華語「碰壁」之意。 挨罵、受責罵。 義項 7917 - 例句 1 - 華語 你就是對人太不客氣，才會常常碰壁。 你就是對人太不客氣，才會常常挨罵。 5994: 捎 (sa) 項目 舊值 新值 義項 8381 - 解說 動作粗魯，隨便就拿。「捎」這個動作，在閩南語裡常有隨便、粗魯的意味。 動作粗魯，隨便就拿。「捎」這個動作常有隨便、粗魯的意味。 6152: 氣 (khuì) 項目 舊值 新值 義項 8615 - 解說 形容詞後綴。在閩南語的口語使用習慣中，常將「氣」字加在形容詞後面，用來表示事情進行的狀態。 形容詞後綴。口語使用時，常將「氣」字加在形容詞後面，用來表示事情進行的狀態。 6360: 珠淚 (tsu-luī) 項目 舊值 新值 義項 8877 - 例句 1 - 華語 送你離開使我流淚。為一首著名的閩南語歌曲。 送你離開使我流淚。為一首著名歌曲。 6380: 祖 (tsóo) 項目 舊值 新值 義項 8909 - 解說 通稱先代的人。在閩南語的口語使用習慣中，「祖」字是沒有性別區分的，除非冠上「查埔」、「查某」才能區分是曾祖父還是曾祖母。 通稱先代的人。口語使用時，「祖」字是沒有性別區分的，除非冠上「查埔」(tsa-poo)、「查某」(tsa-bóo)才能區分是曾祖父還是曾祖母。 6422: 神 (sîn) 項目 舊值 新值 義項 8965 - 解說 指人的精神狀態。在閩南口語的使用習慣中，常將「神」字加在名詞或形容詞後面，具有「神情、神態」的意思。 指人的精神狀態。口語使用時，常將「神」字加在名詞或形容詞後面，具有「神情、神態」的意思。 8848: 結合 (kiat-ha̍p) 項目 舊值 新值 義項 12189 - 解說 彼此相聯合。閩南語通常用在指男女雙方聯姻。 彼此相聯合。通常用來指男女雙方聯姻。 11182: 潤 (jūn/lūn) 項目 舊值 新值 義項 15284 - 例句 1 - 華語 大餅剖開要趕快吃，不然會受潮。 大餅打開要趕快吃，不然會受潮。 12334: 聲調 (siann-tiāu) 項目 舊值 新值 義項 16796 - 解說 聲音高低升降的調子。用在語音上，則漢字有四個聲調，臺灣閩南語有八個聲調；也指個人說話頻率的高低。用在音樂上，則為音階的高低。 聲音高低升降的調子。用在語音上，則臺灣華語有四個聲調、臺灣台語有七個聲調（部分地區有八個聲調）；也指個人說話頻率的高低。用在音樂上，則為音階的高低。 12962: 孽譎仔話 (gia̍t-khiat-á-uē) 項目 舊值 新值 義項 17609 - 例句 1 - 華語 兩角找五分，實付一角五，簡稱「角五」，諧音「覺悟」。這是閩南語歇後語的例子。 兩角找五分，實付一角五，簡稱「角五」，諧音「覺悟」。 13370: 鹽甕仔 (iâm-àng-á) 項目 舊值 新值 義項 18146 - 例句 1 - 華語 鹽罐不可能生蟲。為一句閩南語歇後語。 鹽罐不可能生蟲。為歇後語。 13513: 𤆬路雞 (tshuā-lōo-ke/tshuā-lōo-kue) 項目 舊值 新值 義項 18329 - 解說 帶路雞、引路雞。在臺灣閩南傳統上，結婚禮俗中，新人第一次從娘家做客回家時，娘家會贈送新人一對雞，希望這對雞能常常帶新人回娘家做客。 帶路雞、引路雞。在臺灣、閩南地區傳統結婚禮俗中，新人第一次回娘家，要告辭時，娘家會贈送新人一對雞，希望這對雞能常常帶新人回娘家做客。 13903: 仁仁仁 (jîn-jîn-jîn/lîn-lîn-lîn) 項目 舊值 新值 義項 18803 - 例句 1 - 漢字 這本諺語集所收的臺灣話，逐句都仁仁仁。 這本冊收的諺語，逐句都仁仁仁。 義項 18803 - 例句 1 - 羅馬字 Tsit pún gān-gí-tsi̍p sóo siu ê Tâi-uân-uē, ta̍k kù to jîn-jîn-jîn. Tsit pún tsheh siu ê gān-gí, ta̍k kù to jîn-jîn-jîn. 義項 18803 - 例句 1 - 華語 這本諺語集所收的臺灣話，每一句都是精挑細選的。 這本書所收的諺語，每一句都是精挑細選的。 13982: 白話字 (Pe̍h-uē-jī/Pe̍h-uē-lī) 項目 舊值 新值 義項 18909 - 解說 教會羅馬字。三四百年前，基督宗教的西洋傳教士來到南洋、中國、臺灣等地，因為當時東方人的教育不普及，他們便利用羅馬字母系統來拼寫當地的口語白話，以翻譯聖經、聖詩，編寫教材、文學作品，方便向民眾宣教。又稱作「教會羅馬字」，簡稱「教羅」。早年教會人士常將文言漢文字稱為「孔子字」(Khóng-tsú-jī)，將官話漢文字稱為「唐人字」(Tn̂g-lâng-jī), 將書寫在地白話的教會羅馬字稱為「白話字」（教羅寫法是 Pe̍h-ōe-jī，目前的討論者常簡寫為 POJ）。廈門話及臺灣話的白話字累積了特別豐富的文獻，至今也仍有愛用者、推廣者，早已超出教會的範圍。 教會羅馬字。三四百年前，基督宗教的西洋傳教士來到南洋、中國、臺灣等地，因為當時東方人的教育不普及，他們便利用羅馬字母系統來拼寫當地的口語白話，以翻譯聖經、聖詩，編寫教材、文學作品，方便向民眾宣教。又稱作「教會羅馬字」，簡稱「教羅」。早年教會人士常將文言漢文字稱為「孔子字」(Khóng-tsú-jī)，將官話漢文字稱為「唐人字」(Tn̂g-lâng-jī), 將書寫在地白話的教會羅馬字稱為「白話字」（教羅寫法是 Pe̍h-ōe-jī，目前的討論者常簡寫為 POJ）。廈門話及臺灣台語的白話字累積了特別豐富的文獻，至今也仍有愛用者、推廣者，早已超出教會的範圍。 14132: 封頭壁 (hong-thâu-piah) 項目 舊值 新值 義項 19105 - 解說 山牆。連幢式傳統建築的兩側邊間，閩南語叫做「角間」(kak-king)，角間外側未與鄰宅相連，可以從外部看得到的那面牆壁叫做「封頭壁」。 山牆。連幢式傳統建築的兩側邊間稱「角間」(kak-king)，角間外側未與鄰宅相連，可以從外部看得到的那面牆壁叫做「封頭壁」。 14437: 歌仔冊 (kua-á-tsheh) 項目 舊值 新值 義項 19496 - 解說 歌仔冊。盛行於清末、日治、民國初期，臺灣、閩南、潮州等地區的民間俗文學，通常為約六十四開小冊，多以七字一句、四句一韻之形式成篇，以閩南語、客語書寫，題材包羅萬象，為臺灣重要俗文學資料。 歌仔冊。盛行於清末、日治、民國初期，臺灣、閩南、潮州等地區的民間俗文學，通常為約六十四開小冊，多以七字一句、四句一韻之形式成篇，題材包羅萬象，為臺灣重要俗文學資料。 14444: 漳泉濫 (Tsiang-Tsuân-lām) 項目 舊值 新值 義項 19505 - 解說 說閩南語時不自覺地混用漳州腔和泉州腔兩種口音。這是由於漳、泉兩族群長期接觸交流的發展結果。 說臺灣台語時不自覺地混用漳州腔和泉州腔兩種口音。這是由於漳、泉兩族群長期接觸交流的發展結果。 舊年七月我捌佇面冊整理相關的文件的修改情形( 連結 )，今多數攏已經改名矣。\u0026#160;\u0026#x21a9;\u0026#xfe0e;\n", 
-    "url": "http:\/\/localhost:1313\/sutian\/42\/",
+    "content": " 俗音詞目 出現詞目 讀音類型 劇 [俗]kio̍k 喜劇 hí-kio̍k 主音讀 劇 [俗]kio̍k 悲劇 pi-kio̍k 主音讀 劇 [俗]kio̍k 劇場 kio̍k-tiûnn 主音讀 劇 [俗]kio̍k 廣播劇 kóng-pòo-kio̍k 主音讀 劇 [俗]kio̍k 廣播劇 kóng-pòo-kio̍k 又唸作 劇 [俗]kio̍k 戲劇 hì-kio̍k 主音讀 劇 [俗]kio̍k 歌劇 kua-kio̍k 主音讀 劇 [俗]kio̍k 劇情 kio̍k-tsîng 主音讀 劇 [俗]kio̍k 日劇 Ji̍t-kio̍k/Li̍t-kio̍k 主音讀 劇 [俗]kio̍k 日劇 Ji̍t-kio̍k/Li̍t-kio̍k 第二優勢腔 劇 [俗]kio̍k 連續劇 liân-sio̍k-kio̍k 主音讀 劇 [俗]kio̍k 劇本 kio̍k-pún 主音讀 劇 [俗]kio̍k 劇團 kio̍k-thuân 主音讀 劇 [俗]kio̍k 編劇 pian-kio̍k 主音讀 劇 [俗]kio̍k 話劇 uē-kio̍k 主音讀 劇 [俗]kio̍k 劇院 kio̍k-īnn 主音讀 劇 [俗]kio̍k 舞台劇 bú-tâi-kio̍k 主音讀 劇 [俗]kio̍k 新劇 sin-kio̍k 主音讀 劑 [俗]tse 防腐劑 hông-hú-tse 主音讀 劑 [俗]tse 鎮靜劑 tìn-tsīng-tse 主音讀 劑 [俗]tse 藥劑 io̍h-tse 主音讀 包 [俗]pâu 假包 ké-pâu 主音讀 包 [俗]pâu 假包的 ké-pâu--ê 主音讀 嗣 [俗]sû 絕嗣 tsua̍t-sû 主音讀 埠 [俗]poo 埠頭 poo-thâu 主音讀 埠 [俗]poo 外埠頭 guā-poo-thâu 主音讀 埠 [俗]poo 本埠 pún-poo 主音讀 尚 [俗]sióng 高尚 ko-sióng 主音讀 常 [俗]tshiâng 常在 tshiâng-tsāi 主音讀 強 [俗]kióng 勉強 bián-kióng 主音讀 彌 [俗]mí 阿彌陀佛 Oo-mí-tôo-hu̍t 主音讀 彌 [俗]mí 彌補 mí-póo 主音讀 戀 [俗]luân 失戀 sit-luân 主音讀 戀 [俗]luân 留戀 liû-luân 主音讀 戀 [俗]luân 迷戀 bê-luân 主音讀 戀 [俗]luân 貪戀 tham-luân 主音讀 戀 [俗]luân 戀愛 luân-ài 主音讀 戀 [俗]luân 熱戀 jia̍t-luân/lia̍t-luân 主音讀 戀 [俗]luân 熱戀 jia̍t-luân/lia̍t-luân 第二優勢腔 戀 [俗]luân 戀情 luân-tsîng 主音讀 戀 [俗]luân 初戀 tshoo-luân 主音讀 撫 [俗]bú 撫養 bú-ióng 主音讀 查 [俗]tsa 巡查 sûn-tsa 主音讀 查 [俗]tsa 刺查某 tshiah-tsa-bóo 主音讀 查 [俗]tsa 查某 tsa-bóo 主音讀 查 [俗]tsa 查某𡢃 tsa-bóo-kán 主音讀 查 [俗]tsa 查某人 tsa-bóo-lâng 主音讀 查 [俗]tsa 查某囝 tsa-bóo-kiánn 主音讀 查 [俗]tsa 查某囡仔 tsa-bóo gín-á 主音讀 查 [俗]tsa 查某雨 tsa-bóo-hōo 主音讀 查 [俗]tsa 查某孫 tsa-bóo-sun 主音讀 查 [俗]tsa 查某祖 tsa-bóo-tsóo 主音讀 查 [俗]tsa 查某間 tsa-bóo-king 主音讀 查 [俗]tsa 查某體 tsa-bóo-thé/tsa-bóo-thué 主音讀 查 [俗]tsa 查某體 tsa-bóo-thé/tsa-bóo-thué 第二優勢腔 查 [俗]tsa 查埔 tsa-poo 主音讀 查 [俗]tsa 查埔人 tsa-poo-lâng 主音讀 查 [俗]tsa 查埔囝 tsa-poo-kiánn 主音讀 查 [俗]tsa 查埔囡仔 tsa-poo gín-á 主音讀 查 [俗]tsa 查埔祖 tsa-poo-tsóo 主音讀 查 [俗]tsa 備查 pī-tsa 主音讀 查 [俗]tsa 菜店查某 tshài-tiàm-tsa-bóo 主音讀 查 [俗]tsa 趁食查某 thàn-tsia̍h-tsa-bóo 主音讀 查 [俗]tsa 開查某 khai-tsa-bóo 主音讀 查 [俗]tsa 嫁查某囝 kè tsa-bóo-kiánn 主音讀 查 [俗]tsa 飼查某 tshī-tsa-bóo 主音讀 查 [俗]tsa 審查 sím-tsa 主音讀 查 [俗]tsa 調查 tiâu-tsa 主音讀 查 [俗]tsa 檢查 kiám-tsa 主音讀 查 [俗]tsa 𨑨迌查某 tshit-thô-tsa-bóo 主音讀 查 [俗]tsa 孤查某囝 koo-tsa-bóo-kiánn 主音讀 查 [俗]tsa 查某囝日 tsa-bóo-kiánn-ji̍t/tsa-bóo-kiánn-li̍t 主音讀 查 [俗]tsa 查某囝日 tsa-bóo-kiánn-ji̍t/tsa-bóo-kiánn-li̍t 第二優勢腔 查 [俗]tsa 查 tsa 主音讀 查 [俗]tsa 清查 tshing-tsa 主音讀 查 [俗]tsa 追查 tui-tsa 主音讀 查 [俗]tsa 查詢 tshâ-sûn 又唸作 查 [俗]tsa 訪查 hóng-tsa 主音讀 查 [俗]tsa 查出 tshâ-tshut 又唸作 查 [俗]tsa 查扣 tshâ-khàu 又唸作 查 [俗]tsa 查封 tshâ-hong 又唸作 查 [俗]tsa 偵查 tsing-tsa 主音讀 查 [俗]tsa 查明 tshâ-bîng 又唸作 查 [俗]tsa 查證 tshâ-tsìng 又唸作 查 [俗]tsa 斷掌查埔做相公，斷掌查某守空房。 Tn̄g-tsiúnn tsa-poo tsò siùnn-kang, tn̄g-tsiúnn tsa-bóo tsiú khang-pâng. 主音讀 查 [俗]tsa 查某形 tsa-bóo-hîng 主音讀 查 [俗]tsa 搜查 soo-tsa 主音讀 查 [俗]tsa 普查 phóo-tsa 主音讀 柵 [俗]sa 木柵動物園 Ba̍k-sa Tōng-bu̍t-hn̂g 主音讀 柵 [俗]sa 木柵 Ba̍k-sa 主音讀 汙 [俗]ù 貪官汙吏 tham-kuann-ù-lī 主音讀 潮 [俗]tiau 高潮 ko-tiau 主音讀 紀 [俗]kì 紀錄 kì-lo̍k 主音讀 紀 [俗]kì 紀錄 kì-lo̍k 又唸作 紀 [俗]kì 紀念 kì-liām 主音讀 紀 [俗]kì 紀元 kì-guân 主音讀 紀 [俗]kì 紀律 kì-lu̍t 主音讀 腸 [俗]tshiân 粉腸 hún-tshiâng 又唸作 腸 [俗]tshiân 煙腸 ian-tshiâng 又唸作 膏 [俗]koo 膏肓 koo-bông 主音讀 膏 [俗]koo 膏肓 koo-bông 又唸作 膏 [俗]koo 膏肓 koo-bông 又唸作 膏 [俗]koo 膏藥 koo-io̍h 主音讀 蝕 [俗]sit 蝕日 sit-ji̍t/sit-li̍t 主音讀 蝕 [俗]sit 蝕日 sit-ji̍t/sit-li̍t 第二優勢腔 蝕 [俗]sit 蝕月 sit-gue̍h/sit-ge̍h 主音讀 蝕 [俗]sit 蝕月 sit-gue̍h/sit-ge̍h 第二優勢腔 西 [俗]si 西瓜 si-kue 主音讀 西 [俗]si 賣西瓜的食歪臍瓜仔。 Bē si-kue--ê tsia̍h uai-tsâi-kue-á. 主音讀 西 [俗]si 暗頭仔食西瓜，半暝仔反症。 Àm-thâu-á tsia̍h si-kue, puànn-mê-á huán-tsìng. 主音讀 誓 [俗]sè 山盟海誓 san-bîng-hái-sè 主音讀 誓 [俗]sè 誓不兩立 sè-put-lióng-li̍p 主音讀 誓 [俗]sè 宣誓 suan-sè 主音讀 誓 [俗]sè 起誓 khí-sè 主音讀 轎 [俗]kiau 轎車 kiau-tshia 主音讀 錄 [俗]lo̍k 目錄 bo̍k-lo̍k 主音讀 錄 [俗]lo̍k 錄音 lo̍k-im 主音讀 錄 [俗]lo̍k 錄音機 lo̍k-im-ki 主音讀 錄 [俗]lo̍k 紀錄 kì-lo̍k 主音讀 錄 [俗]lo̍k 記錄 kì-lo̍k 主音讀 錄 [俗]lo̍k 錄音帶 lo̍k-im-tuà 主音讀 錄 [俗]lo̍k 錄取 lo̍k-tshú 主音讀 錄 [俗]lo̍k 登錄 ting-lo̍k 主音讀 錄 [俗]lo̍k 收錄 siu-lo̍k 主音讀 錄 [俗]lo̍k 錄製 lo̍k-tsè 主音讀 錄 [俗]lo̍k 型錄 hîng-lo̍k 主音讀 錄 [俗]lo̍k 筆錄 pit-lo̍k 主音讀 錄 [俗]lo̍k 附錄 hù-lo̍k 主音讀 錄 [俗]lo̍k 錄用 lo̍k-iōng 主音讀 錄 [俗]lo̍k 錄影 lo̍k-iánn 主音讀 錦 [俗]gím 盤喙錦 puânn-tshuì-gím 主音讀 錦 [俗]gím 錦蛇 gím-tsuâ 主音讀 錦 [俗]gím 錦標 kím-piau 又唸作 障 [俗]tsiong 故障 kòo-tsiong 主音讀 障 [俗]tsiong 保障 pó-tsiong 主音讀 饅 [俗]bán 饅頭 bán-thô 主音讀 鮑 [俗]pau 鮑魚 pau-hî/pau-hû 主音讀 鮑 [俗]pau 鮑魚 pau-hî/pau-hû 第二優勢腔 ", 
+    "url": "http:\/\/localhost:1313\/sutian\/%E8%A9%9E%E7%9B%AE%E7%94%A8%E4%BF%97%E9%9F%B3_draft\/",
     "image": "\/images\/kautian42-cover.png",
-    "description": "2024 年教典改名做「教育部臺灣台語常用詞辭典」過一冬了後佇 2025 年 8 月底整理辭典內底相關的語言名稱用詞"
+    "description": "2025年八月教典的文字改版毋但共"
         },
     
     
@@ -692,6 +791,17 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         },
     
     
+    "http:\/\/localhost:1313\/sutian\/42\/": {
+        
+        "title": "教典的閩南相關用詞重整理",
+            "tags": [ "台文",  "教典",  "教典改版",  "語言名稱", ],
+    "content": " 2025 新詞目「滑溜 ku̍t-liū」的例句\n教典佇舊年 8 月正式照國家語言發展報告的語言名稱建議用詞改名做「教育部臺灣台語常用詞辭典」，相關的網站佮文件像包含「臺灣閩南語羅馬字拼音方案」、「臺灣閩南語動畫網」、「臺灣閩南語能力認證考試」等等的全部攏改做臺灣台語矣，到今賰課綱猶未改爾。1\n舊年八月辭典雖然有改名，內文的語言相關用詞煞無調整，無論是例句、義項攏猶是維持舊的文字。這个問題窮實是無遐爾簡單，毋是直接共所有的「閩南」取代做「臺灣」就會用得，真正咧講「中國閩南地區」的文字就是無應該修改的部份。所以有關這个問題真正是需要逐條校對佮修改。舊年我寄批共團隊問的時陣𪜶就應講有整理相關的文字項目予編輯委員處理矣。\n經過一冬，教典佇今年八月底有整理過遮的用詞矣，我共所有修改的項目攏整理佇這篇文章予逐家參考，毋知這个修改有符合逐家的理想無？歡迎來討論。\n語言相關用詞整理的規則 辭典猶未針對這改的修改原則做任何的公告，就我的觀察，應該是照下底五个規則咧做修改：\n原底義項佮例句華語解說內底的「臺灣話」、「臺語」、「閩南語」、「閩南話」多數攏改「臺灣台語」，有的毋免講語言意思嘛會通的就規氣提掉。 原底例句有「臺語」佮「臺灣話」，攏改做其他例句矣，2025 新詞目【 滑溜 ku̍t-liū 】的例句有「台語」，對應的華語解說寫「臺灣台語」 「華語」多數攏維持寫「華語」，並列咧比較的情境才會寫「臺灣華語」（見【 聲調 siann-tiāu 】條目） 「客語」干焦出現佇 【入聲 ji̍p-siann】 條目，是佮台語並列的情形，用詞改「臺灣客語」 真正咧指稱福建南部的「閩南文化」、「閩南傳統」、「閩南菜系」、「閩南粽」、「閩南地區」等等的用詞保留。 下跤是我提 8.12 佮 8.30 兩个時間的教典文字資料做比對的整理，整理所有有關語言名稱的文字修改，標題攏有教典詞目的連結，揤 lueh 就會當看著上新的網頁內容。\n例句修改內容 下跤的四个例句是以早教典例句內底有出現「臺語」、「臺灣話」的例，這改攏共改做其他內容，這馬干焦今年新的 滑溜 ku̍t-liū 詞目內底有講著「Tâi-gí」，漢字是「台語」、對應華語是「臺灣台語」。\n可能是「走音 tsáu-im」詞目的外國人佮「滑溜 ku̍t-liū」詞目的傳教士是仝一位，以早講台語會走音，這馬是學甲真滑溜矣，華語猶咧學所以會走音 🤪\n27224: 離鄉，無離腔。 (Lī hiunn, bô lī khiunn.) 項目 舊值 新值 義項 21845 - 例句 1 - 漢字 伊自少年就對下港起去臺北做生理，佇遐娶某生囝，到今五十外冬矣，毋過「離鄉，無離腔」，講臺語的時猶原有下港腔。 伊自少年就對下港起去臺北做生理，佇遐娶某生囝，到今五十外冬矣，毋過「離鄉，無離腔」，講話的時猶原有下港腔。 義項 21845 - 例句 1 - 羅馬字 I tsū siàu-liân tō tuì ē-káng khí-khì Tâi-pak tsò-sing-lí, tī hia tshuā-bóo senn-kiánn, kàu-tann gōo-tsa̍p-guā tang--ah, m̄-koh “lī hiunn, bô lī khiunn”, kóng Tâi-gí ê sî iu-guân ū ē-káng khiunn. I tsū siàu-liân tō tuì ē-káng khí-khì Tâi-pak tsò-sing-lí, tī hia tshuā-bóo senn-kiánn, kàu-tann gōo-tsa̍p-guā tang--ah, m̄-koh “lī hiunn, bô lī khiunn”, kóng-uē ê sî iu-guân ū ē-káng khiunn. 義項 21845 - 例句 1 - 華語 他年輕時就從南部上去臺北做生意，在那裡娶妻生子，至今五十多年了，不過「離鄉，不離腔」，說臺語時仍然有南部腔。 他年輕時就從南部上去臺北做生意，在那裡娶妻生子，至今五十多年了，不過「離鄉，不離腔」，說話時仍然有南部腔。 3446: 走音 (tsáu-im) 項目 舊值 新值 義項 4820 - 例句 1 - 漢字 彼个外國人講臺語定定會走音。 彼个外國人講華語定定會走音。 義項 4820 - 例句 1 - 羅馬字 Hit ê guā-kok-lâng kóng Tâi-gí tiānn-tiānn ē tsáu-im. Hit ê guā-kok-lâng kóng Huâ-gí tiānn-tiānn ē tsáu-im. 義項 4820 - 例句 1 - 華語 那個外國人說臺語常常會走音。 那個外國人說華語常常會走音。 27320: 平棒 (pênn-pāng/pînn-pāng) 項目 舊值 新值 義項 21941 - 例句 1 - 漢字 臺語欲講甲會平棒閣紲拍，著愛下工夫。 你若欲去參加演講比賽，想欲講甲會平棒閣紲拍，著愛下工夫。 義項 21941 - 例句 1 - 羅馬字 Tâi-gí beh kóng kah ē pênn-pāng koh suà-phah, tio̍h-ài hē kang-hu. Lí nā beh khì tsham-ka ián-káng pí-sài, siūnn-beh kóng kah ē pênn-pāng koh suà-phah, tio̍h-ài hē kang-hu. 義項 21941 - 例句 1 - 華語 臺語要講得四平八穩又流利，必得下功夫。 你若想去參加演講比賽，想要講得四平八穩又流利，必得下功夫。 27283: 端的 (tuan-tiah) 項目 舊值 新值 義項 21906 - 例句 1 - 漢字 伊臺語講甲足端的的，所以予電視台倩去報臺語新聞。 伊英語講甲足端的的，所以予電視台倩去報英語新聞。 義項 21906 - 例句 1 - 羅馬字 I Tâi-gí kóng kah tsiok tuan-tiah--ê, sóo-í hōo tiān-sī-tâi tshiànn khì pò Tâi-gí sin-bûn. I Ing-gí kóng kah tsiok tuan-tiah--ê, sóo-í hōo tiān-sī-tâi tshiànn khì pò Ing-gí sin-bûn. 義項 21906 - 例句 1 - 華語 他臺語說得非常道地，所以受聘電視台播報臺語新聞。 他英語說得非常道地，所以受聘電視台播報英語新聞。 義項修改內容 義項的修改內容就較濟矣，攏總有 28 个詞目的義項有修改語言名稱相關的內容，逐家會當逐條做比對，我有共語言相關的用詞以粗體表示。\n158: 入聲 (ji̍p-siann/li̍p-siann) 項目 舊值 新值 義項 218 - 解說 漢語的調類之一，指以塞音為韻尾的促音節，現今華語音中已無入聲，但是在閩南語和客語中仍有保留。 漢語的調類之一，指以塞音為韻尾的促音節，現今華語音中已無入聲，但是在臺灣台語和臺灣客語中仍有保留。 1173: 水鴨 (tsuí-ah) 項目 舊值 新值 義項 1593 - 解說 水鴨、野鴨。禽鳥類。野生，善游泳，會飛翔。閩南語中常和鴛鴦並列，認為鴛鴦為水鴨的一種。 水鴨、野鴨。禽鳥類。野生，善游泳，會飛翔。常和鴛鴦並列，認為鴛鴦為水鴨的一種。 1175: 水龜 (tsuí-ku) 項目 舊值 新值 義項 1595 - 解說 龍蝨。昆蟲名。生活在水田或池塘中的甲蟲。外型有點像烏龜，所以閩南人稱為「水龜」。 龍蝨。昆蟲名。生活在水田或池塘中的甲蟲。外型有點像烏龜，所以稱為「水龜」。 1192: 水雞 (tsuí-ke/tsuí-kue) 項目 舊值 新值 義項 1617 - 解說 女人的生殖器。臺灣南部的閩南話「水雞」又指女性的生殖器，為了避諱，便把青蛙叫做「四跤仔」(sì-kha-á)。 女人的生殖器。臺灣南部的「水雞」又指女性的生殖器，為了避諱，便把青蛙叫做「四跤仔」(sì-kha-á)。 1260: 王梨 (ông-lâi) 項目 舊值 新值 義項 1708 - 解說 鳳梨。瓜果類。原產南美洲，臺灣於清代康熙末年開始栽培。鳳梨一年四季都有生產，但生產旺季在四至八月。依照民間習俗，在商家開市拜拜或候選人競選時，大家總是拿鳳梨來祈福，因為它除了食用外，還存有閩南語「旺來」的吉祥含意。 鳳梨。瓜果類。原產南美洲，臺灣於清代康熙末年開始栽培。鳳梨一年四季都有生產，但生產旺季在四至八月。依照民間習俗，在商家開市拜拜或候選人競選時，大家總是拿鳳梨來祈福，因為它除了食用外，還存有「旺來」(ōng lâi)的吉祥含意。 1845: 田 (tshân) 項目 舊值 新值 義項 2546 - 解說 可供耕作或作資源開發的土地。「田」裡有水，在閩南話中，「田」是指「水田」，「園」是指「旱田」。 可供耕作或作資源開發的土地。「田」裡有水，「田」是指「水田」，「園」是指「旱田」。 2266: 在欉黃 (tsāi-tsâng-n̂g) 項目 舊值 新值 義項 3136 - 解說 樹頭鮮。成熟度為八、九分以上才摘取下來的水果。它的味道比六、七分熟就摘取下來催熟的水果甜美。引申「催熟」臺灣閩南語說成「隱」。「在欉黃」的水果不需催熟，說成「無隱」，諧音「無穩」，意思就是「不穩當」。 樹頭鮮。成熟度為八、九分以上才摘取下來的水果。它的味道比六、七分熟就摘取下來催熟的水果甜美。 2610: 百二 (pah-jī/pah-lī) 項目 舊值 新值 義項 3646 - 解說 一百二十。這是一種閩南語對於數字的獨特表述模式，從一百一十到一百九十，通常會省略百數之前的一及十位之後的十，如一百二十省略成「百二」(pah-jī)。「百二」常用來祝人長壽。千萬位數亦有同類模式，如「千三、萬二」。 一百二十。這是一種臺灣台語對於數字的獨特表述模式，從一百一十到一百九十，通常會省略百數之前的一及十位之後的十，如一百二十省略成「百二」(pah-jī)。「百二」常用來祝人長壽。千萬位數亦有同類模式，如「千三、萬二」。 2798: 米篩目 (bí-thai-ba̍k) 項目 舊值 新值 義項 3855 - 解說 米苔目。一種臺灣傳統的米食，用等量的在來米和太白粉做成米胚，然後用壓、搓的方式做成條狀的食物，在一般的麵食攤上，經常可以看到。華語的說法是按閩南話音譯的方式來表現。在新加坡、馬來西亞的華語叫「老鼠粉」。 米苔目。一種臺灣傳統的米食，用等量的在來米和太白粉做成米胚，然後用壓、搓的方式做成條狀的食物，在一般的麵食攤上，經常可以看到。華語的說法是依「米篩目」音譯的方式來表現。在新加坡、馬來西亞的華語叫「老鼠粉」。 5231: 相公 (siòng-kong) 項目 舊值 新值 義項 7335 - 解說 古時候妻子對丈夫的尊稱，現在只會出現在臺灣閩南語戲劇裡。 古時候妻子對丈夫的尊稱，現在只會出現在古裝劇裡。 5418: 紅菜 (âng-tshài) 項目 舊值 新值 義項 7582 - 解說 紅鳳菜。葉菜類。為多年生宿根草本菊科植物，莖幹分枝繁多，葉呈橢圓形或倒披針形，葉背為紫紅色，且煮熟後的汁液亦呈紫紅色，因此閩南語大都稱做「紅菜」。 紅鳳菜。葉菜類。為多年生宿根草本菊科植物，莖幹分枝繁多，葉呈橢圓形或倒披針形，葉背為紫紅色，且煮熟後的汁液亦呈紫紅色，因此大都稱做「紅菜」。 5673: 食膨餅 (tsia̍h-phòng-piánn) 項目 舊值 新值 義項 7917 - 解說 膨餅，是一種傳統的小吃甜食。其音為 phòng-piánn，與華語「碰壁」的臺灣閩南語讀音 phòng piah 非常近似。因此，「食膨餅」的意思就是兼取華語「碰壁」之意。 挨罵、受責罵。 義項 7917 - 例句 1 - 華語 你就是對人太不客氣，才會常常碰壁。 你就是對人太不客氣，才會常常挨罵。 5994: 捎 (sa) 項目 舊值 新值 義項 8381 - 解說 動作粗魯，隨便就拿。「捎」這個動作，在閩南語裡常有隨便、粗魯的意味。 動作粗魯，隨便就拿。「捎」這個動作常有隨便、粗魯的意味。 6152: 氣 (khuì) 項目 舊值 新值 義項 8615 - 解說 形容詞後綴。在閩南語的口語使用習慣中，常將「氣」字加在形容詞後面，用來表示事情進行的狀態。 形容詞後綴。口語使用時，常將「氣」字加在形容詞後面，用來表示事情進行的狀態。 6360: 珠淚 (tsu-luī) 項目 舊值 新值 義項 8877 - 例句 1 - 華語 送你離開使我流淚。為一首著名的閩南語歌曲。 送你離開使我流淚。為一首著名歌曲。 6380: 祖 (tsóo) 項目 舊值 新值 義項 8909 - 解說 通稱先代的人。在閩南語的口語使用習慣中，「祖」字是沒有性別區分的，除非冠上「查埔」、「查某」才能區分是曾祖父還是曾祖母。 通稱先代的人。口語使用時，「祖」字是沒有性別區分的，除非冠上「查埔」(tsa-poo)、「查某」(tsa-bóo)才能區分是曾祖父還是曾祖母。 6422: 神 (sîn) 項目 舊值 新值 義項 8965 - 解說 指人的精神狀態。在閩南口語的使用習慣中，常將「神」字加在名詞或形容詞後面，具有「神情、神態」的意思。 指人的精神狀態。口語使用時，常將「神」字加在名詞或形容詞後面，具有「神情、神態」的意思。 8848: 結合 (kiat-ha̍p) 項目 舊值 新值 義項 12189 - 解說 彼此相聯合。閩南語通常用在指男女雙方聯姻。 彼此相聯合。通常用來指男女雙方聯姻。 11182: 潤 (jūn/lūn) 項目 舊值 新值 義項 15284 - 例句 1 - 華語 大餅剖開要趕快吃，不然會受潮。 大餅打開要趕快吃，不然會受潮。 12334: 聲調 (siann-tiāu) 項目 舊值 新值 義項 16796 - 解說 聲音高低升降的調子。用在語音上，則漢字有四個聲調，臺灣閩南語有八個聲調；也指個人說話頻率的高低。用在音樂上，則為音階的高低。 聲音高低升降的調子。用在語音上，則臺灣華語有四個聲調、臺灣台語有七個聲調（部分地區有八個聲調）；也指個人說話頻率的高低。用在音樂上，則為音階的高低。 12962: 孽譎仔話 (gia̍t-khiat-á-uē) 項目 舊值 新值 義項 17609 - 例句 1 - 華語 兩角找五分，實付一角五，簡稱「角五」，諧音「覺悟」。這是閩南語歇後語的例子。 兩角找五分，實付一角五，簡稱「角五」，諧音「覺悟」。 13370: 鹽甕仔 (iâm-àng-á) 項目 舊值 新值 義項 18146 - 例句 1 - 華語 鹽罐不可能生蟲。為一句閩南語歇後語。 鹽罐不可能生蟲。為歇後語。 13513: 𤆬路雞 (tshuā-lōo-ke/tshuā-lōo-kue) 項目 舊值 新值 義項 18329 - 解說 帶路雞、引路雞。在臺灣閩南傳統上，結婚禮俗中，新人第一次從娘家做客回家時，娘家會贈送新人一對雞，希望這對雞能常常帶新人回娘家做客。 帶路雞、引路雞。在臺灣、閩南地區傳統結婚禮俗中，新人第一次回娘家，要告辭時，娘家會贈送新人一對雞，希望這對雞能常常帶新人回娘家做客。 13903: 仁仁仁 (jîn-jîn-jîn/lîn-lîn-lîn) 項目 舊值 新值 義項 18803 - 例句 1 - 漢字 這本諺語集所收的臺灣話，逐句都仁仁仁。 這本冊收的諺語，逐句都仁仁仁。 義項 18803 - 例句 1 - 羅馬字 Tsit pún gān-gí-tsi̍p sóo siu ê Tâi-uân-uē, ta̍k kù to jîn-jîn-jîn. Tsit pún tsheh siu ê gān-gí, ta̍k kù to jîn-jîn-jîn. 義項 18803 - 例句 1 - 華語 這本諺語集所收的臺灣話，每一句都是精挑細選的。 這本書所收的諺語，每一句都是精挑細選的。 13982: 白話字 (Pe̍h-uē-jī/Pe̍h-uē-lī) 項目 舊值 新值 義項 18909 - 解說 教會羅馬字。三四百年前，基督宗教的西洋傳教士來到南洋、中國、臺灣等地，因為當時東方人的教育不普及，他們便利用羅馬字母系統來拼寫當地的口語白話，以翻譯聖經、聖詩，編寫教材、文學作品，方便向民眾宣教。又稱作「教會羅馬字」，簡稱「教羅」。早年教會人士常將文言漢文字稱為「孔子字」(Khóng-tsú-jī)，將官話漢文字稱為「唐人字」(Tn̂g-lâng-jī), 將書寫在地白話的教會羅馬字稱為「白話字」（教羅寫法是 Pe̍h-ōe-jī，目前的討論者常簡寫為 POJ）。廈門話及臺灣話的白話字累積了特別豐富的文獻，至今也仍有愛用者、推廣者，早已超出教會的範圍。 教會羅馬字。三四百年前，基督宗教的西洋傳教士來到南洋、中國、臺灣等地，因為當時東方人的教育不普及，他們便利用羅馬字母系統來拼寫當地的口語白話，以翻譯聖經、聖詩，編寫教材、文學作品，方便向民眾宣教。又稱作「教會羅馬字」，簡稱「教羅」。早年教會人士常將文言漢文字稱為「孔子字」(Khóng-tsú-jī)，將官話漢文字稱為「唐人字」(Tn̂g-lâng-jī), 將書寫在地白話的教會羅馬字稱為「白話字」（教羅寫法是 Pe̍h-ōe-jī，目前的討論者常簡寫為 POJ）。廈門話及臺灣台語的白話字累積了特別豐富的文獻，至今也仍有愛用者、推廣者，早已超出教會的範圍。 14132: 封頭壁 (hong-thâu-piah) 項目 舊值 新值 義項 19105 - 解說 山牆。連幢式傳統建築的兩側邊間，閩南語叫做「角間」(kak-king)，角間外側未與鄰宅相連，可以從外部看得到的那面牆壁叫做「封頭壁」。 山牆。連幢式傳統建築的兩側邊間稱「角間」(kak-king)，角間外側未與鄰宅相連，可以從外部看得到的那面牆壁叫做「封頭壁」。 14437: 歌仔冊 (kua-á-tsheh) 項目 舊值 新值 義項 19496 - 解說 歌仔冊。盛行於清末、日治、民國初期，臺灣、閩南、潮州等地區的民間俗文學，通常為約六十四開小冊，多以七字一句、四句一韻之形式成篇，以閩南語、客語書寫，題材包羅萬象，為臺灣重要俗文學資料。 歌仔冊。盛行於清末、日治、民國初期，臺灣、閩南、潮州等地區的民間俗文學，通常為約六十四開小冊，多以七字一句、四句一韻之形式成篇，題材包羅萬象，為臺灣重要俗文學資料。 14444: 漳泉濫 (Tsiang-Tsuân-lām) 項目 舊值 新值 義項 19505 - 解說 說閩南語時不自覺地混用漳州腔和泉州腔兩種口音。這是由於漳、泉兩族群長期接觸交流的發展結果。 說臺灣台語時不自覺地混用漳州腔和泉州腔兩種口音。這是由於漳、泉兩族群長期接觸交流的發展結果。 舊年七月我捌佇面冊整理相關的文件的修改情形( 連結 )，今多數攏已經改名矣。\u0026#160;\u0026#x21a9;\u0026#xfe0e;\n", 
+    "url": "http:\/\/localhost:1313\/sutian\/42\/",
+    "image": "\/images\/kautian42-cover.png",
+    "description": "2024 年教典改名做「教育部臺灣台語常用詞辭典」過一冬了後佇 2025 年 8 月底整理辭典內底相關的語言名稱用詞"
+        },
+    
+    
     "http:\/\/localhost:1313\/jihing\/tasa_typeface_collection_intro\/": {
         
         "title": "TASA jī-hîng hē-lia̍t: Tâi-gí jī-hîng tsiūnn thài-khong",
@@ -700,17 +810,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     "url": "http:\/\/localhost:1313\/jihing\/tasa_typeface_collection_intro\/",
     "image": "\/images\/TASA_intro_thumbnail.png",
     "description": "Kài-siāu TASA typeface collection ê bûn-tsiunn"
-        },
-    
-    
-    "http:\/\/localhost:1313\/jihing\/": {
-        
-        "title": "字型",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/jihing\/",
-    "image": "",
-    "description": "有關台語文字型的文章"
         },
     
     
@@ -753,17 +852,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
             "tags": [],
     "content": "", 
     "url": "http:\/\/localhost:1313\/language_type\/mandarin\/",
-    "image": "",
-    "description": ""
-        },
-    
-    
-    "http:\/\/localhost:1313\/tags\/%E8%8F%AF%E6%96%87\/": {
-        
-        "title": "華文",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/tags\/%E8%8F%AF%E6%96%87\/",
     "image": "",
     "description": ""
         },
@@ -821,6 +909,17 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     "url": "http:\/\/localhost:1313\/tags\/%E5%8F%B0%E8%AA%9E%E6%96%87%E8%B3%87%E8%A8%8A%E8%99%95%E7%90%86\/",
     "image": "",
     "description": ""
+        },
+    
+    
+    "http:\/\/localhost:1313\/jihing\/googlesiataibun\/": {
+        
+        "title": "三套 Google Fonts 台文字型—予 Google 正常顯示台文字",
+            "tags": [ "台華雙文",  "台文",  "華文", ],
+    "content": " ", 
+    "url": "http:\/\/localhost:1313\/jihing\/googlesiataibun\/",
+    "image": "",
+    "description": "推薦三套完整支援台語文的 Google Fonts 字型，閣有按怎佇 Google 軟體共𪜶啟用"
         },
     
     
@@ -901,22 +1000,11 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         },
     
     
-    "http:\/\/localhost:1313\/language_type\/bilingual\/": {
-        
-        "title": "Bilingual",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/language_type\/bilingual\/",
-    "image": "",
-    "description": ""
-        },
-    
-    
     "http:\/\/localhost:1313\/about\/": {
         
         "title": "介紹",
             "tags": [],
-    "content": " 歡迎 簡短的自我介紹 我是陳建中，目前在師大台文所就讀碩士班，也在公視台語台負責 台語新詞辭庫 的工作。 這個網站是我用來發表文章和整理各種資源的地方，不用註冊、也不會蒐集個人資訊，你可以直接看到這裡的所有內容，也能用搜尋功能找到你要的文章。\n關於教典癖知識 教典癖知識 這個系列記錄了很多有關教育部《臺灣台語常用詞辭典》的細節，也整理了許多 實用工具 。如果你不知道從哪開始看，可以先從這裡入門。\n關於字型 我的女朋友 皓梅 在字型公司 justfont 工作，我和他們長期合作，曾經舉辦過 台語文相關字型的講座 ，也在 2023 年一起參與編修 jf7000 當務字集 。\n網站語言說明 這裡集結了我過去在各處發表的文章，內容多半是台語字典及字型相關，有些文章是台語，有些是華語，部分則有提供雙語服務（像這頁），只要按上方的語言按鈕即可切換。\n網頁所用字型 本網站是用 Hugo 架設，版型是以 Quint theme 為基礎進行調整。字型部分，羅馬字使用國家太空中心品牌製作的 TASA Explorer ，漢字則用 源樣黑體 來補齊部份缺字。\n訂閱與聯絡 這個網站會持續更新相關內容，歡迎你透過 RSS 訂閱文章。如果有任何想法或建議，也歡迎來信 kiantiong7235@gmail.com 和我交流：）\n贊助 Tōo-né 如果我的內容對你有幫助，歡迎透過 bobaboba.me 平台 贊助我 ，感謝你的支持！\n歡迎 上簡省的介紹 我是陳建中，目前佇師大台文所讀碩士班，閣有佇公視台語台負責 台語新詞辭庫 。 遮是我寫文章佮整理我的資源的所在，免登入嘛免納個人資料就通好看著遮的所有物件。嘛通直接佇搜揣 ia̋n-jín 揣著遮的文章。\n有關教典癖智識 教典癖智識 內底寫足濟有關《教育部臺灣台語常用詞辭典》的幼路細節，閣有整理足濟 真實用的家私 。你若是毋知欲對佗位開始看會當先看這。\n有關字型 阮女朋友 皓梅 佇字型公司 justfont 食頭路，我長期佮𪜶合作，捌辦過 有關台語文字型的演講 ，嘛佇 2023 年參與編修 jf7000 當務字集 。\n網頁語言 遮目前收集各種建中以早寫佇各種所在的文章，主要攏是台語字辭典佮字型相關的內容，遮的文章多數是台文，嘛有部份是華文，有的有提供雙語服務（像這頁），只要揤頂面的翻譯甜粿就通好切換語言。\n網頁的字型 網站是用 Hugo 起的，外型是以 Quint theme 做基礎去調整的，網站字型使用國家太空中心的品牌訂做字型 TASA Explorer 處理羅馬字的顯示，用 源樣黑體 處理部份會欠字的漢字。\n訂閱、聯絡 這个網頁會繼續更新相關內容，歡迎你透過 RSS 訂閱遮的文章。若是有啥物話想欲和我講，歡迎寄批至 kiantiong7235@gmail.com 共我分享：）\nTōo-né 若是我的內容對你有幫贊，歡迎透過 bobaboba.me 共我 tōo-né ，感謝。\n", 
+    "content": " 歡迎 有關陳建中 我是陳建中，目前在師大台文所就讀碩士班，也在公視台語台負責 台語新詞辭庫 的工作。 這個網站是我用來發表文章和整理各種資源的地方，不用註冊、也不會蒐集個人資訊，你可以直接看到這裡的所有內容，也能用搜尋功能找到你要的文章。\n關於教典癖知識 教典癖知識 這個系列記錄了很多有關教育部《臺灣台語常用詞辭典》的細節，也整理了許多 實用工具 。如果你不知道從哪開始看，可以先從這裡入門。\n關於字型 我的女朋友 皓梅 在字型公司 justfont 工作，我和他們長期合作，曾經舉辦過 台語文相關字型的講座 ，也在 2023 年一起參與編修 jf7000 當務字集 。\n網站語言說明 這裡集結了我過去在各處發表的文章，內容多半是台語字典及字型相關，有些文章是台語，有些是華語，部分則有提供雙語服務（像這頁），只要按上方的語言按鈕即可切換。\n網頁所用字型 本網站是用 Hugo 架設，版型是以 Quint theme 為基礎進行調整。字型部分，羅馬字使用國家太空中心品牌製作的 TASA Explorer ，漢字則用 源樣黑體 來補齊部份缺字。\n訂閱與聯絡 這個網站會持續更新相關內容，歡迎你透過 RSS 訂閱文章。如果有任何想法或建議，也歡迎來信 kiantiong7235@gmail.com 和我交流：）\n贊助 Tōo-né 如果我的內容對你有幫助，歡迎透過 bobaboba.me 平台 贊助我 ，感謝你的支持！\n歡迎 有關陳建中 我是陳建中，目前佇師大台文所讀碩士班，閣有佇公視台語台負責 台語新詞辭庫 。 遮是我寫文章佮整理我的資源的所在，免登入嘛免納個人資料就通好看著遮的所有物件。嘛通直接佇搜揣 ia̋n-jín 揣著遮的文章。\n有關教典癖智識 教典癖智識 內底寫足濟有關《教育部臺灣台語常用詞辭典》的幼路細節，閣有整理足濟 真實用的家私 。你若是毋知欲對佗位開始看會當先看這。\n有關字型 阮女朋友 皓梅 佇字型公司 justfont 食頭路，我長期佮𪜶合作，較早捌辦過 有關台語文字型的演講 ，嘛佇 2023 年參與編修 jf7000 當務字集 。\n網頁語言 遮目前收集各種建中以早寫佇各種所在的文章，主要攏是台語字辭典佮字型相關的內容，遮的文章多數是台文，嘛有部份是華文，有的有提供雙語服務（像這頁），只要揤頂面的翻譯甜粿就通好切換語言。\n網頁的字型 網站是用 Hugo 起的，外型是以 Quint theme 做基礎去調整的，網站字型使用國家太空中心的品牌訂做字型 TASA Explorer 處理羅馬字的顯示，用 源樣黑體 處理部份會欠字的漢字。\n訂閱、聯絡 這个網頁會繼續更新相關內容，歡迎你透過 RSS 訂閱遮的文章。若是有啥物話想欲和我講，歡迎寄批至 kiantiong7235@gmail.com 共我分享：）\nTōo-né 若是我的內容對你有幫贊，歡迎透過 bobaboba.me 共我 tōo-né ，感謝。\n", 
     "url": "http:\/\/localhost:1313\/about\/",
     "image": "",
     "description": ""
@@ -940,17 +1028,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
             "tags": [],
     "content": "", 
     "url": "http:\/\/localhost:1313\/tags\/%E8%BC%95%E8%81%B2\/",
-    "image": "",
-    "description": ""
-        },
-    
-    
-    "http:\/\/localhost:1313\/tags\/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87\/": {
-        
-        "title": "台華雙文",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/tags\/%E5%8F%B0%E8%8F%AF%E9%9B%99%E6%96%87\/",
     "image": "",
     "description": ""
         },
@@ -1096,6 +1173,39 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     "url": "http:\/\/localhost:1313\/blog\/taigi-mygo\/",
     "image": "\/images\/taigi-mygo-1.jpg",
     "description": "模仿台語台雙語字幕做的台語 MyGO Mî-im"
+        },
+    
+    
+    "http:\/\/localhost:1313\/sketches\/infinite_scroll_genuary2025\/": {
+        
+        "title": "3 Colors Transition－Infinite scroll",
+            "tags": [ "Genuary2025",  "Genuary", ],
+    "content": "Made for Genuary2025-28 \u0026quot;Infinite Scroll.\u0026quot;\n3 Colors Transition－Infinite scroll ", 
+    "url": "http:\/\/localhost:1313\/sketches\/infinite_scroll_genuary2025\/",
+    "image": "\/images\/infinite_scroll_cover.png",
+    "description": "Made for Genuary2025-28 \u0022Infinite Scroll.\u0022"
+        },
+    
+    
+    "http:\/\/localhost:1313\/tags\/genuary\/": {
+        
+        "title": "Genuary",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/tags\/genuary\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
+    "http:\/\/localhost:1313\/tags\/genuary2025\/": {
+        
+        "title": "Genuary2025",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/tags\/genuary2025\/",
+    "image": "",
+    "description": ""
         },
     
     
@@ -1418,17 +1528,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         },
     
     
-    "http:\/\/localhost:1313\/sketches\/": {
-        
-        "title": "Creative Coding Sketches",
-            "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/sketches\/",
-    "image": "",
-    "description": "建中的程式藝術創作"
-        },
-    
-    
     "http:\/\/localhost:1313\/sketches\/eclipse\/": {
         
         "title": "Eclipse 蝕",
@@ -1436,7 +1535,7 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     "content": "揤放送鈕就通產生新的結果\nEclipse 蝕 這个作品是佇 2024-04-14 參與 #WCCChallenge 所創作，原底發表佇 OpenProcessing 平台（ 原始連結 ），後來嘛成做我佇平台頂面上衝的作品，我感覺免 100 逝程式就通寫出按呢的成果誠媠，原底就是一个利用 noise 創作的教材爾，順紲參與社群活動。黃新先生佇政大的學生嘛捌寫過 文章 欣賞這个作品，感謝逐家的呵咾。\n有關 #WCCChallenge WCCChallenge 是一个由德國人 Raphaël 所發起的程式創作社群活動，逐禮拜會佇 Discord 投票決定題目，Raphaël 會佇禮拜暗時開 直播 回顧逐家的投稿，無論是啥物程度的人攏通參加。\n", 
     "url": "http:\/\/localhost:1313\/sketches\/eclipse\/",
     "image": "\/images\/eclipse_cover.jpg",
-    "description": ""
+    "description": "#WCCChallenge topic \u0022Eclipse 🌑\u0022"
         },
     
     
@@ -1730,7 +1829,7 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         
         "title": "p5.js 創作模板",
             "tags": [ "", ],
-    "content": "這是一个 p5.js 創作模板，提供完整的畫布尺寸調整、響應式設計和暫停/播放功能。\n使用方式 複製模板資料夾\n複製 0_p5js_template 資料夾 重新命名為你的作品名稱（例如：my-sketch） 修改 index.md\n設定標題、日期、標籤等 Front Matter 使用 {{\u0026lt; sketch name=\u0026quot;your-sketch-name\u0026quot; width=\u0026quot;500px\u0026quot; height=\u0026quot;700px\u0026quot; \u0026gt;}} 嵌入作品 修改 sketch.js\n調整 BASE_WIDTH 和 BASE_HEIGHT 為你的設計尺寸 在 setup() 函數中初始化你的變數 在 draw() 函數中撰寫你的創作程式碼 重要參數說明 BASE_WIDTH 和 BASE_HEIGHT 這是你的設計基準尺寸。所有座標系統都基於這個尺寸，實際顯示時會自動縮放。\nconst BASE_WIDTH = 500; // 你的設計寬度 const BASE_HEIGHT = 700; // 你的設計高度 座標系統 在 draw() 函數中，你可以直接使用 BASE_WIDTH 和 BASE_HEIGHT 作為參考 例如：circle(BASE_WIDTH / 2, BASE_HEIGHT / 2, 50) 會在畫布中心繪製圓形 mouseX 和 mouseY 需要除以 scaleRatio 來取得正確座標： let mx = mouseX / scaleRatio; let my = mouseY / scaleRatio; 變數初始化 在 setup() 函數中初始化你的變數，例如：\nlet x = 0; let y = BASE_HEIGHT / 2; let speed = 2; 背景設定 如果需要設定背景色，在 setup() 中呼叫：\nbackground(220); // 灰色背景 範例程式碼 // 在 setup() 中 let x = 0; let y = BASE_HEIGHT / 2; let speed = 2; background(220); // 在 draw() 中 push(); scale(scaleRatio); background(220); // 清除上一幀（如果需要動畫） fill(255, 0, 0); circle(BASE_WIDTH / 2, BASE_HEIGHT / 2, 50); x += speed; if (x \u0026gt; BASE_WIDTH) { x = 0; } fill(0, 0, 255); circle(x, y, 30); pop(); 功能說明 自動縮放 畫布會根據容器大小自動縮放 保持原始寬高比 自動調整像素密度以維持視覺品質 暫停/播放控制 作品會自動支援暫停/播放功能 透過 iframe 嵌入時，可以使用控制按鈕 響應式設計 自動適應不同螢幕尺寸 在獨立頁面模式（?sketch_only=true）中會自動置中 注意事項 不要修改全域變數名稱\nscaleRatio、canvasWidth、canvasHeight、p5Initialized 是系統變數，請勿修改 座標系統\n在 draw() 中，使用 push() 和 scale(scaleRatio) 包裝你的程式碼 記得在最後呼叫 pop() 變數作用域\n在檔案頂部宣告你的全域變數 在 setup() 中初始化它們 windowResized()\n如果需要響應視窗大小改變，可以取消註解 windowResized() 函數 注意：resizeCanvas() 會清除 canvas 內容，需要重新繪製 嵌入到其他文章 在其他文章中使用 shortcode 嵌入：\n找不到 sketch: your-sketch-name\n參數說明：\nname: 你的 sketch 資料夾名稱 width: iframe 寬度（例如：\u0026quot;500px\u0026quot; 或 \u0026quot;100%\u0026quot;） height: iframe 高度（例如：\u0026quot;700px\u0026quot;） reload: 是否顯示重新載入按鈕（可選，預設為 false） ", 
+    "content": "Made for Genuary2025-28 \u0026quot;Infinite Scroll.\u0026quot;\n使用方式 複製模板資料夾\n複製 0_p5js_template 資料夾 重新命名為你的作品名稱（例如：my-sketch） 修改 index.md\n設定標題、日期、標籤等 Front Matter 使用 嵌入作品 修改 sketch.js\n調整 BASE_WIDTH 和 BASE_HEIGHT 為你的設計尺寸 在 setup() 函數中初始化你的變數 在 draw() 函數中撰寫你的創作程式碼 重要參數說明 BASE_WIDTH 和 BASE_HEIGHT 這是你的設計基準尺寸。所有座標系統都基於這個尺寸，實際顯示時會自動縮放。\nconst BASE_WIDTH = 500; // 你的設計寬度 const BASE_HEIGHT = 700; // 你的設計高度 座標系統 在 draw() 函數中，你可以直接使用 BASE_WIDTH 和 BASE_HEIGHT 作為參考 例如：circle(BASE_WIDTH / 2, BASE_HEIGHT / 2, 50) 會在畫布中心繪製圓形 mouseX 和 mouseY 需要除以 scaleRatio 來取得正確座標： let mx = mouseX / scaleRatio; let my = mouseY / scaleRatio; 變數初始化 在 setup() 函數中初始化你的變數，例如：\nlet x = 0; let y = BASE_HEIGHT / 2; let speed = 2; 背景設定 如果需要設定背景色，在 setup() 中呼叫：\nbackground(220); // 灰色背景 範例程式碼 // 在 setup() 中 let x = 0; let y = BASE_HEIGHT / 2; let speed = 2; background(220); // 在 draw() 中 push(); scale(scaleRatio); background(220); // 清除上一幀（如果需要動畫） fill(255, 0, 0); circle(BASE_WIDTH / 2, BASE_HEIGHT / 2, 50); x += speed; if (x \u0026gt; BASE_WIDTH) { x = 0; } fill(0, 0, 255); circle(x, y, 30); pop(); 功能說明 自動縮放 畫布會根據容器大小自動縮放 保持原始寬高比 自動調整像素密度以維持視覺品質 暫停/播放控制 作品會自動支援暫停/播放功能 透過 iframe 嵌入時，可以使用控制按鈕 響應式設計 自動適應不同螢幕尺寸 在獨立頁面模式（?sketch_only=true）中會自動置中 注意事項 不要修改全域變數名稱\nscaleRatio、canvasWidth、canvasHeight、p5Initialized 是系統變數，請勿修改 座標系統\n在 draw() 中，使用 push() 和 scale(scaleRatio) 包裝你的程式碼 記得在最後呼叫 pop() 變數作用域\n在檔案頂部宣告你的全域變數 在 setup() 中初始化它們 windowResized()\n如果需要響應視窗大小改變，可以取消註解 windowResized() 函數 注意：resizeCanvas() 會清除 canvas 內容，需要重新繪製 嵌入到其他文章 在其他文章中使用 shortcode 嵌入：\n找不到 sketch: your-sketch-name\n參數說明：\nname: 你的 sketch 資料夾名稱 width: iframe 寬度（例如：\u0026quot;500px\u0026quot; 或 \u0026quot;100%\u0026quot;） height: iframe 高度（例如：\u0026quot;700px\u0026quot;） reload: 是否顯示重新載入按鈕（可選，預設為 false） ", 
     "url": "http:\/\/localhost:1313\/sketches\/0_p5js_template\/",
     "image": "\/images\/",
     "description": ""

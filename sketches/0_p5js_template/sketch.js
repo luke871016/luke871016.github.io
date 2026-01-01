@@ -102,7 +102,7 @@ function setup() {
   // 注意：較高的 pixelDensity 會增加渲染負擔，可能導致初始卡頓
   const finalDensity = Math.max(1, Math.min(targetDensity, 3));
   pixelDensity(finalDensity);
-  
+
   // 提示：如果遇到初始卡頓，可以考慮：
   // 1. 降低 pixelDensity 上限（例如改為 2）
   // 2. 將複雜的初始化邏輯延遲到 draw() 的第一幀
