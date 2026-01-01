@@ -57,328 +57,24 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     </section>
     <main class="h-entry e-content container col">
         
-        
-
-
-
-
-
-
-
+             
 <div class="cards" id="results">
-  
-    
-    <div class="card h-entry">
-      <a href="https://www.kiantiong.com/sketches/eclipse/" class="u-url">
-        
-          <img src="/images/eclipse_cover.jpg" alt="Eclipse 蝕" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name card-title">Eclipse 蝕</h2>
-          <p class="small e-content card-summary"><p>揤放送鈕就通產生新的結果</p>
-                                
-
-<div
-  class="sketch-embed-wrapper"
-  style="width: 100%; max-width: 500px; margin: 2em auto;"
->
-  
-  <div
-    style="
-      display: flex;
-      align-items: center;
-      gap: 0.75em;
-      margin-bottom: 0.75em;
-    "
-  >
-    
-    <div style="display: flex; gap: 0.5em; align-items: center">
+   
+  <div class="card h-entry">
+    <a href="https://www.kiantiong.com/sketches/eclipse/" class="u-url">
       
-      <button
-        id="sketch-iframe-6bb7bcee2b35f980a4ee601ebc5c8fd7-play-btn"
-        onclick="playSketch('sketch-iframe-6bb7bcee2b35f980a4ee601ebc5c8fd7')"
-        class="sketch-control-btn sketch-play-btn"
-        style="
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          border: none;
-          background: #5c8273;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0;
-          transition: all 0.2s ease;
-          margin: 0;
-        "
-        title="播放"
-      >
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <polygon points="5 3 19 12 5 21 5 3"></polygon>
-        </svg>
-      </button>
-
+      <img src="/images/eclipse_cover.jpg" alt="Eclipse 蝕" class="u-photo" />
       
-      <button
-        id="sketch-iframe-6bb7bcee2b35f980a4ee601ebc5c8fd7-stop-btn"
-        onclick="stopSketch('sketch-iframe-6bb7bcee2b35f980a4ee601ebc5c8fd7')"
-        class="sketch-control-btn sketch-stop-btn"
-        style="
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          border: none;
-          background: #e0e0e0;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0;
-          transition: all 0.2s ease;
-          margin: 0;
-        "
-        title="停止"
-      >
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#666"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <rect x="6" y="6" width="12" height="12"></rect>
-        </svg>
-      </button>
-    </div>
-
-    
-    <a
-      href="/sketches/eclipse/?sketch_only=true"
-      target="_blank"
-      rel="noopener noreferrer"
-      style="
-        font-size: 0.95em;
-        color: #333;
-        font-weight: 500;
-        text-decoration: none;
-        transition: color 0.2s ease;
-      "
-      onmouseover="this.style.color='var(--link-color, #5c8273)'"
-      onmouseout="this.style.color='#333'"
-      >Eclipse 蝕</a
-    >
+      <div class="text">
+        <h2 class="p-name card-title">Eclipse 蝕</h2>
+        <p class="small e-content card-summary">#WCCChallenge topic &quot;Eclipse 🌑&quot;</p>
+      </div>
+    </a>
   </div>
   
-
-  <div
-    class="sketch-embed"
-    style="
-                width: 100%;
-                position: relative;
-                border-radius: 8px;
-                overflow: hidden;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                aspect-ratio: 500 / 700;
-            "
-  >
-    <iframe
-      id="sketch-iframe-6bb7bcee2b35f980a4ee601ebc5c8fd7"
-      src="/sketches/eclipse/?sketch_only=true"
-      width="100%"
-      height="100%"
-      frameborder="0"
-      scrolling="no"
-      style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-      "
-      loading="lazy"
-      title="Eclipse 蝕 - p5.js Sketch"
-    >
-    </iframe>
-  </div>
 </div>
 
-
-<script>
-  (function () {
-    const iframeId = "sketch-iframe-6bb7bcee2b35f980a4ee601ebc5c8fd7";
-    const shouldAutoplay = true;
-    let isPlaying = shouldAutoplay;
-    const linkColor = "#5c8273";
-    const grayBg = "#e0e0e0";
-    const grayIcon = "#666";
-    const whiteIcon = "#fff";
-
-    function updateButtonStates(id, playing) {
-      const playBtn = document.getElementById(id + "-play-btn");
-      const stopBtn = document.getElementById(id + "-stop-btn");
-
-      if (playing) {
-        
-        if (playBtn) {
-          playBtn.style.background = linkColor;
-          const svg = playBtn.querySelector("svg");
-          if (svg) {
-            svg.setAttribute("stroke", whiteIcon);
-          }
-        }
-        if (stopBtn) {
-          stopBtn.style.background = grayBg;
-          const svg = stopBtn.querySelector("svg");
-          if (svg) {
-            svg.setAttribute("stroke", grayIcon);
-          }
-        }
-      } else {
-        
-        if (playBtn) {
-          playBtn.style.background = grayBg;
-          const svg = playBtn.querySelector("svg");
-          if (svg) {
-            svg.setAttribute("stroke", grayIcon);
-          }
-        }
-        if (stopBtn) {
-          stopBtn.style.background = linkColor;
-          const svg = stopBtn.querySelector("svg");
-          if (svg) {
-            svg.setAttribute("stroke", whiteIcon);
-          }
-        }
-      }
-    }
-
-    function playSketch(id) {
-      const iframe = document.getElementById(id);
-      if (iframe) {
-        
-        iframe.src =
-          iframe.src.split("?")[0] + "?sketch_only=true&t=" + Date.now();
-        isPlaying = true;
-        updateButtonStates(id, true);
-      }
-    }
-
-    function stopSketch(id) {
-      const iframe = document.getElementById(id);
-      if (iframe && isPlaying) {
-        
-        try {
-          iframe.contentWindow.postMessage({ type: "pause-sketch" }, "*");
-          isPlaying = false;
-          updateButtonStates(id, false);
-        } catch (e) {
-          
-          console.warn("無法發送暫停訊息，嘗試重新載入");
-          iframe.src =
-            iframe.src.split("?")[0] + "?sketch_only=true&t=" + Date.now();
-        }
-      }
-    }
-
-    
-    
-    updateButtonStates(iframeId, shouldAutoplay);
-    
-
-    
-    const iframe = document.getElementById(iframeId);
-    if (iframe && !shouldAutoplay) {
-      let paused = false; 
-
-      
-      const messageHandler = function(event) {
-        
-        if (event.source !== iframe.contentWindow) return;
-
-        if (event.data && event.data.type === 'sketch-loaded' && !paused) {
-          paused = true;
-          
-          setTimeout(function() {
-            try {
-              iframe.contentWindow.postMessage({ type: "pause-sketch" }, "*");
-            } catch (e) {
-              console.warn("無法發送暫停訊息:", e);
-            }
-          }, 100); 
-        }
-      };
-      window.addEventListener('message', messageHandler);
-
-      
-      let fallbackAttempts = 0;
-      const maxFallbackAttempts = 30; 
-      iframe.addEventListener('load', function() {
-        const fallbackPause = function() {
-          if (fallbackAttempts < maxFallbackAttempts && !paused) {
-            try {
-              iframe.contentWindow.postMessage({ type: "pause-sketch" }, "*");
-            } catch (e) {
-              
-            }
-            fallbackAttempts++;
-            if (fallbackAttempts < maxFallbackAttempts && !paused) {
-              setTimeout(fallbackPause, 100);
-            } else if (fallbackAttempts >= maxFallbackAttempts) {
-              paused = true; 
-            }
-          }
-        };
-        
-        setTimeout(fallbackPause, 1000);
-      });
-    }
-
-    
-    
-    window["playSketch_" + iframeId] = function () {
-      playSketch(iframeId);
-    };
-    window["stopSketch_" + iframeId] = function () {
-      stopSketch(iframeId);
-    };
-
-    
-    window["playSketch"] = function (id) {
-      playSketch(id);
-    };
-    window["stopSketch"] = function (id) {
-      stopSketch(id);
-    };
-    
-  })();
-</script>
  
-
-<p>這个作品是佇 2024-04-14 參與 #WCCChallenge 所創作，原底發表佇 OpenProcessing 平台（
-<a href="https://openprocessing.org/sketch/2239516" target="_blank" rel="noopener">原始連結 </a>），後來嘛成做我佇平台頂面上衝的作品，我感覺免 100 逝程式就通寫出按呢的成果誠媠，原底就是一个利用 <code>noise</code> 創作的教材爾，順紲參與社群活動。黃新先生佇政大的學生嘛捌寫過
-<a href="https://matters.town/a/aq3cu4yzg1ll" target="_blank" rel="noopener">文章 </a>欣賞這个作品，感謝逐家的呵咾。</p></p>
-        </div>
-      </a>
-    </div>
-  
-</div>
-
-
-
 
     </main>
 <footer>
@@ -419,6 +115,50 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         },
     
     
+    "https:\/\/www.kiantiong.com\/tags\/genuary\/": {
+        
+        "title": "Genuary",
+            "tags": [],
+    "content": "", 
+    "url": "https:\/\/www.kiantiong.com\/tags\/genuary\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
+    "https:\/\/www.kiantiong.com\/tags\/genuary2026\/": {
+        
+        "title": "Genuary2026",
+            "tags": [],
+    "content": "", 
+    "url": "https:\/\/www.kiantiong.com\/tags\/genuary2026\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
+    "https:\/\/www.kiantiong.com\/sketches\/genuary2026_1\/": {
+        
+        "title": "One color, one shape.",
+            "tags": [ "Genuary2026",  "Genuary", ],
+    "content": " \u0026#8592; 1/5 \u0026#8594; Live version One color, one shape. ", 
+    "url": "https:\/\/www.kiantiong.com\/sketches\/genuary2026_1\/",
+    "image": "\/images\/genuary2026_1_1.png",
+    "description": ""
+        },
+    
+    
+    "https:\/\/www.kiantiong.com\/tags\/": {
+        
+        "title": "Tags",
+            "tags": [],
+    "content": "", 
+    "url": "https:\/\/www.kiantiong.com\/tags\/",
+    "image": "",
+    "description": ""
+        },
+    
+    
     "https:\/\/www.kiantiong.com\/sutian\/": {
         
         "title": "字辭典僻智識",
@@ -436,17 +176,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
             "tags": [],
     "content": "", 
     "url": "https:\/\/www.kiantiong.com\/language_type\/",
-    "image": "",
-    "description": ""
-        },
-    
-    
-    "https:\/\/www.kiantiong.com\/tags\/": {
-        
-        "title": "Tags",
-            "tags": [],
-    "content": "", 
-    "url": "https:\/\/www.kiantiong.com\/tags\/",
     "image": "",
     "description": ""
         },
@@ -1112,17 +841,6 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
         },
     
     
-    "https:\/\/www.kiantiong.com\/tags\/genuary\/": {
-        
-        "title": "Genuary",
-            "tags": [],
-    "content": "", 
-    "url": "https:\/\/www.kiantiong.com\/tags\/genuary\/",
-    "image": "",
-    "description": ""
-        },
-    
-    
     "https:\/\/www.kiantiong.com\/tags\/genuary2025\/": {
         
         "title": "Genuary2025",
@@ -1460,7 +1178,7 @@ https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.cs
     "content": "揤放送鈕就通產生新的結果\nEclipse 蝕 這个作品是佇 2024-04-14 參與 #WCCChallenge 所創作，原底發表佇 OpenProcessing 平台（ 原始連結 ），後來嘛成做我佇平台頂面上衝的作品，我感覺免 100 逝程式就通寫出按呢的成果誠媠，原底就是一个利用 noise 創作的教材爾，順紲參與社群活動。黃新先生佇政大的學生嘛捌寫過 文章 欣賞這个作品，感謝逐家的呵咾。\n有關 #WCCChallenge WCCChallenge 是一个由德國人 Raphaël 所發起的程式創作社群活動，逐禮拜會佇 Discord 投票決定題目，Raphaël 會佇禮拜暗時開 直播 回顧逐家的投稿，無論是啥物程度的人攏通參加。\n", 
     "url": "https:\/\/www.kiantiong.com\/sketches\/eclipse\/",
     "image": "\/images\/eclipse_cover.jpg",
-    "description": "#WCCChallenge topic \u0022Eclipse 🌑\u0022"
+    "description": ""
         },
     
     
