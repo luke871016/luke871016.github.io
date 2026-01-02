@@ -44,7 +44,7 @@ function initSketch() {
   // setup
   // ============================================
   for (let i = 0; i < random(10, 20); i++) {
-    balls.push(new Ball(random(width), random(height)));
+    balls.push(new Ball(random(BASE_WIDTH), random(BASE_HEIGHT)));
   }
 }
 
@@ -160,7 +160,10 @@ class Ball {
 
     this.timer--;
     if (this.timer == 0) {
-      this.targetPosition = createVector(random(width), random(height));
+      this.targetPosition = createVector(
+        random(BASE_WIDTH),
+        random(BASE_HEIGHT)
+      );
       this.timer = floor(random(60, 180));
       this.duration = this.timer;
     }
