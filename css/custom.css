@@ -953,3 +953,16 @@ header .logo img {
   background-color: var(--link-color) !important;
   height: auto !important;
 }
+
+.atk-main-editor > .atk-header input {
+  box-shadow: none;
+}
+
+.atk-main-editor > .atk-textarea-wrap > .atk-textarea {
+  box-shadow: none;
+}
+
+.atk-comment > .atk-main > .atk-header .atk-item.atk-nick,
+.atk-comment > .atk-main > .atk-header .atk-item.atk-nick a {
+  color: var(--link-color) !important;
+}
