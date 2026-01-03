@@ -927,3 +927,29 @@ header .logo img {
     min-height: 250px;
   }
 }
+
+/* artalk留言板 */
+
+/* 調整 placeholder 文字顏色 */
+.atk-main-editor ::placeholder {
+  color: #bbb !important; /* 深灰色,可以調整成你想要的顏色 */
+  opacity: 1;
+}
+
+/* 針對不同瀏覽器 */
+.atk-main-editor ::-webkit-input-placeholder {
+  color: #bbb !important;
+}
+
+.atk-main-editor ::-moz-placeholder {
+  color: #bbb !important;
+}
+
+.atk-main-editor :-ms-input-placeholder {
+  color: #bbb !important;
+}
+
+.atk-main-editor > .atk-bottom .atk-send-btn {
+  background-color: var(--link-color) !important;
+  height: auto !important;
+}
