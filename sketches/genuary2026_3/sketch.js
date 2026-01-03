@@ -268,16 +268,38 @@ class MyDrawer {
       translate(-this.drawingArea.width / 2, -this.drawingArea.height / 2);
 
       const ratio = 1 - this.timer / this.drawingDuration;
-      for (let i = 0; i < 100; i++) {
+      for (let i = 0; i < 200; i++) {
         const angle =
-          lerp(PI - 0.1, (PI * 3) / 2 + 0.1, ratio) + random(-0.1, 0.1);
+          lerp(PI - 0.1, (PI * 3) / 2 + 0.1, ratio) + random(-0.15, 0.15);
         strokeWeight(this.drawingArea.width * 0.005 * randomGaussian(1, 0.3));
+        blendMode(MULTIPLY);
         const r = 1 - random(random(random()));
         const x =
           this.drawingArea.width + cos(angle) * this.drawingArea.width * r;
         const y =
           this.drawingArea.height + sin(angle) * this.drawingArea.height * r;
+        stroke(0, 255, 255);
         point(x, y);
+        stroke(255, 0, 255);
+        const rand1 = random(
+          -this.drawingArea.width * 0.005,
+          this.drawingArea.width * 0.005
+        );
+        const rand2 = random(
+          -this.drawingArea.width * 0.005,
+          this.drawingArea.width * 0.005
+        );
+        point(x + rand1, y + rand2);
+        stroke(255, 255, 0);
+        const rand3 = random(
+          -this.drawingArea.width * 0.005,
+          this.drawingArea.width * 0.005
+        );
+        const rand4 = random(
+          -this.drawingArea.width * 0.005,
+          this.drawingArea.width * 0.005
+        );
+        point(x + rand3, y + rand4);
       }
 
       pop();
