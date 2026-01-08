@@ -8,7 +8,7 @@
   --caption-text: #565c5f;
   --link-color: #5c8273;
   --shadow-color: rgba(0, 0, 0, 0.15);
-  --borders: #555;
+  --borders: #aaa;
 
   /* 字型設定 */
   --font-heading: "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif;
@@ -965,4 +965,14 @@ header .logo img {
 .atk-comment > .atk-main > .atk-header .atk-item.atk-nick,
 .atk-comment > .atk-main > .atk-header .atk-item.atk-nick a {
   color: var(--link-color) !important;
+}
+
+kbd {
+  background-color: var(--primary-bg);
+  box-shadow: inset 0 -1px 0 var(--borders);
+  color: var(--primary-text);
+  border: 1px solid var(--borders);
+  border-radius: 0.2rem;
+  font: 80% var(--borders);
+  padding: 0.15rem 0.3rem;
 }
