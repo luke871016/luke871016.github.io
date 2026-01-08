@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>外來語 on 陳建中｜Tân Kiàn-tiong</title>
-    <link>https://www.kiantiong.com/tags/%E5%A4%96%E4%BE%86%E8%AA%9E/</link>
+    <link>http://localhost:1313/tags/%E5%A4%96%E4%BE%86%E8%AA%9E/</link>
     <description>Recent content in 外來語 on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
     <lastBuildDate>Thu, 07 Sep 2023 11:19:46 +0800</lastBuildDate>
-    <atom:link href="https://www.kiantiong.com/tags/%E5%A4%96%E4%BE%86%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%A4%96%E4%BE%86%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>巷仔內才知影的教典外來語詞</title>
-      <link>https://www.kiantiong.com/sutian/1/</link>
+      <link>http://localhost:1313/sutian/1/</link>
       <pubDate>Thu, 07 Sep 2023 11:19:46 +0800</pubDate>
-      <guid>https://www.kiantiong.com/sutian/1/</guid>
+      <guid>http://localhost:1313/sutian/1/</guid>
       <description>文章語言：台語
-        &lt;figure&gt;&lt;img src=&#34;https://www.kiantiong.com/images/kautian1-cover.jpg&#34;&#xA;    alt=&#34;搜揣結果&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;揣「-」的搜揣結果&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;佇用臺灣台語查詞目輸入「-」會當揣著所有囥佇方言差表內底的外來語詞，攏總有 23 條&#xA;（音讀欄無咧看連字符號，愛囥佇詞目欄的連字符號才會予查著，方言差表的嘛算是詞目欄）&lt;/p&gt;&#xA;&lt;h2 id=&#34;教典祕密外來語清單&#34;&gt;教典祕密外來語清單&lt;/h2&gt;&#xA;&lt;p&gt;實際上整理起來，方言差表內底無囥佇外來語附錄的外來語干焦遮 11 个詞喔，其他攏有收佇外來語附錄&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;oo-khà-sàng（阿母，外來語附錄收 khà-sàng）&lt;/li&gt;&#xA;&lt;li&gt;mè-sù（月經）&lt;/li&gt;&#xA;&lt;li&gt;gat-lá 油（臭油、番仔油）&lt;/li&gt;&#xA;&lt;li&gt;le-khòo-tòo（曲盤）&lt;/li&gt;&#xA;&lt;li&gt;ji-siá-kuh（吸石）&lt;/li&gt;&#xA;&lt;li&gt;bu-lá-tsià（奶帕仔，外來語附錄收 bu-là-jià）&lt;/li&gt;&#xA;&lt;li&gt;ha-sí-khah（出癖）&lt;/li&gt;&#xA;&lt;li&gt;mí-sooh/mí-soh/bí-sooh（豆醬）&lt;/li&gt;&#xA;&lt;li&gt;jiá-khuh/jiak-khuh/jiak-kuh/tsiak-kuh（挩鍊仔）&lt;/li&gt;&#xA;&lt;li&gt;sir-lí-pah/ló-lí 仔/su-lí-pah（淺拖仔）&lt;/li&gt;&#xA;&lt;li&gt;ji-lòo-sià/ji-lò-sià/gi-lòo-sià（自動車）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;
+        &lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/kautian1-cover.jpg&#34;&#xA;    alt=&#34;搜揣結果&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;揣「-」的搜揣結果&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;佇用臺灣台語查詞目輸入「-」會當揣著所有囥佇方言差表內底的外來語詞，攏總有 23 條&#xA;（音讀欄無咧看連字符號，愛囥佇詞目欄的連字符號才會予查著，方言差表的嘛算是詞目欄）&lt;/p&gt;&#xA;&lt;h2 id=&#34;教典祕密外來語清單&#34;&gt;教典祕密外來語清單&lt;/h2&gt;&#xA;&lt;p&gt;實際上整理起來，方言差表內底無囥佇外來語附錄的外來語干焦遮 11 个詞喔，其他攏有收佇外來語附錄&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;oo-khà-sàng（阿母，外來語附錄收 khà-sàng）&lt;/li&gt;&#xA;&lt;li&gt;mè-sù（月經）&lt;/li&gt;&#xA;&lt;li&gt;gat-lá 油（臭油、番仔油）&lt;/li&gt;&#xA;&lt;li&gt;le-khòo-tòo（曲盤）&lt;/li&gt;&#xA;&lt;li&gt;ji-siá-kuh（吸石）&lt;/li&gt;&#xA;&lt;li&gt;bu-lá-tsià（奶帕仔，外來語附錄收 bu-là-jià）&lt;/li&gt;&#xA;&lt;li&gt;ha-sí-khah（出癖）&lt;/li&gt;&#xA;&lt;li&gt;mí-sooh/mí-soh/bí-sooh（豆醬）&lt;/li&gt;&#xA;&lt;li&gt;jiá-khuh/jiak-khuh/jiak-kuh/tsiak-kuh（挩鍊仔）&lt;/li&gt;&#xA;&lt;li&gt;sir-lí-pah/ló-lí 仔/su-lí-pah（淺拖仔）&lt;/li&gt;&#xA;&lt;li&gt;ji-lòo-sià/ji-lò-sià/gi-lòo-sià（自動車）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;
       </description>
     </item>
   </channel>
