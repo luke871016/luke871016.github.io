@@ -1,0 +1,67 @@
+baseURL = 'https://www.kiantiong.com/'
+defaultContentLanguage = "und-hani"
+languageCode = 'und-hani'
+title = '陳建中｜Tân Kiàn-tiong'
+theme = 'quint'
+
+[params]
+css = ["css/custom.css"]            # Your custom CSS overrides, stored in yoursite/static/
+numImages = 10                      # Number of random images to choose from for banners (in themes/quint/static/images)
+useToc = true                      # Set to true to show a Table of Contents on multi-heading posts
+
+[params.author]
+name = '陳建中｜Tân Kiàn-tiong'
+image = '/images/logo.png'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menus.main]]
+    name = '頭頁'
+    url = '/'
+    weight = 5
+
+[[menus.main]]
+    name = '日誌'
+    url = '/blog'
+    weight = 10
+
+[[menus.main]]
+    name = '字型'
+    url = '/jihing'
+    weight = 20
+
+[[menus.main]]
+    name = '字辭典'
+    url = '/sutian'
+    weight = 30
+
+[[menus.main]]
+    name = '介紹'
+    url = '/about'
+    weight = 40
+
+[[menus.footer]]
+    name = 'RSS Feed'
+    url = '/index.xml'
+    weight = 10
+
+# [[menus.footer]]
+#     name = 'Email 訂閱'
+#     url = 'https://blogtrottr.com/?subscribe=https://www.kiantiong.com/index.xml'
+#     weight = 20
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+    [markup.goldmark.extensions]
+      typographer = false
+
+[taxonomies]
+  series = "series"
+  tags = "tags"
+  language_type = "language_type"
+  

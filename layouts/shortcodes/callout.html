@@ -1,0 +1,34 @@
+{{/* Callout Shortcode
+使用方式：
+{{< callout type="info" title="重要提醒" >}}
+這是 callout 的內容
+{{< /callout >}}
+
+支援的類型：
+- info: 資訊提示（藍色）
+- warning: 警告提醒（黃色）
+- success: 成功訊息（綠色）
+- error: 錯誤訊息（紅色）
+- note: 筆記說明（灰色）
+*/}}
+
+{{ $type := .Get "type" | default "info" }}
+{{ $title := .Get "title" | default "" }}
+
+<div class="callout callout-{{ $type }}">
+    {{ if $title }}
+    <div class="callout-header">
+        <div class="callout-icon">
+            {{ if eq $type "info" }}ℹ️{{ end }}
+            {{ if eq $type "warning" }}⚠️{{ end }}
+            {{ if eq $type "success" }}✅{{ end }}
+            {{ if eq $type "error" }}❌{{ end }}
+            {{ if eq $type "note" }}📝{{ end }}
+        </div>
+        <div class="callout-title">{{ $title }}</div>
+    </div>
+    {{ end }}
+    <div class="callout-content">
+        {{ .Inner | markdownify }}
+    </div>
+</div> 

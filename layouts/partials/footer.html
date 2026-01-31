@@ -1,0 +1,24 @@
+<footer>
+    <div class="social-media">
+        {{ range site.Params.social}}
+            <a href="{{ .url }}"><img alt="{{ .name }}" src="{{ .icon }}"/></a>
+        {{ end }}
+    </div>
+    <div class="logo h-card">
+        <a class="u-url" href="{{ .Site.Home.Permalink }}">
+            <img alt="Site Logo" class="site-logo u-photo" src="{{ $.Site.Params.logo | default "/images/logo.png" }}"/>
+        </a>
+        <p>{{ now.Format "2006" }}
+            {{ .Site.Title }}</p>
+    </div>
+    <nav>
+        <ul>
+            {{- range site.Menus.footer }}
+                <li>
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+            {{- end }}
+        </ul>
+    </nav>
+    {{ partial "search-index.html" . }}
+</footer>

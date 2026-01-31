@@ -1,0 +1,55 @@
+{{/* 取得正確的文章列表 */}}
+{{ $posts := .Pages }}
+{{ if .IsHome }}
+  {{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
+  {{ $jihingPosts := where .Site.RegularPages "Section" "jihing" }}
+  {{ $sutianPosts := where .Site.RegularPages "Section" "sutian" }}
+  {{ $allPosts := $blogPosts | union $jihingPosts | union $sutianPosts }}
+  {{ $posts = sort $allPosts "Date" "desc" }}
+{{ end }}
+
+{{/* 分頁器 */}}
+{{ $paginator := .Paginate $posts }}
+
+{{/* 卡片區塊 */}}
+<div class="cards" id="results">
+  {{ range $paginator.Pages }}
+    {{ $post := . }}
+    <div class="card h-entry">
+      <a href="{{ $post.Permalink }}" class="u-url">
+        {{ with $post.Params.image }}
+          <img src="{{ . }}" alt="{{ $post.Title }}" class="u-photo">
+        {{ else }}
+          {{ partial "randImage" $post }}
+        {{ end }}
+        <div class="text">
+          <h2 class="p-name card-title">{{ $post.Title }}</h2>
+          <p class="small e-content card-summary">{{ $post.Summary }}</p>
+        </div>
+      </a>
+    </div>
+  {{ end }}
+</div>
+
+{{/* 分頁導覽列 */}}
+{{ if gt $paginator.TotalPages 1 }}
+  <div class="pagination" id="pagination">
+    {{ if $paginator.HasPrev }}
+      <a href="{{ $paginator.Prev.URL }}">前一頁</a>
+    {{ else }}
+      <span></span>
+    {{ end }}
+    <div class="pages">
+      {{ range $paginator.Pagers }}
+        <a href="{{ .URL }}"{{ if eq . $paginator }} class="active"{{ end }}>
+          {{ .PageNumber }}
+        </a>
+      {{ end }}
+    </div>
+    {{ if $paginator.HasNext }}
+      <a href="{{ $paginator.Next.URL }}">後一頁</a>
+    {{ else }}
+      <span></span>
+    {{ end }}
+  </div>
+{{ end }}

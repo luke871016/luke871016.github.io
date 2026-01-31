@@ -1,0 +1,7 @@
+<!-- ktquint2/layouts/shortcodes/collapse.html -->
+<details>
+  <summary>{{ .Get "summary" | default "補充資訊" }}</summary>
+  <div style="margin-top:0.5em;">
+    {{ .Inner | markdownify }}
+  </div>
+</details>

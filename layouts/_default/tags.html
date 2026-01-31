@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <section class="hero">
+        <h1 class="p-name">#{{ .Title }}</h1>
+        <p class="subtitle">所有包含 #{{ .Title }} 的文章</p>
+        <!-- {{ partial "search.html" . }} -->
+    </section>
+    <main class="h-entry e-content container col">
+        {{ .Content }}
+        {{ partial "cards" . }}
+    </main>
+{{ end }}

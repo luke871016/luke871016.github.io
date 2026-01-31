@@ -1,0 +1,17 @@
+{{/* 雙語對照 shortcode
+使用方式：
+{{< bilingual >}}
+{{< mandarin >}}
+華語內容
+{{< /mandarin >}}
+{{< taiwanese >}}
+台語內容
+{{< /taiwanese >}}
+{{< /bilingual >}}
+*/}}
+
+<div class="bilingual-container">
+    <div class="mandarin-content">
+        {{ .Inner | markdownify }}
+    </div>
+</div> 

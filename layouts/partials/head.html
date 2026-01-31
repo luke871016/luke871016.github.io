@@ -1,0 +1,18 @@
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="/images/fav/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+    <link href="/images/fav/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="/images/fav/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+    <link href="/images/fav/site.webmanifest" rel="manifest"/>
+    <title>{{ if ne .Title .Site.Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont-truetype@2.5.25/css/vf.min.css
+" rel="stylesheet">
+    <link href="https://tauhu.tw/tauhu-oo.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet"/>
+    {{ range .Site.Params.css -}}
+        <link href="/{{ . }}" rel="stylesheet"/>
+    {{- end }}
+    {{ partial "extra_head.html" . }}
+</head>

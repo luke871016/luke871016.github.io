@@ -1,0 +1,5 @@
+<form action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' class="form-inline" id="search" method="get">
+    <label for="search-input" hidden="">揣網頁內容</label>
+    <input id="search-input" name="query" placeholder="揣網頁內容" type="text"/>
+    <button type="submit" value="search">揣</button>
+</form>

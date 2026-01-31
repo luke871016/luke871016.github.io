@@ -1,0 +1,28 @@
+{{ define "main" }}
+    <section class="hero">
+        <h1 class="p-name">{{ .Title }}</h1>
+        {{ partial "search.html" . }}
+    </section>
+    <main class="h-entry e-content container col">
+        <!-- Debug information -->
+        <p>Debug: Total pages: {{ len .Pages }}</p>
+        <p>Debug: Term: {{ .Data.Term }}</p>
+        <p>Debug: Term count: {{ len .Data.Pages }}</p>
+        
+        <ul>
+            {{ range .Pages }}
+            <li>Debug: Found page "{{ .Title }}" with tags: {{ .Params.tags }}</li>
+            {{ partial "li" . }}
+            {{ end }}
+        </ul>
+        
+        <!-- Alternative approach using .Data.Pages -->
+        <h3>Using .Data.Pages:</h3>
+        <ul>
+            {{ range .Data.Pages }}
+            <li>Debug: Found page "{{ .Title }}" with tags: {{ .Params.tags }}</li>
+            {{ partial "li" . }}
+            {{ end }}
+        </ul>
+    </main>
+{{ end }}
