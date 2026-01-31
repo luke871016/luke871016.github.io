@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+@import url("https://font.emtech.cc/css/GenYoGothicTW");
+
+>>>>>>> 38e8ea9f19c15150be5409214c096cef8656f4a5
 /* Root Variables */
 :root {
   --primary-bg: #efefef;
@@ -18,7 +23,10 @@
 
 @font-face {
   font-family: "GenYoExt";
+<<<<<<< HEAD
   font-display: swap;
+=======
+>>>>>>> 38e8ea9f19c15150be5409214c096cef8656f4a5
   src: url("/fonts/GenYoExt2-R.woff2") format("woff2");
   font-style: normal;
 }
