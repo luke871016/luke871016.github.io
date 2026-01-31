@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Language_type on 陳建中｜Tân Kiàn-tiong</title>
-    <link>https://www.kiantiong.com/language_type/</link>
+    <link>http://localhost:1313/language_type/</link>
     <description>Recent content in Language_type on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
     <lastBuildDate>Wed, 28 Jan 2026 19:00:00 +0800</lastBuildDate>
-    <atom:link href="https://www.kiantiong.com/language_type/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/language_type/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bilingual</title>
-      <link>https://www.kiantiong.com/language_type/bilingual/</link>
+      <link>http://localhost:1313/language_type/bilingual/</link>
       <pubDate>Wed, 28 Jan 2026 19:00:00 +0800</pubDate>
-      <guid>https://www.kiantiong.com/language_type/bilingual/</guid>
+      <guid>http://localhost:1313/language_type/bilingual/</guid>
       <description>
         
       </description>
     </item>
     <item>
       <title>Taiwanese</title>
-      <link>https://www.kiantiong.com/language_type/taiwanese/</link>
+      <link>http://localhost:1313/language_type/taiwanese/</link>
       <pubDate>Thu, 08 Jan 2026 02:50:00 +0800</pubDate>
-      <guid>https://www.kiantiong.com/language_type/taiwanese/</guid>
+      <guid>http://localhost:1313/language_type/taiwanese/</guid>
       <description>
         
       </description>
     </item>
     <item>
       <title>Mandarin</title>
-      <link>https://www.kiantiong.com/language_type/mandarin/</link>
+      <link>http://localhost:1313/language_type/mandarin/</link>
       <pubDate>Sat, 16 Aug 2025 10:05:47 +0800</pubDate>
-      <guid>https://www.kiantiong.com/language_type/mandarin/</guid>
+      <guid>http://localhost:1313/language_type/mandarin/</guid>
       <description>
         
       </description>
