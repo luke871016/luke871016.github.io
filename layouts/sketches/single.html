@@ -1,0 +1,229 @@
+{{ define "main" }}
+    {{/* 結構化資料 */}}
+    {{ partial "structured-data.html" . }}
+    
+    {{/* 檢查是否為 sketch_only 模式，如果是則顯示獨立頁面 */}}
+    {{ $sketchFile := .Resources.GetMatch "sketch.js" }}
+    {{ if $sketchFile }}
+    <div id="sketch-only-container" style="display: none;">
+        {{ $bgColor := default "#ffffff" .Params.canvas_bg }}
+        <div id="p5-canvas-wrapper" style="width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999; background-color: {{ $bgColor }}; display: flex; align-items: center; justify-content: center;"></div>
+        <div id="p5-loading" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #666; font-family: sans-serif; z-index: 10000;">載入中...</div>
+    </div>
+    {{ end }}
+    
+    <main class="post h-entry container row">
+        <div class="post">
+            <div>
+                <h1 class="p-name" id="textOverlay">{{ .Title }}</h1>
+                {{ with .Params.subtitle }}
+                <p class="subtitle">{{ . }}</p>
+                {{ end }}
+            </div>
+            <div class="post-data row">
+                <time class="dt-published" datetime="{{ .Date }}">
+                    <a class="u-url" href="{{ .Permalink }}">{{ .Date | time.Format ":date_medium" }}</a>
+                </time>
+                {{ with .Params.series }}
+                    {{ range . }}
+                        {{ $seriesName := . }}
+                        {{ $seriesKey := $seriesName | urlize }}
+                        {{ $seriesPages := index site.Taxonomies.series $seriesKey }}
+                        {{ $sortedPages := $seriesPages.Pages.ByDate }}
+                        {{ $currentIndex := 0 }}
+                        {{ range $i, $p := $sortedPages }}
+                            {{ if eq $p.Permalink $.Permalink }}
+                                {{ $currentIndex = add $i 1 }}
+                            {{ end }}
+                        {{ end }}
+                        <div class="series-top">
+                            <a href="{{ "/series/" | relLangURL }}{{ $seriesKey }}">{{ $seriesName }}</a> 系列第 {{ $currentIndex }} 篇
+                        </div>
+                    {{ end }}
+                {{ end }}
+                <span rel="author" class="p-author h-card">
+                    <img class="u-photo hidden" src="{{ with $.Site.Params.Author.image }}{{ . }}{{ else }}{{ end }}" />
+                    <span class="p-name hidden" rel="me">{{ with .Params.author }}{{ . }}{{ else }}{{ $.Site.Params.Author.name }}{{ end }}</span>
+                </span>
+
+                {{ with .Params.tags }}
+                <div class="tag-container">
+                    {{ range . }}
+                    <a class="p-category tag" href="{{ "tags/" | relURL }}{{ . | urlize }}/">
+                        #{{ . }}
+                    </a>&nbsp;
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+            
+            <div class="e-content">
+                {{ .Content }}
+            </div>
+
+            {{ with .Params.series }}
+                {{ range . }}
+                    {{ $seriesName := . }}
+                    {{ $seriesKey := $seriesName | urlize }}
+                    {{ $seriesPages := index site.Taxonomies.series $seriesKey }}
+                    <details class="series-list">
+                        <summary>{{ $seriesName }} Series</summary>
+                        <ol>
+                        {{ range $seriesPages.Pages.ByDate }}
+                            {{ if eq .Permalink $.Permalink }}
+                            <li>{{ .Title }}</li>
+                            {{ else }}
+                            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                            {{ end }}
+                        {{ end }}
+                        </ol>
+                    </details>
+                {{ end }}
+            {{ end }}
+            
+            <hr>
+            {{/* 文章底部：同 section 上下篇連結 */}}
+            <nav class="post-pagination">
+                {{ with .PrevInSection }}
+                    <a class="prev-post" href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>
+                {{ end }}
+                {{ with .NextInSection }}
+                    <a class="next-post" href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
+                {{ end }}
+            </nav>
+        </div>
+    </main>
+    
+    {{/* 載入 p5.js 和 sketch.js（僅在 sketch_only 模式） */}}
+    {{ if $sketchFile }}
+    <script src="/js/p5.min.js"></script>
+    <script>
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const isSketchOnly = urlParams.get('sketch_only') === 'true';
+            
+            if (isSketchOnly) {
+                // 隱藏所有其他元素
+                document.querySelector('header')?.style.setProperty('display', 'none', 'important');
+                document.querySelector('footer')?.style.setProperty('display', 'none', 'important');
+                document.querySelector('main')?.style.setProperty('display', 'none', 'important');
+                
+                // 顯示 sketch 容器
+                const sketchContainer = document.getElementById('sketch-only-container');
+                if (sketchContainer) {
+                    sketchContainer.style.display = 'block';
+                }
+                
+                // 設定 body 樣式
+                document.body.style.margin = '0';
+                document.body.style.padding = '0';
+                document.body.style.overflow = 'hidden';
+                
+            const loadingEl = document.getElementById('p5-loading');
+                const container = document.getElementById('p5-canvas-wrapper');
+            const sketchUrl = '{{ $sketchFile.RelPermalink }}';
+            
+            function loadSketch() {
+                if (typeof p5 === 'undefined') {
+                    setTimeout(loadSketch, 50);
+                    return;
+                }
+                
+                const script = document.createElement('script');
+                script.src = sketchUrl;
+                script.onload = function() {
+                    // 等待 canvas 被創建並添加到容器中
+                    let attempts = 0;
+                    const maxAttempts = 100; // 增加嘗試次數
+                    let canvasFound = false;
+                    
+                    const checkCanvas = function() {
+                        const canvas = document.querySelector('canvas');
+                        if (canvas && !canvasFound) {
+                            canvasFound = true;
+                            
+                            // 確保 canvas 在正確的容器中
+                            if (container && !container.contains(canvas)) {
+                                container.appendChild(canvas);
+                            }
+                            
+                            // 等待 p5.js 完成初始化
+                            // 使用 requestAnimationFrame 確保在下一幀執行，避免阻塞
+                            requestAnimationFrame(function() {
+                                // 只在 windowResized 函數存在時才調用，避免不必要的延遲
+                                if (typeof windowResized === 'function') {
+                                    // 使用 requestAnimationFrame 而非 setTimeout，減少延遲
+                                    requestAnimationFrame(function() {
+                                        windowResized();
+                                        finishLoading();
+                                    });
+                                } else {
+                                    finishLoading();
+                                }
+                            });
+                        } else if (!canvasFound && attempts < maxAttempts) {
+                            attempts++;
+                            setTimeout(checkCanvas, 50);
+                        } else if (!canvasFound && attempts >= maxAttempts) {
+                            // 如果超時，顯示錯誤訊息
+                            if (loadingEl) {
+                                loadingEl.innerHTML = '<p style="color: #d32f2f;">無法載入 canvas</p>';
+                            }
+                            console.error('無法找到 canvas 元素，可能 sketch.js 載入失敗或 setup() 未執行');
+                        }
+                    };
+                    
+                    const finishLoading = function() {
+                        if (loadingEl) {
+                            loadingEl.style.display = 'none';
+                        }
+                        // 通知父頁面已載入完成
+                        if (window.parent !== window.self) {
+                            window.parent.postMessage({ type: 'sketch-loaded', sketch: '{{ .File.TranslationBaseName }}' }, '*');
+                        }
+                    };
+                    
+                    // 使用 MutationObserver 監聽 canvas 的創建
+                    const observer = new MutationObserver(function(mutations) {
+                        if (!canvasFound) {
+                            const canvas = document.querySelector('canvas');
+                            if (canvas) {
+                                checkCanvas();
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                    
+                    observer.observe(document.body, {
+                        childList: true,
+                        subtree: true
+                    });
+                    
+                    // 同時使用輪詢方式檢查（作為備用）
+                    checkCanvas();
+                };
+                script.onerror = function() {
+                    if (loadingEl) {
+                            loadingEl.innerHTML = '<p style="color: #d32f2f;">載入失敗</p>';
+                    }
+                };
+                document.head.appendChild(script);
+            }
+            
+                // 監聽重新播放訊息
+                window.addEventListener('message', function(event) {
+                    if (event.data && event.data.type === 'reload-sketch') {
+                        location.reload();
+                    }
+                });
+                
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', loadSketch);
+            } else {
+                loadSketch();
+                }
+            }
+        })();
+    </script>
+    {{ end }}
+{{ end }}

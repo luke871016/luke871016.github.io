@@ -1,0 +1,47 @@
+{{/* 取得 sketches section 的文章列表 */}} {{ $posts := .Pages }} {{/* 分頁器
+*/}} {{ $paginator := .Paginate $posts }} {{/* Sketches 卡片區塊 */}}
+<div class="sketches-cards" id="results">
+  {{ range $paginator.Pages }} {{ $post := . }}
+  <article class="sketch-card h-entry">
+    <a href="{{ $post.Permalink }}" class="u-url sketch-card-link">
+      <div class="sketch-image-wrapper">
+        {{ with $post.Params.image }}
+        <img
+          src="{{ . }}"
+          alt="{{ $post.Title }}"
+          class="u-photo sketch-image"
+        />
+        {{ else }} {{ partial "randImage" $post }} {{ end }}
+      </div>
+      <div class="sketch-info">
+        <h2 class="p-name sketch-title">{{ $post.Title }}</h2>
+        <time class="dt-published sketch-date" datetime="{{ $post.Date }}">
+          {{ $post.Date | time.Format ":date_medium" }}
+        </time>
+      </div>
+    </a>
+  </article>
+  {{ end }}
+</div>
+
+{{/* 分頁導覽列 */}} {{ if gt $paginator.TotalPages 1 }}
+<div class="pagination" id="pagination">
+  {{ if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL }}">前一頁</a>
+  {{ else }}
+  <span></span>
+  {{ end }}
+  <div class="pages">
+    {{ range $paginator.Pagers }}
+    <a href="{{ .URL }}" {{ if eq . $paginator }} class="active" {{ end }}>
+      {{ .PageNumber }}
+    </a>
+    {{ end }}
+  </div>
+  {{ if $paginator.HasNext }}
+  <a href="{{ $paginator.Next.URL }}">後一頁</a>
+  {{ else }}
+  <span></span>
+  {{ end }}
+</div>
+{{ end }}

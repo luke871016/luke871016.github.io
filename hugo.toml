@@ -37,9 +37,19 @@ image = '/images/logo.png'
     weight = 30
 
 [[menus.main]]
+    name = 'Sketches'
+    url = '/sketches'
+    weight = 40
+
+    [[menus.main]]
+    name = '簽到'
+    url = '/comments'
+    weight = 50
+
+[[menus.main]]
     name = '介紹'
     url = '/about'
-    weight = 40
+    weight = 60
 
 [[menus.footer]]
     name = 'RSS Feed'

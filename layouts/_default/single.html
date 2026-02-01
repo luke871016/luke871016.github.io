@@ -113,6 +113,11 @@
             {{ end }}
             
             <hr>
+
+            {{ if .Params.comments }}
+                {{ partial "comments.html" . }}
+            {{ end }}
+
             {{/* 文章底部：同 section 上下篇連結 */}}
             <nav class="post-pagination">
                 {{ with .PrevInSection }}

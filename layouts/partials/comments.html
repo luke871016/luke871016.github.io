@@ -1,0 +1,14 @@
+<!-- Artalk 留言板 -->
+<div id="Comments"></div>
+
+<link href="https://unpkg.com/artalk@latest/dist/Artalk.css" rel="stylesheet" />
+<script src="https://unpkg.com/artalk@latest/dist/Artalk.js"></script>
+<script>
+  Artalk.init({
+    el: "#Comments",
+    pageKey: "{{ .RelPermalink }}", // Hugo 變數,自動取得頁面路徑
+    pageTitle: "{{ .Title }}", // Hugo 變數,自動取得頁面標題
+    server: "https://artalk-railway-production-cbb4.up.railway.app",
+    site: "kiantiong",
+  });
+</script>

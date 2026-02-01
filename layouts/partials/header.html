@@ -1,16 +1,23 @@
 <header>
-    <div class="logo h-card">
-        <a class="u-url" href="{{ .Site.Home.Permalink }}">
-            <img alt="Site Logo" class="site-logo u-photo" src="{{ $.Site.Params.logo | default "/images/logo.png" }}"/>
-        </a>
-    </div>
-    <nav class="menu">
-        <ul>
-            {{- range site.Menus.main }}
-                <li>
-                    <a href="{{ .URL }}">{{ .Name }}</a>
-                </li>
-            {{- end }}
-        </ul>
-    </nav>
+  <div class="logo h-card">
+    <a class="u-url" href="{{ .Site.Home.Permalink }}">
+      <img alt="Site Logo" class="site-logo u-photo" src="{{ $.Site.Params.logo
+      | default "/images/logo.png" }}"/>
+    </a>
+  </div>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <nav class="menu">
+    <ul>
+      {{- range site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{- end }}
+    </ul>
+  </nav>
 </header>

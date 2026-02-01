@@ -1,0 +1,320 @@
+{{/* Sketch 嵌入 Shortcode 使用方式： {{< sketch name="hello-p5" >}} -
+預設大小嵌入 {{< sketch name="hello-p5" width="600" >}} - 自訂寬度 {{< sketch
+name="hello-p5" width="600" height="400" >}} - 自訂寬高 {{< sketch
+name="hello-p5" width="600" height="400" reload="true" >}} - 帶控制按鈕 {{<
+sketch name="hello-p5" autoplay="false" >}} - 載入時不自動播放 */}} {{
+$sketchName := .Get "name" | default (.Get 0) }} {{ $width := .Get "width" |
+default "100%" }} {{ $height := .Get "height" | default "400" }} {{ $reload :=
+.Get "reload" | default "false" }} {{ $autoplay := .Get "autoplay" | default
+"true" }} {{/* 計算寬高比 */}} {{ $widthNum := 800 }} {{ $heightNum := 400 }} {{
+if ne $width "100%" }} {{ $widthStr := replaceRE "[^0-9]" "" $width }} {{ if
+$widthStr }} {{ $widthNum = int $widthStr }} {{ end }} {{ end }} {{ $heightStr
+:= replaceRE "[^0-9]" "" $height }} {{ if $heightStr }} {{ $heightNum = int
+$heightStr }} {{ end }} {{/* 尋找對應的 sketch 頁面 */}} {{ $sketchPage := false
+}} {{ range where site.RegularPages "Section" "sketches" }} {{ $baseName :=
+.File.TranslationBaseName }} {{ if or (eq $baseName $sketchName) (eq (path.Base
+.File.Dir) $sketchName) }} {{ $sketchPage = . }} {{ end }} {{ end }} {{ if
+$sketchPage }} {{/* 建立唯一的 ID */}} {{ $iframeId := printf "sketch-iframe-%s"
+(md5 (printf "%s-%s" $sketchName $width $height)) }}
+
+<div
+  class="sketch-embed-wrapper"
+  style="width: 100%; max-width: {{ $width }}; margin: 2em auto;"
+>
+  {{ if eq $reload "true" }}
+  <div
+    style="
+      display: flex;
+      align-items: center;
+      gap: 0.75em;
+      margin-bottom: 0.75em;
+    "
+  >
+    {{/* 控制按鈕組 */}}
+    <div style="display: flex; gap: 0.5em; align-items: center">
+      {{/* 播放按鈕 */}}
+      <button
+        id="{{ $iframeId }}-play-btn"
+        onclick="playSketch('{{ $iframeId }}')"
+        class="sketch-control-btn sketch-play-btn"
+        style="
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          background: #5c8273;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          transition: all 0.2s ease;
+          margin: 0;
+        "
+        title="播放"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </button>
+
+      {{/* 停止按鈕 */}}
+      <button
+        id="{{ $iframeId }}-stop-btn"
+        onclick="stopSketch('{{ $iframeId }}')"
+        class="sketch-control-btn sketch-stop-btn"
+        style="
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          background: #e0e0e0;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          transition: all 0.2s ease;
+          margin: 0;
+        "
+        title="停止"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#666"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="6" y="6" width="12" height="12"></rect>
+        </svg>
+      </button>
+    </div>
+
+    {{/* 標題（連結到獨立頁面） */}}
+    <a
+      href="{{ $sketchPage.RelPermalink }}?sketch_only=true"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="
+        font-size: 0.95em;
+        color: #333;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      "
+      onmouseover="this.style.color='var(--link-color, #5c8273)'"
+      onmouseout="this.style.color='#333'"
+      >{{ $sketchPage.Title }}</a
+    >
+  </div>
+  {{ end }}
+
+  <div
+    class="sketch-embed"
+    style="
+                width: 100%;
+                position: relative;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                aspect-ratio: {{ $widthNum }} / {{ $heightNum }};
+            "
+  >
+    <iframe
+      id="{{ $iframeId }}"
+      src="{{ $sketchPage.RelPermalink }}?sketch_only=true"
+      width="100%"
+      height="100%"
+      frameborder="0"
+      scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      "
+      loading="lazy"
+      title="{{ $sketchPage.Title }} - p5.js Sketch"
+    >
+    </iframe>
+  </div>
+</div>
+
+{{ if or (eq $reload "true") (eq $autoplay "false") }}
+<script>
+  (function () {
+    const iframeId = "{{ $iframeId }}";
+    const shouldAutoplay = {{ if eq $autoplay "false" }}false{{ else }}true{{ end }};
+    let isPlaying = shouldAutoplay;
+    const linkColor = "#5c8273";
+    const grayBg = "#e0e0e0";
+    const grayIcon = "#666";
+    const whiteIcon = "#fff";
+
+    function updateButtonStates(id, playing) {
+      const playBtn = document.getElementById(id + "-play-btn");
+      const stopBtn = document.getElementById(id + "-stop-btn");
+
+      if (playing) {
+        // 播放狀態：播放按鈕深色，停止按鈕灰色
+        if (playBtn) {
+          playBtn.style.background = linkColor;
+          const svg = playBtn.querySelector("svg");
+          if (svg) {
+            svg.setAttribute("stroke", whiteIcon);
+          }
+        }
+        if (stopBtn) {
+          stopBtn.style.background = grayBg;
+          const svg = stopBtn.querySelector("svg");
+          if (svg) {
+            svg.setAttribute("stroke", grayIcon);
+          }
+        }
+      } else {
+        // 暫停狀態：播放按鈕灰色，停止按鈕深色
+        if (playBtn) {
+          playBtn.style.background = grayBg;
+          const svg = playBtn.querySelector("svg");
+          if (svg) {
+            svg.setAttribute("stroke", grayIcon);
+          }
+        }
+        if (stopBtn) {
+          stopBtn.style.background = linkColor;
+          const svg = stopBtn.querySelector("svg");
+          if (svg) {
+            svg.setAttribute("stroke", whiteIcon);
+          }
+        }
+      }
+    }
+
+    function playSketch(id) {
+      const iframe = document.getElementById(id);
+      if (iframe) {
+        // 總是重新載入 iframe（重新播放）
+        iframe.src =
+          iframe.src.split("?")[0] + "?sketch_only=true&t=" + Date.now();
+        isPlaying = true;
+        updateButtonStates(id, true);
+      }
+    }
+
+    function stopSketch(id) {
+      const iframe = document.getElementById(id);
+      if (iframe && isPlaying) {
+        // 發送暫停訊息給 iframe
+        try {
+          iframe.contentWindow.postMessage({ type: "pause-sketch" }, "*");
+          isPlaying = false;
+          updateButtonStates(id, false);
+        } catch (e) {
+          // 如果無法發送訊息，則重新載入並立即暫停
+          console.warn("無法發送暫停訊息，嘗試重新載入");
+          iframe.src =
+            iframe.src.split("?")[0] + "?sketch_only=true&t=" + Date.now();
+        }
+      }
+    }
+
+    // 初始化按鈕狀態
+    {{ if eq $reload "true" }}
+    updateButtonStates(iframeId, shouldAutoplay);
+    {{ end }}
+
+    // 處理 autoplay 設定
+    const iframe = document.getElementById(iframeId);
+    if (iframe && !shouldAutoplay) {
+      let paused = false; // 標記是否已經暫停
+
+      // 監聽來自 iframe 的載入完成訊息
+      const messageHandler = function(event) {
+        // 只處理來自這個 iframe 的訊息
+        if (event.source !== iframe.contentWindow) return;
+
+        if (event.data && event.data.type === 'sketch-loaded' && !paused) {
+          paused = true;
+          // sketch 載入完成後，發送暫停訊息
+          setTimeout(function() {
+            try {
+              iframe.contentWindow.postMessage({ type: "pause-sketch" }, "*");
+            } catch (e) {
+              console.warn("無法發送暫停訊息:", e);
+            }
+          }, 100); // 稍微延遲以確保 p5.js 完全初始化
+        }
+      };
+      window.addEventListener('message', messageHandler);
+
+      // 備用方案：如果沒有收到 sketch-loaded 訊息，使用輪詢方式
+      let fallbackAttempts = 0;
+      const maxFallbackAttempts = 30; // 最多嘗試 3 秒
+      iframe.addEventListener('load', function() {
+        const fallbackPause = function() {
+          if (fallbackAttempts < maxFallbackAttempts && !paused) {
+            try {
+              iframe.contentWindow.postMessage({ type: "pause-sketch" }, "*");
+            } catch (e) {
+              // 忽略錯誤
+            }
+            fallbackAttempts++;
+            if (fallbackAttempts < maxFallbackAttempts && !paused) {
+              setTimeout(fallbackPause, 100);
+            } else if (fallbackAttempts >= maxFallbackAttempts) {
+              paused = true; // 達到最大嘗試次數，標記為已處理
+            }
+          }
+        };
+        // 延遲開始，等待 sketch 初始化
+        setTimeout(fallbackPause, 1000);
+      });
+    }
+
+    // 將函數暴露到全域作用域
+    {{ if eq $reload "true" }}
+    window["playSketch_" + iframeId] = function () {
+      playSketch(iframeId);
+    };
+    window["stopSketch_" + iframeId] = function () {
+      stopSketch(iframeId);
+    };
+
+    // 使用簡化的函數名稱（避免衝突）
+    window["playSketch"] = function (id) {
+      playSketch(id);
+    };
+    window["stopSketch"] = function (id) {
+      stopSketch(id);
+    };
+    {{ end }}
+  })();
+</script>
+{{ end }} {{ else }}
+<div
+  style="
+    padding: 2em;
+    text-align: center;
+    color: #999;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+  "
+>
+  <p>找不到 sketch: {{ $sketchName }}</p>
+</div>
+{{ end }}
