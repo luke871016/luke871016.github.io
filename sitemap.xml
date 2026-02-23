@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.kiantiong.com/blog/</loc>
+    <lastmod>2026-02-20T23:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://www.kiantiong.com/language_type/</loc>
     <lastmod>2026-02-11T02:50:00+08:00</lastmod>
   </url><url>
@@ -48,9 +51,6 @@
     <lastmod>2026-01-28T19:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/blog/using_taigi_ime/</loc>
-    <lastmod>2026-01-28T19:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/blog/</loc>
     <lastmod>2026-01-28T19:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/%E8%BC%B8%E5%85%A5%E6%B3%95/</loc>
