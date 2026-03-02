@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.kiantiong.com/language_type/</loc>
+    <lastmod>2026-03-02T19:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/language_type/mandarin/</loc>
+    <lastmod>2026-03-02T19:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/tags/</loc>
+    <lastmod>2026-03-02T19:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/blog/taigibun101_2026/</loc>
+    <lastmod>2026-03-02T19:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/tags/%E8%AA%B2%E7%A8%8B/</loc>
+    <lastmod>2026-03-02T19:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/blog/</loc>
+    <lastmod>2026-03-02T19:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/jihing/</loc>
+    <lastmod>2026-02-28T17:08:12+08:00</lastmod>
+  </url><url>
     <loc>https://www.kiantiong.com/language_type/bilingual/</loc>
     <lastmod>2026-02-25T16:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/blogblogparty/</loc>
     <lastmod>2026-02-25T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/language_type/</loc>
-    <lastmod>2026-02-25T16:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/tags/</loc>
-    <lastmod>2026-02-25T16:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://www.kiantiong.com/blog/is_it_just_me_or/</loc>
     <lastmod>2026-02-25T16:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/%E8%8F%AF%E6%96%87/</loc>
-    <lastmod>2026-02-25T16:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/blog/</loc>
     <lastmod>2026-02-25T16:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/%E9%9B%99%E8%AA%9E%E5%B0%8D%E7%85%A7/</loc>
@@ -158,9 +170,6 @@
     <loc>https://www.kiantiong.com/sutian/43/</loc>
     <lastmod>2025-11-11T22:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/jihing/</loc>
-    <lastmod>2025-11-10T10:05:47+08:00</lastmod>
-  </url><url>
     <loc>https://www.kiantiong.com/sutian/42/</loc>
     <lastmod>2025-10-11T14:00:00+08:00</lastmod>
   </url><url>
@@ -175,9 +184,6 @@
   </url><url>
     <loc>https://www.kiantiong.com/sutian/41/</loc>
     <lastmod>2025-09-07T02:10:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/language_type/mandarin/</loc>
-    <lastmod>2025-08-16T10:05:47+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/jihing/nofontprime/</loc>
     <lastmod>2025-08-16T10:05:47+08:00</lastmod>
