@@ -975,3 +975,8 @@ kbd {
   font: 80% var(--borders);
   padding: 0.15rem 0.3rem;
 }
+
+/* 行內經過時間：避免在清單／段落中被當成區塊而斷行 */
+.elapsed-time-inline {
+  display: inline;
+}
