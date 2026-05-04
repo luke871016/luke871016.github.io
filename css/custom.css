@@ -707,7 +707,7 @@ header .logo a {
 
 header .logo img {
   display: block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 /* 隱藏 checkbox */
@@ -979,4 +979,256 @@ kbd {
 /* 行內經過時間：避免在清單／段落中被當成區塊而斷行 */
 .elapsed-time-inline {
   display: inline;
+}
+
+/* shortcode tailo_parallel：芫荽 Iansui（Google Fonts）＋漢字／臺羅平行 */
+.taigi-par-wrap {
+  margin: 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: "Iansui", "GenYoExt", "GenYoGothicTW", ui-serif, serif;
+}
+
+/* 標籤列在色塊內頂部，下方分隔線（參考 shadcn code block tabs） */
+.taigi-par-head {
+  flex-shrink: 0;
+  padding: 0.5rem 0.75rem 0;
+  box-sizing: border-box;
+}
+
+.taigi-par-head-divider {
+  display: block;
+  margin: 0.4rem -0.75rem 0;
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--primary-text) 14%, transparent);
+}
+
+/* shadcn 風：標籤列（置左、圓角軌道＋選中塊） */
+.taigi-par-tabs {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.taigi-par-tabs button.taigi-par-tab {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0.38rem 0.72rem !important;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent !important;
+  color: color-mix(in srgb, var(--primary-text) 72%, var(--caption-text)) !important;
+  cursor: pointer;
+  font-family: "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  white-space: nowrap;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.taigi-par-tabs button.taigi-par-tab:hover {
+  color: var(--primary-text) !important;
+  background: color-mix(in srgb, #fff 22%, transparent) !important;
+}
+
+.taigi-par-tabs button.taigi-par-tab.is-active,
+.taigi-par-tabs button.taigi-par-tab[aria-selected="true"] {
+  color: var(--primary-text) !important;
+  background: color-mix(in srgb, #f4f7f5 88%, #d2dad7) !important;
+  border-color: color-mix(in srgb, var(--primary-text) 14%, transparent);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.taigi-par-tabs button.taigi-par-tab:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+.taigi-par-root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  background: #d2dad7;
+  overflow: hidden;
+}
+
+.taigi-par-body {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0.65rem 1rem 1rem;
+  font-size: 1.175rem;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  text-indent: 0;
+  box-sizing: border-box;
+}
+
+.taigi-par-root--mandarin .taigi-par-body {
+  padding-bottom: 0.4rem;
+}
+
+/* 教育部辭典式：華語對譯置於台文下方，全形括號、較淡色 */
+.taigi-par-mandarin {
+  margin: 0;
+  padding: 0 1rem 0.85rem;
+  font-family: "GenYoGothicTW", "GenYoExt", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-size: 0.95em;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #6f7673;
+  letter-spacing: 0.01em;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+}
+
+.taigi-par-line {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.taigi-par-line-latin {
+  font-family: inherit;
+}
+
+/* 與 taigi_typing style.css：ruby / rt / .char-mark */
+.taigi-par-root ruby,
+.taigi-par-root .taigi-par-ruby {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  margin: 5px 0px;
+  vertical-align: bottom;
+  ruby-align: center;
+}
+
+.taigi-par-root rt {
+  font-size: 15px;
+  color: var(--caption-text);
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: normal;
+  user-select: none;
+}
+
+.taigi-par-root .taigi-par-line-latin.taigi-par-line ruby,
+.taigi-par-root .taigi-par-ruby-tailo {
+  font-family: inherit;
+}
+
+.taigi-par-root .taigi-par-ruby-tailo rt {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.05;
+}
+
+.taigi-par-root .taigi-par-punct-ruby rt {
+  font-size: 13px;
+}
+
+.taigi-par-plain {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.taigi-par-mark {
+  display: inline;
+}
+
+.taigi-par-punct {
+  display: inline;
+}
+
+/* 漢羅分開：兩段原始稿 */
+.taigi-par-dual {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.taigi-par-dual-block {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  font-size: 1.175rem;
+  line-height: 1.5;
+}
+
+.taigi-par-dual-t {
+  font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  .taigi-par-body {
+    line-height: 1.45;
+  }
+
+  .taigi-par-root rt {
+    font-size: 13px;
+  }
+
+  .taigi-par-root ruby,
+  .taigi-par-root .taigi-par-ruby {
+    margin: 1px 1px;
+  }
+
+  .taigi-par-dual-block {
+    line-height: 1.45;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .taigi-par-root rt {
+    font-size: 13px;
+  }
+}
+
+.taigi-par-err {
+  margin: 0;
+  color: #a33;
+  font-size: 0.95rem;
+}
+
+/* 隱藏承載稿：供 JS 讀 .value，避免 <script>+jsonify 被壓縮／跳脫成雙重 JSON 字串 */
+.taigi-par-src {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
