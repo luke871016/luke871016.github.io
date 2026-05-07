@@ -341,17 +341,42 @@
 
   function renderHanjiRuby(tokens) {
     let html = "";
-    for (const t of tokens) {
-      if (t.kind === "space") {
-        html += " ";
-      } else if (t.kind === "raw") {
-        html += escapeHtml(t.char);
-      } else if (t.kind === "pair") {
-        const cls =
-          "taigi-par-ruby" + (t.isPunctuation ? " taigi-par-punct-ruby" : "");
-        html += "<ruby class=\"" + cls + "\">";
-        html += escapeHtml(t.hanji);
-        html += "<rt>" + escapeHtml(t.tailo) + "</rt></ruby>";
+    function tokenHtml(t) {
+      if (t.kind === "raw") return escapeHtml(t.char);
+      const cls = "taigi-par-ruby" + (t.isPunctuation ? " taigi-par-punct-ruby" : "");
+      return (
+        "<ruby class=\"" +
+        cls +
+        "\">" +
+        escapeHtml(t.hanji) +
+        "<rt>" +
+        escapeHtml(t.tailo) +
+        "</rt></ruby>"
+      );
+    }
+    function isPunctToken(t) {
+      return (t.kind === "pair" && !!t.isPunctuation) || (t.kind === "raw" && isPunctuation(t.char));
+    }
+    for (let i = 0; i < tokens.length; i++) {
+      const t = tokens[i];
+      if (t.kind === "space") continue;
+      if (isPunctToken(t)) {
+        html += tokenHtml(t);
+        continue;
+      }
+      let cluster = tokenHtml(t);
+      let j = i + 1;
+      while (j < tokens.length && tokens[j].kind === "space") j++;
+      while (j < tokens.length && isPunctToken(tokens[j])) {
+        cluster += tokenHtml(tokens[j]);
+        j++;
+        while (j < tokens.length && tokens[j].kind === "space") j++;
+      }
+      if (j > i + 1) {
+        html += '<span class="taigi-par-no-break">' + cluster + "</span>";
+        i = j - 1;
+      } else {
+        html += cluster;
       }
     }
     return html;
@@ -359,18 +384,44 @@
 
   function renderTailoRuby(tokens) {
     let html = "";
-    for (const t of tokens) {
-      if (t.kind === "space") {
-        html += " ";
-      } else if (t.kind === "raw") {
-        html += escapeHtml(t.char);
-      } else if (t.kind === "pair") {
-        const cls =
-          "taigi-par-ruby taigi-par-ruby-tailo" +
-          (t.isPunctuation ? " taigi-par-punct-ruby" : "");
-        html += "<ruby class=\"" + cls + "\">";
-        html += escapeHtml(t.tailo);
-        html += "<rt>" + escapeHtml(t.hanji) + "</rt></ruby>";
+    function tokenHtml(t) {
+      if (t.kind === "raw") return escapeHtml(t.char);
+      const cls =
+        "taigi-par-ruby taigi-par-ruby-tailo" +
+        (t.isPunctuation ? " taigi-par-punct-ruby" : "");
+      return (
+        "<ruby class=\"" +
+        cls +
+        "\">" +
+        escapeHtml(t.tailo) +
+        "<rt>" +
+        escapeHtml(t.hanji) +
+        "</rt></ruby>"
+      );
+    }
+    function isPunctToken(t) {
+      return (t.kind === "pair" && !!t.isPunctuation) || (t.kind === "raw" && isPunctuation(t.char));
+    }
+    for (let i = 0; i < tokens.length; i++) {
+      const t = tokens[i];
+      if (t.kind === "space") continue;
+      if (isPunctToken(t)) {
+        html += tokenHtml(t);
+        continue;
+      }
+      let cluster = tokenHtml(t);
+      let j = i + 1;
+      while (j < tokens.length && tokens[j].kind === "space") j++;
+      while (j < tokens.length && isPunctToken(tokens[j])) {
+        cluster += tokenHtml(tokens[j]);
+        j++;
+        while (j < tokens.length && tokens[j].kind === "space") j++;
+      }
+      if (j > i + 1) {
+        html += '<span class="taigi-par-no-break">' + cluster + "</span>";
+        i = j - 1;
+      } else {
+        html += cluster;
       }
     }
     return html;
