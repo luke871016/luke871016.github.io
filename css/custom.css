@@ -47,16 +47,16 @@ p {
   margin-block-end: 0.5em;
 }
 
-/* justfont 官方 class 會覆蓋原本的 fallback 清單；
-   使用較高優先權補回源樣黑體，且不受非同步注入順序影響。 */
-.e-content.jf-jinxuanlatte-book {
-  font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif;
-  font-weight: 300;
+/* 自訂 justfont 作用範圍；!important 避免官方 JS 注入後覆寫 fallback */
+.font-jf-body {
+  font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-weight: 300 !important;
 }
 
-strong {
-  font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif;
-  font-weight: 600;
+.font-jf-body strong,
+.font-jf-body b {
+  font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-weight: 600 !important;
 }
 
 .post {
