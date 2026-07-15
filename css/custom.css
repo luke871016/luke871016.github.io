@@ -16,6 +16,8 @@
 @media (prefers-color-scheme: dark) {
 }
 
+
+
 @font-face {
   font-family: "GenYoExt";
   font-display: swap;
@@ -45,8 +47,15 @@ p {
   margin-block-end: 0.5em;
 }
 
+/* justfont 官方 class 會覆蓋原本的 fallback 清單；
+   使用較高優先權補回源樣黑體，且不受非同步注入順序影響。 */
+.e-content.jf-jinxuanlatte-book {
+  font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif;
+  font-weight: 300;
+}
+
 strong {
-  font-family: "jf-jinxuanlatte";
+  font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif;
   font-weight: 600;
 }
 
