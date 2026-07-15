@@ -10,7 +10,7 @@
 
   /* 字型設定 */
   --font-heading: "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif;
-  --font-body: "jf-jinxuanlatte", "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif;
+  --font-body: "kimsuan", "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,8 +56,6 @@ body {
 }
 
 p {
-  font-family: "jf-jinxuanlatte", sans-serif;
-  font-weight: 300;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
