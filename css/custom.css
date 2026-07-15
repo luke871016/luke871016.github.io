@@ -56,6 +56,8 @@ body {
 }
 
 p {
+  font-family: "jf-jinxuanlatte", sans-serif;
+  font-weight: 300;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
