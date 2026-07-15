@@ -10,7 +10,7 @@
 
   /* 字型設定 */
   --font-heading: "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif;
-  --font-body: "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif;
+  --font-body: "jf-jinxuanlatte", "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
