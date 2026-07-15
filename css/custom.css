@@ -9,14 +9,12 @@
   --borders: #aaa;
 
   /* 字型設定 */
-  --font-heading: "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif;
+  --font-heading: "jf-jinxuan", "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif;
   --font-body: "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
 }
-
-
 
 @font-face {
   font-family: "GenYoExt";
@@ -59,6 +57,32 @@ p {
   font-weight: 600 !important;
 }
 
+
+.font-jf-menu {
+  font-family: "jf-jinxuan", "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.font-genyo,
+.copyblock-container,
+.copyblock-container * {
+  font-family: "TASAOrbiter", "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.jf-loading body { /*載入中不顯示*/
+  opacity: 0;
+  visibility: hidden;
+}
+.jf-active body { /*如果處理成功，直接顯示*/
+  opacity: 1;
+  visibility: visible;
+}
+.jf-inactive body {/*如果處理失敗，直接顯示*/
+  opacity: 1;
+  visibility: visible;
+}
+
 .post {
   width: 100%;
   box-sizing: border-box;
@@ -75,9 +99,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
+  /* !important 保留 fallback 清單，避免 justfont 稍後注入的規則覆寫。 */
+  font-family: var(--font-heading) !important;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700 !important;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -517,6 +542,7 @@ figure img {
 }
 
 code {
+  font-family: monospace, "GenYoGothicTW";
   background-color: #ddd;
   border-radius: 5px;
 }
