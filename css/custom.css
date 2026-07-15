@@ -45,6 +45,10 @@ p {
   margin-block-end: 0.5em;
 }
 
+a {
+  font-weight: 400 !important;
+}
+
 /* 自訂 justfont 作用範圍；!important 避免官方 JS 注入後覆寫 fallback */
 .font-jf-body {
   font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif !important;
@@ -56,7 +60,6 @@ p {
   font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif !important;
   font-weight: 600 !important;
 }
-
 
 .font-jf-menu {
   font-family: "jf-jinxuan", "GenYoGothicTW", "GenYoExt", sans-serif !important;
@@ -105,6 +108,49 @@ h6 {
   font-weight: 700 !important;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+/*
+  TASA 專文：必須寫在全域 h1–h6 / justfont 規則之後，
+  並直接指定子元素（不能只靠繼承），否則 !important 會蓋掉。
+  front matter: content_font = "tasa"
+*/
+.post.font-tasa-article .p-name,
+.post.font-tasa-article .e-content.font-tasa-body,
+.post.font-tasa-article .e-content.font-tasa-body :is(
+  p,
+  li,
+  td,
+  th,
+  dt,
+  dd,
+  div,
+  span,
+  a,
+  em,
+  i,
+  small,
+  label,
+  figcaption,
+  summary,
+  blockquote,
+  .callout,
+  .callout-title,
+  .callout-content
+) {
+  font-family: "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.post.font-tasa-article .e-content.font-tasa-body :is(strong, b) {
+  font-family: "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.post.font-tasa-article .p-name,
+.post.font-tasa-article .e-content.font-tasa-body :is(h1, h2, h3, h4, h5, h6) {
+  font-family: "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif !important;
+  font-weight: 600 !important;
 }
 
 table {
