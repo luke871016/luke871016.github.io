@@ -37,7 +37,7 @@
   <link href="/css/styles.css" rel="stylesheet" />
   
   
-  <link href="/css/custom.css?v=ec186c91fb95" rel="stylesheet" /> 
+  <link href="/css/custom.css?v=ecd15d1f692c" rel="stylesheet" /> 
 
 </head>
 <body><script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-65933.js"></script>
@@ -46,7 +46,7 @@
 
   var _jf = _jf || [];
   var jfBodyScan =
-    ".font-jf-body :is(p, li, td, th, h1, h2, h3, h4, h5, h6, dt, dd, figcaption, summary, blockquote):not(.copyblock-container *)," +
+    ".font-jf-body :is(p, li, td, th, h1, h2, h3, h4, h5, h6, dt, dd, figcaption, summary, blockquote):not(.copyblock-container *):not(.taigi-par-wrap *)," +
     ".card-summary.font-jf-body," +
     ".subtitle.font-jf-body";
   _jf.push(["_setFont", "jf-jinxuanlatte-book", "css", jfBodyScan]);
@@ -54,7 +54,7 @@
     "_setFont",
     "jf-jinxuanlatte-semibold",
     "css",
-    ".font-jf-body strong:not(.copyblock-container *), .font-jf-body b:not(.copyblock-container *)",
+    ".font-jf-body strong:not(.copyblock-container *):not(.taigi-par-wrap *), .font-jf-body b:not(.copyblock-container *):not(.taigi-par-wrap *)",
   ]);
   _jf.push([
     "_setFont",
@@ -109,18 +109,6 @@
         
              
 <div class="cards" id="results">
-   
-  <div class="card h-entry">
-    <a href="https://www.kiantiong.com/sutian/20/" class="u-url">
-      
-      <img src="/images/kautian20-cover.jpg" alt="教典阿明的一生——第二季" class="u-photo" />
-      
-      <div class="text">
-        <h2 class="p-name card-title">教典阿明的一生——第二季</h2>
-        <p class="small e-content card-summary font-jf-body">2024教典詞目更新，又閣有增加阿明的例句喔！</p>
-      </div>
-    </a>
-  </div>
    
   <div class="card h-entry">
     <a href="https://www.kiantiong.com/sutian/19/" class="u-url">
@@ -229,6 +217,18 @@
       </div>
     </a>
   </div>
+   
+  <div class="card h-entry">
+    <a href="https://www.kiantiong.com/sutian/10/" class="u-url">
+      
+      <img src="/images/kautian10-cover.jpg" alt="注音做名姓嘛有讀音？" class="u-photo" />
+      
+      <div class="text">
+        <h2 class="p-name card-title">注音做名姓嘛有讀音？</h2>
+        <p class="small e-content card-summary font-jf-body">注音符號「ㄠ」、「ㄟ」、「ㄙ」竟然有台語讀音？</p>
+      </div>
+    </a>
+  </div>
   
 </div>
 
@@ -267,10 +267,6 @@
       7
     </a>
     
-    <a href="/tags/%E5%8F%B0%E6%96%87/page/8/" >
-      8
-    </a>
-    
   </div>
   
   <a href="/tags/%E5%8F%B0%E6%96%87/page/7/">後一頁</a>
@@ -304,6 +300,17 @@
     };
     
     window.store = {
+    
+    
+    "https:\/\/www.kiantiong.com\/blog\/": {
+        
+        "title": "日誌",
+            "tags": [],
+    "content": "", 
+    "url": "https:\/\/www.kiantiong.com\/blog\/",
+    "image": "",
+    "description": "日常文章佮筆記"
+        },
     
     
     "https:\/\/www.kiantiong.com\/language_type\/bilingual\/": {
@@ -380,17 +387,6 @@
     "url": "https:\/\/www.kiantiong.com\/about\/",
     "image": "",
     "description": ""
-        },
-    
-    
-    "https:\/\/www.kiantiong.com\/blog\/": {
-        
-        "title": "日誌",
-            "tags": [],
-    "content": "", 
-    "url": "https:\/\/www.kiantiong.com\/blog\/",
-    "image": "",
-    "description": "日常文章佮筆記"
         },
     
     
@@ -1238,17 +1234,6 @@
     "url": "https:\/\/www.kiantiong.com\/blog\/kautian-giansip-1\/",
     "image": "\/images\/20250705-1.jpg",
     "description": "20250705參加教典編輯培訓初階研習"
-        },
-    
-    
-    "https:\/\/www.kiantiong.com\/blog\/20250725\/": {
-        
-        "title": "個人網頁重起",
-            "tags": [ "台文",  "Hugo", ],
-    "content": " 毋知欲囥啥物圖，和逐家分享我舊年八月寫的， 用 p5.js 產生的仙人草 佇台文所的第一學期結束了後，了一個月的時間總算是重起我的個人網頁矣，以早 2020 年的時陣我捌創過我的個人網頁，彼陣舞真久創真濟功能了後煞囥咧生菇，干焦佇 2023 佇 justfont 辦演講了後有 更新一篇文章爾 ，彼陣對文章更新的流程抑是啥無共流程定予好勢，逐改欲舞都足費氣，所以就攏無處理。\n這幾冬有當時仔嘛想欲重新來處理，煞逐改攏無堅持到底就放棄。其實嘛是寫袂少內容，但是攏掖佇面冊、threads 佮 HackMD，教典僻智識寫三十幾篇全部囥面冊，其實佇外口的設備若是無登入欲看是真痛苦，有一个家己會當掌握一切的個人網頁猶是真重要的代誌。\n六月學期結束我就隨重新來舞我的網頁，真久無接觸相關的物件矣，欲按怎做都袂記得矣。皓梅叫我一定愛綴時行來 Vibe Coding，我就試看用 Cursor 輔助我的工課。結果有 AI 鬥相共有影真方便，往過濟濟愛查真久研究按怎創的物件，這馬真緊就通好理解。需要做啥物功能都會當佮 AI 討論。我猶是繼續用 Hugo，揣著一个真好看功能真簡單的主題 Quint 就隨開始做矣。搬教典僻智識的文章嘛順紲思考我所需要的功能。雙語功能、Carousell、系列文章等等的功能嘛是一步一步加起去的，嘛隨時寫真濟筆記方便我後來通好繼續維護。\n總是講這改做的準備比往過加真濟，嘛有共最近的內容徙來遮矣，希望未來我會當繼續佇遮寫物件，予遮的內容愈來愈豐富。\n", 
-    "url": "https:\/\/www.kiantiong.com\/blog\/20250725\/",
-    "image": "\/images\/cactus-1.png",
-    "description": "佇台文所的第一學期結束了後，了一個月的時間總算是重起我的個人網頁矣，以早 2020 年的時陣我捌創過我的個人網頁……"
         },
     
     

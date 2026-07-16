@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.kiantiong.com/blog/</loc>
+    <lastmod>2026-07-16T11:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://www.kiantiong.com/language_type/bilingual/</loc>
     <lastmod>2026-07-16T01:00:00+08:00</lastmod>
   </url><url>
@@ -21,9 +24,6 @@
     <lastmod>2026-07-16T01:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/about/</loc>
-    <lastmod>2026-07-16T01:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/blog/</loc>
     <lastmod>2026-07-16T01:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/%E5%AF%A6%E7%94%A8%E5%B7%A5%E5%85%B7/</loc>
@@ -256,9 +256,6 @@
   </url><url>
     <loc>https://www.kiantiong.com/blog/kautian-giansip-1/</loc>
     <lastmod>2025-07-05T22:49:26+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/blog/20250725/</loc>
-    <lastmod>2025-07-03T14:08:03+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/sutian/37/</loc>
     <lastmod>2025-05-29T11:48:17+08:00</lastmod>

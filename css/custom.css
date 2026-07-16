@@ -137,7 +137,7 @@ h6 {
   .callout,
   .callout-title,
   .callout-content
-) {
+):not(.taigi-par-wrap):not(.taigi-par-wrap *) {
   font-family: "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif !important;
   font-weight: 400 !important;
 }
@@ -1064,7 +1064,30 @@ kbd {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  font-family: "Iansui", "GenYoExt", "GenYoGothicTW", ui-serif, serif;
+}
+
+/* 蓋過 .font-jf-body / .font-tasa-body 與 justfont 的 !important */
+.post .e-content .taigi-par-wrap,
+.post .e-content.font-jf-body .taigi-par-wrap,
+.post .e-content.font-tasa-body .taigi-par-wrap,
+.post .e-content .taigi-par-wrap :is(
+  .taigi-par-root,
+  .taigi-par-body,
+  .taigi-par-line,
+  .taigi-par-plain,
+  .taigi-par-dual,
+  .taigi-par-dual-block,
+  .taigi-par-mark,
+  .taigi-par-punct,
+  ruby,
+  rt,
+  .taigi-par-ruby,
+  .taigi-par-ruby-tailo,
+  .taigi-par-line-latin,
+  .taigi-par-dual-t,
+  .taigi-par-caption
+) {
+  font-family: "Iansui", "GenYoExt", "GenYoGothicTW", ui-serif, serif !important;
 }
 
 /* 標籤列在色塊內頂部，下方分隔線（參考 shadcn code block tabs） */
@@ -1170,7 +1193,7 @@ kbd {
 .taigi-par-mandarin {
   margin: 0;
   padding: 0 1rem 0.85rem;
-  font-family: "GenYoGothicTW", "GenYoExt", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: "GenYoGothicTW", "GenYoExt", "PingFang TC", "Microsoft JhengHei", sans-serif !important;
   font-size: 0.95em;
   line-height: 1.55;
   font-weight: 400;
