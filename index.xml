@@ -6,8 +6,17 @@
     <description>Recent content on 陳建中｜Tân Kiàn-tiong</description>
     <generator>Hugo</generator>
     <language>und-hani</language>
-    <lastBuildDate>Thu, 16 Jul 2026 01:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 11:00:00 +0800</lastBuildDate>
     <atom:link href="https://www.kiantiong.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>共網頁套 justfont 的 webfont</title>
+      <link>https://www.kiantiong.com/blog/20260716/</link>
+      <pubDate>Thu, 16 Jul 2026 11:00:00 +0800</pubDate>
+      <guid>https://www.kiantiong.com/blog/20260716/</guid>
+      <description>文章語言：台語
+        &lt;p&gt;我的網頁嘛欲紡 1 冬矣，較早的網頁字型是用免費的組合：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;漢字：&#xA;&lt;a href=&#34;https://font.emtech.cc/fonts/GenKiGothicTW&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;源起黑體 &lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;台羅、英文：&#xA;&lt;a href=&#34;https://github.com/localremotetw/TASA-Typeface-Collection&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TASA 字體 &lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;源起黑體是用用&#xA;&lt;a href=&#34;https://elvismao.com/zh-Hant/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;毛哥 &lt;/a&gt;的網頁字型服務 &#xA;&lt;a href=&#34;https://font.emtech.cc/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;emfont &lt;/a&gt;，TASA 字體是直接共規个字型的 woff2 版本傳起去網頁。&lt;/p&gt;&#xA;&lt;p&gt;最近皓梅共我講 justfont 最近總算是開始咧還𪜶的技術債矣，十幾冬以來雖然 justfont 的字型作品一直攏有支援台語文的漢字佮台羅， webfont 煞無支援，致使佇𪜶網頁試拍的區域攏袂當看著遮的字。只要是超過 BMP 範圍的漢字抑是需要 OpenType 特性組合的台羅攏袂得通顯示。像「𪜶𠢕𬦰𫝏𠞩」抑是「m̄ n̂g a̍h i̍h」攏會按呢。&lt;/p&gt;&#xA;&lt;p&gt;其實其他的 webfont 服務嘛有類似的問題，像 emfont 目前雖然漢字是攏會使得，毋過台羅就會出問題（毛哥有講以後會更新！），google font 嘛有類似的問題（&#xA;&lt;a href=&#34;https://kisaragi-hiu.com/google-font-taigi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;參考這篇 &lt;/a&gt;），最近針對芫荽特案處理才至少有一套芫荽會當用爾爾。&lt;/p&gt;&#xA;&lt;p&gt;今總算是會當用 justfont 的 webfont 處理台文顯示矣：），我欲成做世間頭一个用 justfont 字體的台文網頁矣，jf 的網頁字型是訂閱制，上基礎的方案 588 台票就會得通用 jf &lt;strong&gt;全部&lt;/strong&gt;的字體，是算頁面顯示幾改（有任何人，為 jf 掠一改字體就準算），588 會當買 10 萬改的額，使用超過 80% 會寄批通知，閣再入數就好。我就先買 588 箍試用一下，嘛看我的網頁的流量會當擋偌久才閣共逐家報告。&lt;/p&gt;&#xA;&lt;p&gt;各位朋友若是想欲予你的網頁閣較有特色，其實嘛真推薦恁來試用 jf 的 webfont，其他字型公司像華康文鼎的 webfont 攏是 to B 的業務，閣需要寫批抑是敲電話，干焦 justfont 佇𪜶的網頁揤一下鑢卡就會當個人使用矣，誠方便喔。&lt;/p&gt;&#xA;&lt;h2 id=&#34;hugo-site-套-jf-webfont-愛注意的問題&#34;&gt;Hugo Site 套 jf webfont 愛注意的問題&lt;/h2&gt;&#xA;&lt;p&gt;嘛記錄一下我套用 justfont webfont 所拄著的問題，凡勢有仝款咧用 Hugo 的朋友會當參考，我原底誠天真直接共我網頁底層的 font-family 設定改做 justfont 的字體，結果網頁字型袂當套用。&lt;/p&gt;&#xA;&lt;p&gt;實際去看 Javascript 送出去的 POST 內容，發現伊竟然是共我規个網頁所有的文章的字攏送出去矣，超過 justfont api 的限制。佮 jf 的工程師問才知影是因為我的 hugo site 有全文搜揣的功能，程式變做共我規个網頁 6 千幾个無重複个文字攏送出去矣，後來設定明確的 CSS 規則，干焦共字體套佇我欲愛的所在就會用得矣。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.kiantiong.com/images/20260716_1.png&#34; alt=&#34;拍字&#34;&gt;&lt;/p&gt;&#xA;
+      </description>
+    </item>
     <item>
       <title>介紹</title>
       <link>https://www.kiantiong.com/about/</link>
