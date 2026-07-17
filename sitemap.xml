@@ -2,19 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.kiantiong.com/tags/hugo/</loc>
-    <lastmod>2026-07-16T11:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://www.kiantiong.com/language_type/</loc>
-    <lastmod>2026-07-16T11:00:00+08:00</lastmod>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/series/</loc>
-    <lastmod>2026-07-16T11:00:00+08:00</lastmod>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/</loc>
-    <lastmod>2026-07-16T11:00:00+08:00</lastmod>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/language_type/taiwanese/</loc>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/tags/%E6%95%99%E5%85%B8/</loc>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/series/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</loc>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/sutian/49/</loc>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/tags/%E6%95%99%E5%85%B8%E7%B5%B1%E8%A8%88/</loc>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/tags/%E4%BD%BF%E7%94%A8%E4%BA%BA%E6%AC%A1/</loc>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/tags/%E5%8F%B0%E6%96%87/</loc>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/sutian/</loc>
+    <lastmod>2026-07-17T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.kiantiong.com/tags/hugo/</loc>
     <lastmod>2026-07-16T11:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/blog/20260716/</loc>
@@ -24,9 +45,6 @@
     <lastmod>2026-07-16T11:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/blog/</loc>
-    <lastmod>2026-07-16T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/tags/%E5%8F%B0%E6%96%87/</loc>
     <lastmod>2026-07-16T11:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/%E5%AD%97%E5%9E%8B/</loc>
@@ -119,13 +137,7 @@
     <loc>https://www.kiantiong.com/tags/%E6%95%99%E5%85%B8%E6%AD%B7%E5%8F%B2/</loc>
     <lastmod>2026-02-11T02:50:00+08:00</lastmod>
   </url><url>
-    <loc>https://www.kiantiong.com/series/%E6%95%99%E5%85%B8%E5%83%BB%E6%99%BA%E8%AD%98/</loc>
-    <lastmod>2026-02-11T02:50:00+08:00</lastmod>
-  </url><url>
     <loc>https://www.kiantiong.com/sutian/48/</loc>
-    <lastmod>2026-02-11T02:50:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/sutian/</loc>
     <lastmod>2026-02-11T02:50:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/blog/using_taigi_ime/</loc>
@@ -135,9 +147,6 @@
     <lastmod>2026-01-28T19:00:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/sutian/47/</loc>
-    <lastmod>2026-01-08T02:50:00+08:00</lastmod>
-  </url><url>
-    <loc>https://www.kiantiong.com/tags/%E6%95%99%E5%85%B8/</loc>
     <lastmod>2026-01-08T02:50:00+08:00</lastmod>
   </url><url>
     <loc>https://www.kiantiong.com/tags/%E6%8B%8D%E5%AD%97/</loc>
