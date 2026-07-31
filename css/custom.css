@@ -97,6 +97,10 @@ a {
   box-sizing: border-box;
 }
 
+.post .e-content {
+  letter-spacing: 0.5px;
+}
+
 li {
   margin: 10px 0px;
 }
@@ -492,18 +496,32 @@ figure img {
 .callout-header {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
 .callout-icon {
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: inherit;
+}
+
+.callout-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .callout-title {
   font-size: 1rem;
   color: var(--primary-text);
+  min-width: 0;
+  line-height: 1.35;
 }
 
 .callout-content {
@@ -521,7 +539,8 @@ figure img {
   background-color: rgba(59, 130, 246, 0.05);
 }
 
-.callout-info .callout-title {
+.callout-info .callout-title,
+.callout-info .callout-icon {
   color: #1e40af;
 }
 
@@ -530,7 +549,8 @@ figure img {
   background-color: rgba(245, 158, 11, 0.05);
 }
 
-.callout-warning .callout-title {
+.callout-warning .callout-title,
+.callout-warning .callout-icon {
   color: #d97706;
 }
 
@@ -539,7 +559,8 @@ figure img {
   background-color: rgba(16, 185, 129, 0.05);
 }
 
-.callout-success .callout-title {
+.callout-success .callout-title,
+.callout-success .callout-icon {
   color: #059669;
 }
 
@@ -548,7 +569,8 @@ figure img {
   background-color: rgba(239, 68, 68, 0.05);
 }
 
-.callout-error .callout-title {
+.callout-error .callout-title,
+.callout-error .callout-icon {
   color: #dc2626;
 }
 
@@ -557,7 +579,8 @@ figure img {
   background-color: rgba(107, 114, 128, 0.05);
 }
 
-.callout-note .callout-title {
+.callout-note .callout-title,
+.callout-note .callout-icon {
   color: #4b5563;
 }
 
@@ -569,14 +592,13 @@ figure img {
   }
 
   .callout-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
   .callout-icon {
-    margin-right: 0;
-    margin-bottom: 0.25rem;
+    width: 1.05rem;
+    height: 1.05rem;
   }
   .post-pagination {
     padding: 1rem 0.5rem;
