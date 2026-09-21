@@ -73,23 +73,37 @@ a {
   font-weight: 400 !important;
 }
 
+/* 最多等 200ms：字型還沒好就先顯示，避免慢速網路把整頁卡住 */
 .jf-loading body {
   opacity: 0;
   visibility: hidden;
 }
-.jf-active body {
+.jf-loading:not(.jf-timeout) body {
+  animation: jf-show-text 200ms step-end forwards;
+}
+.jf-active body,
+.jf-inactive body,
+html.jf-timeout body {
   opacity: 1;
   visibility: visible;
 }
-.jf-inactive body {
-  opacity: 1;
-  visibility: visible;
-}
-.jf-active *, .jf-inactive * {
+.jf-active *,
+.jf-inactive *,
+html.jf-timeout * {
   -webkit-transition: opacity 0.1s ease-out;
   -moz-transition: opacity 0.1s ease-out;
   -o-transition: opacity 0.1s ease-out;
   transition: opacity 0.1s ease-out;
+}
+@keyframes jf-show-text {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .post {
