@@ -6,8 +6,6 @@
     --link-color: #879094;
     --shadow-color: rgba(0, 0, 0, 0.15);
     --borders: #555;
-    --pagination-bg: #f5f6fa;
-    --pagination-link: #5c8273;
 }
 
 @media (prefers-color-scheme: dark) {
