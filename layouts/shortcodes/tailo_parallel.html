@@ -1,0 +1,76 @@
+{{/*
+  漢字／臺羅平行文本（對齊邏輯同 taigi_typing）
+
+  用法一：內文用單獨一行 --- 分隔（可多行）；可選第三段華語對譯（辭典式括號顯示在下方）
+  {{< tailo_parallel >}}
+  漢字稿
+  ---
+  臺羅稿
+  ---
+  華語稿（選填）
+  {{< /tailo_parallel >}}
+
+  用法二：具名參數（mandarin / caption 選填）
+  {{< tailo_parallel hanji="…" tailo="…" mandarin="…" caption="…" >}}
+
+  default：預設顯示模式 hanji | tailo | split（split＝漢字稿、臺羅稿兩段原始文本）
+*/}}
+
+{{- $hanji := "" -}}
+{{- $tailo := "" -}}
+{{- $mandarin := "" -}}
+{{- $caption := "" -}}
+{{- $default := default "hanji" (.Get "default") -}}
+{{- $allowedModes := slice "hanji" "tailo" "split" -}}
+{{- if not (in $allowedModes $default) }}{{ $default = "hanji" }}{{ end -}}
+{{- $inner := replaceRE `\r\n` "\n" .Inner | strings.TrimSpace -}}
+{{- $hk := .Get "hanji" -}}
+{{- $tk := .Get "tailo" -}}
+{{- $mdParam := .Get "mandarin" -}}
+{{- with .Get "caption" }}{{ $caption = . | strings.TrimSpace }}{{ end -}}
+{{- if and $hk $tk -}}
+  {{- $hanji = $hk | strings.TrimSpace -}}
+  {{- $tailo = $tk | strings.TrimSpace -}}
+  {{- with $mdParam }}{{ $mandarin = . | strings.TrimSpace }}{{ end -}}
+{{- else if $inner -}}
+  {{- $parts := split $inner "\n---\n" -}}
+  {{- $n := len $parts -}}
+  {{- if or (lt $n 2) (gt $n 3) -}}
+    {{- errorf "shortcode tailo_parallel: 內文須為 2 段（漢字稿---臺羅稿）或 3 段（再多一個---華語稿）；或使用 hanji= / tailo=（目前 %d 段）" $n -}}
+  {{- end -}}
+  {{- $hanji = index $parts 0 | strings.TrimSpace -}}
+  {{- $tailo = index $parts 1 | strings.TrimSpace -}}
+  {{- if eq $n 3 }}{{ $mandarin = index $parts 2 | strings.TrimSpace }}{{ end -}}
+{{- else -}}
+  {{- errorf "shortcode tailo_parallel: 請提供 hanji 與 tailo 參數，或使用內文 + --- 分隔" -}}
+{{- end -}}
+
+{{- if not (.Page.Scratch.Get "taigiParallelJsIncluded") -}}
+  {{- .Page.Scratch.Set "taigiParallelJsIncluded" true -}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iansui&amp;display=swap" rel="stylesheet">
+  <script src="{{ "js/taigi-parallel.js" | relURL }}" defer></script>
+{{- end -}}
+
+<div class="taigi-par-wrap">
+  <div class="taigi-par-root{{ if $mandarin }} taigi-par-root--mandarin{{ end }}" lang="und-hani" data-taigi-default="{{ $default }}" id="taigi-panel-{{ .Ordinal }}" role="tabpanel">
+    <div class="taigi-par-head">
+      <div class="taigi-par-tabs" role="tablist" aria-label="顯示模式">
+        <button type="button" class="taigi-par-tab" role="tab" data-taigi-mode="hanji" id="taigi-tab-hanji-{{ .Ordinal }}" aria-selected="false" aria-controls="taigi-panel-{{ .Ordinal }}" tabindex="-1">漢字標台羅</button>
+        <button type="button" class="taigi-par-tab" role="tab" data-taigi-mode="tailo" id="taigi-tab-tailo-{{ .Ordinal }}" aria-selected="false" aria-controls="taigi-panel-{{ .Ordinal }}" tabindex="-1">台羅標漢字</button>
+        <button type="button" class="taigi-par-tab" role="tab" data-taigi-mode="split" id="taigi-tab-split-{{ .Ordinal }}" aria-selected="false" aria-controls="taigi-panel-{{ .Ordinal }}" tabindex="-1">並列</button>
+      </div>
+      <div class="taigi-par-head-divider" aria-hidden="true"></div>
+    </div>
+    <div class="taigi-par-body" aria-live="polite"></div>
+    {{- if $mandarin -}}
+    <p class="taigi-par-mandarin" lang="zh-Hant">{{ $mandarin | htmlEscape }}</p>
+    {{- end -}}
+    <textarea class="taigi-par-src taigi-par-src-hanji" aria-hidden="true" tabindex="-1" readonly>{{ $hanji | htmlEscape }}</textarea>
+    <textarea class="taigi-par-src taigi-par-src-tailo" aria-hidden="true" tabindex="-1" readonly>{{ $tailo | htmlEscape }}</textarea>
+  </div>
+  {{- if $caption -}}
+  <p class="taigi-par-caption" style="text-align:center; color:#888">{{ $caption | htmlEscape }}</p>
+  {{- end -}}
+</div>

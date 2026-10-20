@@ -5,7 +5,7 @@ tags: ["範例", "shortcode"]
 categories: ["教學"]
 ---
 
-這篇文章展示如何使用新設計的 callout shortcode 來創建各種類型的提示框。
+這篇文章展示如何使用 callout shortcode 創建各種類型的提示框，以及雙語頁面如何用 `lang` 參數讓 callout 跟著語言切換顯示。
 
 ## 基本用法
 
@@ -45,6 +45,39 @@ categories: ["教學"]
 這是一個沒有標題的資訊提示框，內容會直接顯示。
 {{< /callout >}}
 
+## 雙語頁面：用 `lang` 參數讓 Callout 跟著語言切換
+
+在雙語（華／台）頁面中，**不要**把 callout 巢狀放在 `{{< mandarin >}}` 或 `{{< taiwanese >}}` 裡面，否則會造成 HTML 渲染錯誤。  
+改為使用**獨立的 callout 區塊**，並加上 `lang="mandarin"` 或 `lang="taiwanese"`，callout 就會依頁面語言切換一併顯示或隱藏。
+
+### 華語專用 Callout（切到華語時才顯示）
+
+{{< callout type="note" title="重點筆記（華語）" lang="mandarin" >}}
+這是只有切換到華語時才會顯示的 callout，內容用華語撰寫。
+{{< /callout >}}
+
+### 台語專用 Callout（切到台語時才顯示）
+
+{{< callout type="note" title="重點筆記（台語）" lang="taiwanese" >}}
+這是只有切換到台語時才會顯示的 callout，內容用台語撰寫。
+{{< /callout >}}
+
+### 書寫範例（雙語頁面）
+
+同一則重點，若華語、台語各有一段說明，請寫成**兩個獨立的 callout**，分別指定 `lang="mandarin"` 與 `lang="taiwanese"`：
+
+```markdown
+{{< callout type="note" title="重點筆記" lang="mandarin" >}}
+- 編碼、字型與輸入法是三大角色
+- 編碼定義符號編號；字型決定顯示圖形；輸入法把想打的字轉成編碼
+{{< /callout >}}
+
+{{< callout type="note" title="重點筆記" lang="taiwanese" >}}
+- 編碼、字型佮輸入法是三大角色
+- 編碼負責定義符號編號；字型負責顯示圖；輸入法共想欲打的字轉做編碼
+{{< /callout >}}
+```
+
 ## 包含 Markdown 內容
 
 {{< callout type="warning" title="程式碼範例" >}}
@@ -59,9 +92,9 @@ function hello() {
 **注意**：這段程式碼僅供參考。
 {{< /callout >}}
 
-## 使用方式
+## 使用方式總整理
 
-在您的 Markdown 文件中，可以使用以下語法：
+在 Markdown 中可使用以下語法：
 
 ```markdown
 {{< callout type="info" title="標題" >}}
@@ -69,7 +102,15 @@ function hello() {
 {{< /callout >}}
 ```
 
-支援的類型：
+**參數說明：**
+
+| 參數 | 必填 | 說明 |
+|------|------|------|
+| `type` | 否 | 預設 `info`。可選：`info`、`warning`、`success`、`error`、`note` |
+| `title` | 否 | callout 標題，不填則只顯示內容 |
+| `lang` | 否 | 雙語頁面專用。設為 `mandarin` 或 `taiwanese` 時，callout 會隨語言切換顯示／隱藏；不設則兩種語言都會顯示 |
+
+**類型對應：**
 
 - `info`: 資訊提示（藍色）
 - `warning`: 警告提醒（黃色）
@@ -77,4 +118,4 @@ function hello() {
 - `error`: 錯誤訊息（紅色）
 - `note`: 筆記說明（灰色）
 
-標題是可選的，如果不提供標題，callout 將只顯示內容。
+**重要提醒：** 雙語頁面請勿將 `{{< callout >}}` 巢狀放在 `{{< mandarin >}}`／`{{< taiwanese >}}` 內，應改為獨立的 callout 區塊並使用 `lang` 參數，才能正確渲染並跟著語言切換。

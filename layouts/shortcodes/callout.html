@@ -4,26 +4,37 @@
 這是 callout 的內容
 {{< /callout >}}
 
-支援的類型：
-- info: 資訊提示（藍色）
-- warning: 警告提醒（黃色）
-- success: 成功訊息（綠色）
-- error: 錯誤訊息（紅色）
-- note: 筆記說明（灰色）
-*/}}
+雙語頁面可加 lang 參數，callout 會隨語言切換顯示：
+{{< callout type="note" title="重點筆記" lang="mandarin" >}}華語說明{{< /callout >}}
+{{< callout type="note" title="重點筆記" lang="taiwanese" >}}台語說明{{< /callout >}}
 
+支援的類型：info, warning, success, error, note
+*/}}
 {{ $type := .Get "type" | default "info" }}
 {{ $title := .Get "title" | default "" }}
+{{ $lang := .Get "lang" | default "" }}
 
+{{ if eq $lang "mandarin" }}<div class="mandarin-content" lang="zh-hant" data-language="mandarin">{{ end }}
+{{ if eq $lang "taiwanese" }}<div class="taiwanese-content" lang="und-hani" data-language="taiwanese">{{ end }}
 <div class="callout callout-{{ $type }}">
     {{ if $title }}
     <div class="callout-header">
-        <div class="callout-icon">
-            {{ if eq $type "info" }}ℹ️{{ end }}
-            {{ if eq $type "warning" }}⚠️{{ end }}
-            {{ if eq $type "success" }}✅{{ end }}
-            {{ if eq $type "error" }}❌{{ end }}
-            {{ if eq $type "note" }}📝{{ end }}
+        <div class="callout-icon" aria-hidden="true">
+            {{ if eq $type "info" }}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            {{ end }}
+            {{ if eq $type "warning" }}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+            {{ end }}
+            {{ if eq $type "success" }}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            {{ end }}
+            {{ if eq $type "error" }}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+            {{ end }}
+            {{ if eq $type "note" }}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+            {{ end }}
         </div>
         <div class="callout-title">{{ $title }}</div>
     </div>
@@ -31,4 +42,6 @@
     <div class="callout-content">
         {{ .Inner | markdownify }}
     </div>
-</div> 
+</div>
+{{ if eq $lang "mandarin" }}</div>{{ end }}
+{{ if eq $lang "taiwanese" }}</div>{{ end }}

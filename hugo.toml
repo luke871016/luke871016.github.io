@@ -8,6 +8,7 @@ theme = 'quint'
 css = ["css/custom.css"]            # Your custom CSS overrides, stored in yoursite/static/
 numImages = 10                      # Number of random images to choose from for banners (in themes/quint/static/images)
 useToc = true                      # Set to true to show a Table of Contents on multi-heading posts
+social = []                         # 不要沿用主題 hugo.toml 裡的社群連結
 
 [params.author]
 name = '陳建中｜Tân Kiàn-tiong'
@@ -41,10 +42,10 @@ image = '/images/logo.png'
     url = '/sketches'
     weight = 40
 
-    [[menus.main]]
-    name = '簽到'
-    url = '/comments'
-    weight = 50
+# [[menus.main]]
+#     name = '簽到'
+#     url = '/comments'
+#     weight = 50
 
 [[menus.main]]
     name = '介紹'

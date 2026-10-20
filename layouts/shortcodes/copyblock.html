@@ -1,26 +1,56 @@
-<div class="copyblock-container">
+{{/* 內容放進 <template>，等 justfont 掃描完成後再灌入可見區，避免超過 2000 字元限制。 */}}
+<div class="copyblock-container font-genyo" data-jf-exclude="true">
   <div class="copyblock-header">
-    <button class="copyblock-btn" onclick="copyToClipboard(this)">Copy</button>
+    <button type="button" class="copyblock-btn" onclick="copyToClipboard(this)">Copy</button>
     <span class="copyblock-title">{{ .Get "title" | default "複製區塊" }}</span>
   </div>
   <div class="copyblock-content">
-    <code>{{ .Inner | plainify }}</code>
+    <code class="copyblock-code" aria-busy="true"></code>
   </div>
+  <template class="copyblock-source">{{ .Inner | plainify }}</template>
 </div>
 <script>
-function copyToClipboard(btn) {
-  var code = btn.parentElement.nextElementSibling.querySelector('code');
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(code.textContent);
-  } else {
-    var textarea = document.createElement('textarea');
-    textarea.value = code.textContent;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
+(function () {
+  function hydrateCopyblocks() {
+    document.querySelectorAll(".copyblock-container").forEach(function (block) {
+      var code = block.querySelector(".copyblock-code");
+      var source = block.querySelector("template.copyblock-source");
+      if (!code || !source || code.dataset.hydrated === "1") return;
+      code.textContent = source.content.textContent || "";
+      code.dataset.hydrated = "1";
+      code.removeAttribute("aria-busy");
+    });
   }
-  btn.textContent = 'Copied';
-  setTimeout(function(){ btn.textContent = 'Copy'; }, 1200);
-}
-</script> 
+
+  if (!window.copyToClipboard) {
+    window.copyToClipboard = function (btn) {
+      var block = btn.closest(".copyblock-container");
+      var code = block && block.querySelector(".copyblock-code");
+      if (!code) return;
+      if (code.dataset.hydrated !== "1") hydrateCopyblocks();
+      var text = code.textContent || "";
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text);
+      } else {
+        var textarea = document.createElement("textarea");
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+      }
+      btn.textContent = "Copied";
+      setTimeout(function () {
+        btn.textContent = "Copy";
+      }, 1200);
+    };
+  }
+
+  /* 優先等 justfont 跑完再灌入；若 justfont 未載入則稍後 fallback。 */
+  var _jf = window._jf || [];
+  window._jf = _jf;
+  _jf.push(["_eventActived", hydrateCopyblocks]);
+  _jf.push(["_eventInactived", hydrateCopyblocks]);
+  setTimeout(hydrateCopyblocks, 2500);
+})();
+</script>

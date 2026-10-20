@@ -7,6 +7,7 @@ summary = 'TASA jī-hîng hē-lia̍t sī nn̄g thò kong-lîng uân-tsíng, siat
 image = '/images/TASA_intro_thumbnail.png'
 toc = false
 language_type = "taiwanese"
+content_font = "tasa"
 tags = ["台文","字型"]
 +++
 

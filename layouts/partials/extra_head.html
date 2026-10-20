@@ -1,1 +1,6 @@
-<!-- Override this partial (create layouts/partials/extra_head.html) to add to your head -->
+<script>
+  /* 200ms 內 webfont 還沒好就先顯示文字；之後就算 justfont 才加上 jf-loading 也不再把整頁藏起來 */
+  window.setTimeout(function () {
+    document.documentElement.classList.add("jf-timeout");
+  }, 200);
+</script>

@@ -1,0 +1,5 @@
+{{- /* Params: at, empty, future — 勿在輸出中夾帶換行，否則在 markdownify 清單內會斷行 */ -}}
+{{- $at := .Get "at" | default "" -}}
+{{- $empty := .Get "empty" | default "--" -}}
+{{- $future := .Get "future" | default "尚未開始" -}}
+{{- printf `<span class="elapsed-time-inline" data-start="%s" data-empty="%s" data-future="%s">%s</span>` ($at | htmlEscape) ($empty | htmlEscape) ($future | htmlEscape) ($empty | htmlEscape) | safeHTML -}}

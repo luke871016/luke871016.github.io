@@ -1,3 +1,27 @@
+<script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-65933.js"></script>
+<script>
+  /* justfont 不要掃整塊 .font-jf-body（會連 copyblock 超大字表一起送出）。
+     改掃正文常見元素，並排除 .copyblock-container 內文。 */
+  var _jf = _jf || [];
+  var jfBodyScan =
+    ".font-jf-body :is(p, li, td, th, h1, h2, h3, h4, h5, h6, dt, dd, figcaption, summary, blockquote):not(.copyblock-container *):not(.taigi-par-wrap *)," +
+    ".card-summary.font-jf-body," +
+    ".subtitle.font-jf-body";
+  _jf.push(["_setFont", "jf-jinxuanlatte-book", "css", jfBodyScan]);
+  _jf.push([
+    "_setFont",
+    "jf-jinxuanlatte-semibold",
+    "css",
+    ".font-jf-body strong:not(.copyblock-container *):not(.taigi-par-wrap *), .font-jf-body b:not(.copyblock-container *):not(.taigi-par-wrap *)",
+  ]);
+  _jf.push([
+    "_setFont",
+    "jf-jinxuan-bold",
+    "css",
+    "h1:not(.font-tasa-article *):not(.font-tasa-body *), h2:not(.font-tasa-article *):not(.font-tasa-body *), h3:not(.font-tasa-article *):not(.font-tasa-body *), h4:not(.font-tasa-article *):not(.font-tasa-body *), h5:not(.font-tasa-article *):not(.font-tasa-body *), h6:not(.font-tasa-article *):not(.font-tasa-body *)",
+  ]);
+  _jf.push(["_setFont", "jf-jinxuan-medium", "css", ".font-jf-menu, .font-jf-menu a"]);
+</script>
 <header>
   <div class="logo h-card">
     <a class="u-url" href="{{ .Site.Home.Permalink }}">
@@ -11,7 +35,7 @@
     <span></span>
     <span></span>
   </label>
-  <nav class="menu">
+  <nav class="menu font-jf-menu">
     <ul>
       {{- range site.Menus.main }}
       <li>

@@ -1,6 +1,33 @@
 <head>
+  {{- $title := cond (ne .Title .Site.Title) (printf "%s | %s" .Title .Site.Title) .Site.Title -}}
+  {{- $description := or .Description .Summary .Site.Params.description .Site.Title -}}
+  {{- $canonicalURL := .Permalink -}}
+  {{- $ogImage := "" -}}
+  {{- with .Params.image -}}
+    {{- $ogImage = . | absURL -}}
+  {{- else -}}
+    {{- with .Params.images -}}
+      {{- $ogImage = (index . 0) | absURL -}}
+    {{- else -}}
+      {{- with .Site.Params.author.image -}}
+        {{- $ogImage = . | absURL -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="{{ $description }}" />
+  <link rel="canonical" href="{{ $canonicalURL }}" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+  <meta property="og:title" content="{{ $title }}" />
+  <meta property="og:description" content="{{ $description }}" />
+  <meta property="og:url" content="{{ $canonicalURL }}" />
+  {{ with $ogImage }}<meta property="og:image" content="{{ . }}" />{{ end }}
+  <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}" />
+  <meta name="twitter:title" content="{{ $title }}" />
+  <meta name="twitter:description" content="{{ $description }}" />
+  {{ with $ogImage }}<meta name="twitter:image" content="{{ . }}" />{{ end }}
   <link
     href="/images/fav/apple-touch-icon.png"
     rel="apple-touch-icon"
@@ -19,13 +46,13 @@
     type="image/png"
   />
   <link href="/images/fav/site.webmanifest" rel="manifest" />
-  <title>
-    {{ if ne .Title .Site.Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}
-  </title>
+  <title>{{ $title }}</title>
   <link href="https://font.emtech.cc/css/GenYoGothicTW/400" rel="stylesheet" />
   <link href="https://font.emtech.cc/css/GenYoGothicTW/700" rel="stylesheet" />
   <link href="/css/styles.css" rel="stylesheet" />
   {{ range .Site.Params.css -}}
-  <link href="/{{ . }}" rel="stylesheet" />
+  {{ $staticPath := print "static/" . }}
+  {{ $v := partialCached "css-fingerprint.html" $staticPath }}
+  <link href="/{{ . }}?v={{ $v }}" rel="stylesheet" />
   {{- end }} {{ partial "extra_head.html" . }}
 </head>

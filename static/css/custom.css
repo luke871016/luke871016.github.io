@@ -9,7 +9,7 @@
   --borders: #aaa;
 
   /* 字型設定 */
-  --font-heading: "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif;
+  --font-heading: "jf-jinxuan", "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif;
   --font-body: "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif;
 }
 
@@ -22,20 +22,6 @@
   src: url("/fonts/GenYoExt2-R.woff2") format("woff2");
   font-style: normal;
 }
-
-/* @font-face {
-    font-family: 'GenKiLomaji';
-    src: url('/fonts/GenKiGothic2-TW-Lomaji-R.woff2') format('woff2');
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'GenKiLomaji';
-    src: url('/fonts/GenKiGothic2-TW-Lomaji-B.woff2') format('woff2');
-    font-style: normal;
-    font-weight: bold;
-} */
 
 @font-face {
   font-family: "TASAExplorer";
@@ -59,9 +45,74 @@ p {
   margin-block-end: 0.5em;
 }
 
+a {
+  font-weight: 400 !important;
+}
+
+/* 自訂 justfont 作用範圍；!important 避免官方 JS 注入後覆寫 fallback */
+.font-jf-body {
+  font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.font-jf-body strong,
+.font-jf-body b {
+  font-family: "jf-jinxuanlatte", "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.font-jf-menu {
+  font-family: "jf-jinxuan", "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.font-genyo,
+.copyblock-container,
+.copyblock-container * {
+  font-family: "TASAOrbiter", "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* 最多等 200ms：字型還沒好就先顯示，避免慢速網路把整頁卡住 */
+.jf-loading body {
+  opacity: 0;
+  visibility: hidden;
+}
+.jf-loading:not(.jf-timeout) body {
+  animation: jf-show-text 200ms step-end forwards;
+}
+.jf-active body,
+.jf-inactive body,
+html.jf-timeout body {
+  opacity: 1;
+  visibility: visible;
+}
+.jf-active *,
+.jf-inactive *,
+html.jf-timeout * {
+  -webkit-transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+}
+@keyframes jf-show-text {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 .post {
   width: 100%;
   box-sizing: border-box;
+}
+
+.post .e-content {
+  letter-spacing: 0.5px;
 }
 
 li {
@@ -75,11 +126,55 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
+  /* !important 保留 fallback 清單，避免 justfont 稍後注入的規則覆寫。 */
+  font-family: var(--font-heading) !important;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700 !important;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+/*
+  TASA 專文：必須寫在全域 h1–h6 / justfont 規則之後，
+  並直接指定子元素（不能只靠繼承），否則 !important 會蓋掉。
+  front matter: content_font = "tasa"
+*/
+.post.font-tasa-article .p-name,
+.post.font-tasa-article .e-content.font-tasa-body,
+.post.font-tasa-article .e-content.font-tasa-body :is(
+  p,
+  li,
+  td,
+  th,
+  dt,
+  dd,
+  div,
+  span,
+  a,
+  em,
+  i,
+  small,
+  label,
+  figcaption,
+  summary,
+  blockquote,
+  .callout,
+  .callout-title,
+  .callout-content
+) {
+  font-family: "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.post.font-tasa-article .e-content.font-tasa-body :is(strong, b) {
+  font-family: "TASAOrbiter", "GenYoExt", "GenYoGothicTW", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.post.font-tasa-article .p-name,
+.post.font-tasa-article .e-content.font-tasa-body :is(h1, h2, h3, h4, h5, h6) {
+  font-family: "TASAExplorer", "GenYoExt", "GenYoGothicTW", sans-serif !important;
+  font-weight: 600 !important;
 }
 
 table {
@@ -415,18 +510,32 @@ figure img {
 .callout-header {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
 .callout-icon {
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: inherit;
+}
+
+.callout-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .callout-title {
   font-size: 1rem;
   color: var(--primary-text);
+  min-width: 0;
+  line-height: 1.35;
 }
 
 .callout-content {
@@ -444,7 +553,8 @@ figure img {
   background-color: rgba(59, 130, 246, 0.05);
 }
 
-.callout-info .callout-title {
+.callout-info .callout-title,
+.callout-info .callout-icon {
   color: #1e40af;
 }
 
@@ -453,7 +563,8 @@ figure img {
   background-color: rgba(245, 158, 11, 0.05);
 }
 
-.callout-warning .callout-title {
+.callout-warning .callout-title,
+.callout-warning .callout-icon {
   color: #d97706;
 }
 
@@ -462,7 +573,8 @@ figure img {
   background-color: rgba(16, 185, 129, 0.05);
 }
 
-.callout-success .callout-title {
+.callout-success .callout-title,
+.callout-success .callout-icon {
   color: #059669;
 }
 
@@ -471,7 +583,8 @@ figure img {
   background-color: rgba(239, 68, 68, 0.05);
 }
 
-.callout-error .callout-title {
+.callout-error .callout-title,
+.callout-error .callout-icon {
   color: #dc2626;
 }
 
@@ -480,7 +593,8 @@ figure img {
   background-color: rgba(107, 114, 128, 0.05);
 }
 
-.callout-note .callout-title {
+.callout-note .callout-title,
+.callout-note .callout-icon {
   color: #4b5563;
 }
 
@@ -492,14 +606,13 @@ figure img {
   }
 
   .callout-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
   .callout-icon {
-    margin-right: 0;
-    margin-bottom: 0.25rem;
+    width: 1.05rem;
+    height: 1.05rem;
   }
   .post-pagination {
     padding: 1rem 0.5rem;
@@ -517,6 +630,7 @@ figure img {
 }
 
 code {
+  font-family: monospace, "GenYoGothicTW";
   background-color: #ddd;
   border-radius: 5px;
 }
@@ -560,6 +674,7 @@ details {
 }
 
 .series-list summary {
+  font-family: var(--font-heading);
   cursor: pointer;
   font-weight: bold;
 }
@@ -707,7 +822,7 @@ header .logo a {
 
 header .logo img {
   display: block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 /* 隱藏 checkbox */
@@ -974,4 +1089,277 @@ kbd {
   border-radius: 0.2rem;
   font: 80% var(--borders);
   padding: 0.15rem 0.3rem;
+}
+
+/* 行內經過時間：避免在清單／段落中被當成區塊而斷行 */
+.elapsed-time-inline {
+  display: inline;
+}
+
+/* shortcode tailo_parallel：芫荽 Iansui（Google Fonts）＋漢字／臺羅平行 */
+.taigi-par-wrap {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: "Iansui", "GenYoExt", "GenYoGothicTW", ui-serif, serif;
+}
+
+/* 標籤列在色塊內頂部，下方分隔線（參考 shadcn code block tabs） */
+.taigi-par-head {
+  flex-shrink: 0;
+  padding: 0.5rem 0.75rem 0;
+  box-sizing: border-box;
+}
+
+.taigi-par-head-divider {
+  display: block;
+  margin: 0.4rem -0.75rem 0;
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--primary-text) 14%, transparent);
+}
+
+/* shadcn 風：標籤列（置左、圓角軌道＋選中塊） */
+.taigi-par-tabs {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.taigi-par-tabs button.taigi-par-tab {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0.38rem 0.72rem !important;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent !important;
+  color: color-mix(in srgb, var(--primary-text) 72%, var(--caption-text)) !important;
+  cursor: pointer;
+  font-family: "GenYoGothicTW", "GenYoExt", sans-serif !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  white-space: nowrap;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.taigi-par-tabs button.taigi-par-tab:hover {
+  color: var(--primary-text) !important;
+  background: color-mix(in srgb, #fff 22%, transparent) !important;
+}
+
+.taigi-par-tabs button.taigi-par-tab.is-active,
+.taigi-par-tabs button.taigi-par-tab[aria-selected="true"] {
+  color: var(--primary-text) !important;
+  background: color-mix(in srgb, #f4f7f5 88%, #d2dad7) !important;
+  border-color: color-mix(in srgb, var(--primary-text) 14%, transparent);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.taigi-par-tabs button.taigi-par-tab:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+.taigi-par-root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  background: #d2dad7;
+  overflow: hidden;
+}
+
+.taigi-par-body {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0.65rem 1rem 1rem;
+  font-size: 1.175rem;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  text-indent: 0;
+  box-sizing: border-box;
+}
+
+.taigi-par-root--mandarin .taigi-par-body {
+  padding-bottom: 0.4rem;
+}
+
+/* 教育部辭典式：華語對譯置於台文下方，全形括號、較淡色 */
+.taigi-par-mandarin {
+  margin: 0;
+  padding: 0 1rem 0.85rem;
+  font-family: "GenYoGothicTW", "GenYoExt", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-size: 0.95em;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #6f7673;
+  letter-spacing: 0.01em;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+}
+
+.taigi-par-line {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.taigi-par-line-latin {
+  font-family: inherit;
+}
+
+/* 與 taigi_typing style.css：ruby / rt / .char-mark */
+.taigi-par-root ruby,
+.taigi-par-root .taigi-par-ruby {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  margin: 5px 0.08em;
+  vertical-align: bottom;
+  ruby-align: center;
+}
+
+.taigi-par-root rt {
+  font-size: 15px;
+  color: var(--caption-text);
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: normal;
+  user-select: none;
+}
+
+.taigi-par-root .taigi-par-line-latin.taigi-par-line ruby,
+.taigi-par-root .taigi-par-ruby-tailo {
+  font-family: inherit;
+  margin: 5px 0.2em;
+}
+
+.taigi-par-root .taigi-par-ruby-tailo rt {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.05;
+}
+
+.taigi-par-caption {
+  margin: 0;
+  margin-top: 0.5em;
+}
+
+.taigi-par-root .taigi-par-no-break {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.taigi-par-root .taigi-par-punct-ruby rt {
+  font-size: 13px;
+}
+
+.taigi-par-plain {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.taigi-par-mark {
+  display: inline;
+}
+
+.taigi-par-punct {
+  display: inline;
+}
+
+/* 漢羅分開：兩段原始稿 */
+.taigi-par-dual {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.taigi-par-dual-block {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  font-size: 1.175rem;
+  line-height: 1.5;
+}
+
+.taigi-par-dual-t {
+  font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  .taigi-par-body {
+    line-height: 1.45;
+  }
+
+  .taigi-par-root rt {
+    font-size: 13px;
+  }
+
+  .taigi-par-root ruby,
+  .taigi-par-root .taigi-par-ruby {
+    margin: 1px 0.06em;
+  }
+
+  .taigi-par-root .taigi-par-line-latin.taigi-par-line ruby,
+  .taigi-par-root .taigi-par-ruby-tailo {
+    margin: 1px 0.1em;
+  }
+
+  .taigi-par-dual-block {
+    line-height: 1.45;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .taigi-par-root rt {
+    font-size: 13px;
+  }
+}
+
+.taigi-par-err {
+  margin: 0;
+  color: #a33;
+  font-size: 0.95rem;
+}
+
+/* 隱藏承載稿：供 JS 讀 .value，避免 <script>+jsonify 被壓縮／跳脫成雙重 JSON 字串 */
+.taigi-par-src {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

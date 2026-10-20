@@ -7,7 +7,7 @@ summary = '有一隻老硞硞的鱷魚咧硞嘓魚'
 toc = false
 language_type = "taiwanese"
 image = "/images/khokhi-cover.jpeg"
-tags = ["台文"]
+tags = ["台文", "創作"]
 +++
 
 {{< figure

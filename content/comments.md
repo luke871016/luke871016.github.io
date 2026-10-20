@@ -1,11 +1,11 @@
 +++
-draft = false
+draft = true
 date = '2026-01-03T14:00:00+08:00'
 title = '簽到'
 toc = false
 language_type = "bilingual"
 mandarin_title = "簽到"
-comments= true
+comments= false
 +++
 
 {{< mandarin >}}
