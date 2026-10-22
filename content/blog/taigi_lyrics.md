@@ -12,7 +12,7 @@ tags = ["雙語對照","實用工具","歌詞"]
 comments= false
 +++
 
-[**臺語歌真正正字歌詞網–歌詞語料搜揣 網頁連結**](https://tkt7235.pythonanywhere.com/)
+[**臺語歌真正正字歌詞網–歌詞語料搜揣 網頁連結**](https://taigilyrics.kiantiong.com)
 
 {{< mandarin >}}
 
